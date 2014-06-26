@@ -102,7 +102,8 @@ nav.links a:hover {
   color: #ee3025; }
 
 a.pp-icon img {
-  padding-top: .5em; }
+  padding-top: .5em;
+  margin: 0 2em; }
 
 a.pp-icon:hover {
   opacity: 0.7; }
@@ -163,33 +164,84 @@ span {
   color: #fdb415; }
 
 .judges {
-  background-color: #ffebba;
+  background-color: #e8ebda;
   width: 100%;
   height: 100%;
   padding-top: 1px; }
 
-.about, .bios, .prizes, .submit, .tickets {
+.about, .bios, .prizes, .submit, .sponsors {
   width: 60%;
   margin: 4em auto; }
 
-.judge-pic {
+.photos {
   width: 20%;
+  text-transform: uppercase;
+  text-align: center;
+  display: inline-block;
+  margin-right: 2em; }
+
+.judge-pic {
+  width: 100%;
   height: 150px;
+  background-color: black; }
+
+.photos:last-child {
+  margin-right: 0; }
+
+.apply {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  border: 1px solid #fdb415;
+  position: relative; }
+  .apply:before {
+    position: absolute;
+    content: '';
+    background: url(../img/pp-submit-tr.png) no-repeat;
+    width: 114px;
+    height: 114px;
+    right: -36px;
+    top: -35px; }
+  .apply:after {
+    position: absolute;
+    content: '';
+    background: url(../img/pp-submit-bl.png) no-repeat;
+    width: 183px;
+    height: 183px;
+    left: -56px;
+    bottom: -57px; }
+
+.submit h2 {
+  font-size: 2em;
+  color: #f16521;
+  text-transform: none;
+  line-height: 1.2em;
+  margin-bottom: 1.2em; }
+.submit p {
+  color: #f16521; }
+
+.submit-button {
+  width: 148px;
+  height: 48px;
+  background: url(../img/pp-submit-button.png) no-repeat;
+  margin: 3em auto 0 auto;
+  text-align: center;
+  padding-top: .4em; }
+  .submit-button a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em; }
+    .submit-button a:hover {
+      color: #ee3025; }
+
+.sponsor-logo {
+  width: 45%;
+  height: 80px;
   background-color: black;
   margin-right: 2em;
   display: inline-block; }
 
-.judge-pic:last-child {
-  margin-right: 0; }
-
-.judge-name {
-  width: 20%;
-  margin-right: 2em;
-  display: inline-block;
-  text-align: center;
-  text-transform: uppercase; }
-
-.judge-name:last-child {
+.sponsor-logo:last-child {
   margin-right: 0; }
 
 footer {
