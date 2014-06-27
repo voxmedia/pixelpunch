@@ -393,7 +393,8 @@ footer {
       padding-top: 2em; } }
 
 .m-footer-logo {
-  float: right; }
+  float: right;
+  padding-top: 1em; }
   @media screen and (max-width: 870px) {
     .m-footer-logo {
       float: none;
