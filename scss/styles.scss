@@ -5,9 +5,15 @@
 *, *:after, *:before { 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-.clearfix:before, .clearfix:after { display: table; content: ''; }
-.clearfix:after { clear: both; }
+  box-sizing: border-box; 
+}
+.clearfix:before, .clearfix:after { 
+  display: table; 
+  content: ''; 
+}
+.clearfix:after { 
+  clear: both; 
+}
 
 body {
   background: $white;
@@ -21,16 +27,24 @@ body {
 a {
   color: $orange;
   text-decoration: none;
-}
 
-a:hover, a:focus {
-  color: $red;
+  &:hover {
+    color: $red;
+  }
 }
 
 #nav {
   background: $orange;
   width: 100%;
   padding: 0.4em;
+
+  @media screen and (max-width: $break-tablet) {
+    padding: 0.2em;
+  }
+
+  @media screen and (max-width: $break-mobile) {
+    display: none;
+  }
 }
 
 li {
@@ -42,39 +56,74 @@ nav.links {
   text-align: center;
   position: relative;
   padding: 0 2em;
+
+  a {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    padding: 0.3em;
+    display: inline-block;
+    margin: 0 .5em;
+    white-space: nowrap;
+    color: $white;
+    vertical-align: middle;
+
+    &:hover {
+        color: $red;
+    }
+
+    @media screen and (max-width: $break-tablet) {
+      padding: 0;
+      margin: 0.2em;
+      font-size: 1em;
+
+    }
+
+    @media screen and (max-width: 550px) {
+      padding: 0;
+      margin: 0.2em;
+      font-size: .7em;
+      font-weight: 600;
+
+    }
+  }
 }
 
-nav.links a {
-  font-weight: 300;
-  text-transform: uppercase;
-  font-size: 1.2em;
-  letter-spacing: 1px;
-  padding: 0.3em;
-  display: inline-block;
-  margin: 0 0.5em;
-  white-space: nowrap;
-  color: $white;
-  vertical-align: middle;
+a.pp-icon {
+  img {
+    padding-top: .5em;
+    margin: 0 2em;
+
+    @media screen and (max-width: $break-tablet) {
+      margin: 0;
+      width: 50%;
+    }
+  }
+  
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
-nav.links a:hover {
-  color: $red;
-}
-
-a.pp-icon img {
-  padding-top: .5em;
-  margin: 0 2em;
-}
-
-a.pp-icon:hover {
-  opacity: 0.7;
-}
 
 .bg-img img {
   position: relative;
   margin: 0 auto;
   width: 100%;
   height: 100%;
+
+  @media screen and (max-width: $break-mobile){
+    display: none;
+  }
+}
+
+.bg-img-mobile img {
+  display: none;
+
+  @media screen and (max-width: $break-mobile){
+    display: block;
+  }
 }
 
 .content {
@@ -83,14 +132,25 @@ a.pp-icon:hover {
   width: 100%
 }
 
-div h1 {
-  color: $red;
-  font-size: 3em;
-  text-transform: uppercase;
-}
+div {
+  h1 {
+    color: $red;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 300;
 
-div p {
-  font-size: 1em;
+    @media screen and (max-width: $break-mobile) {
+      text-align: center;
+      font-size: 2em;
+    }
+  }
+  p {
+   font-size: 1em;
+
+    @media screen and (max-width: $break-mobile) {
+      text-align: center;
+    }
+  }
 }
 
 .event {
@@ -101,35 +161,81 @@ div p {
   margin: 7em auto 4em auto;
   position: relative;
   width: 60%;
+
+  @media screen and (max-width: $break-tablet) {
+    margin: 4em auto;
+    width: 80%;
+  }
 }
 
 .details {
   background-color: $white;
-  padding: 0.5em;
+  padding: 0.5em auto;
   margin: 0 auto;
-  top: -80px;
-  width: 50%;
+  top: -60px;
+  width: 45%;
   position: relative;
-  margin-bottom: -5em;
+  margin-bottom: -4em;
+
+  @media screen and (max-width: $break-large) {
+    top: -70px;
+  }
+
+  @media screen and (max-width: $break-tablet) {
+    width: 60%;
+    top: -60px;
+  }
+
+  @media screen and (max-width: $break-mobile) {
+    top: -50px;
+    margin-bottom: -3em;
+  }
 }
 
 .event h1, h2 {
   text-transform: uppercase;
 }
 
-.event h1 {
-  font-size: 4em;
-  color: $black;
-  font-weight: 600;
-}
+.event {
 
-.event h2 {
-  font-size: 2.5em;
-}
+    h1 {
+      font-size: 3.5em;
+      color: $black;
+      font-weight: 600;
 
-.event h3 {
-  font-size: 2.1em;
-  font-weight: 300;
+      @media screen and (max-width: $break-mobile) {
+        font-size: 2.5em;
+      }
+    }
+
+    h2 {
+      font-size: 2em;
+
+      @media screen and (max-width: $break-large) {
+        font-size: 1.5em;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 1.2em;
+      }
+      @media screen and (max-width: $break-mobile) {
+        font-size: 1em;
+      }
+    }
+
+    h3 {
+      font-size: 1.7em;
+      font-weight: 300;
+
+      @media screen and (max-width: $break-large) {
+        font-size: 1.2em;
+      }
+      @media screen and (max-width: 550px) {
+        font-size: 1em;
+      }
+      @media screen and (max-width: $break-mobile) {
+        font-size: .8em;
+      }
+    }
 }
 
 span {
@@ -146,24 +252,37 @@ span {
 .about, .bios, .prizes, .submit, .sponsors {
   width: 60%;
   margin: 4em auto;
+
+  @media screen and (max-width: $break-tablet) {
+    width: 80%;
+  }
 }
 
 .photos {
   width: 20%;
-  text-transform: uppercase;
   text-align: center;
   display: inline-block;
   margin-right: 2em;
+
+  &:last-child {
+   margin-right: 0;
+  }
+
+  h4 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
 }
 
 .judge-pic {
   width: 100%;
-  height: 150px;
-  background-color: $black;
-}
-
-.photos:last-child {
-  margin-right: 0;
 }
 
 .apply {
@@ -236,20 +355,42 @@ span {
   width: 45%;
   height: 80px;
   background-color: $black;
-  margin-right: 2em;
+  margin: 0 2em 2em 0;
   display: inline-block;
-}
 
-.sponsor-logo:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 footer {
-  height: 60px;
   background: $black;
   color: $white;
   text-transform: uppercase;
   font-size: .8em;
-  padding: 1em;
-  clear: both;
+  padding: 2em;
+  width: 100%;
+
+  @media screen and (max-width: $break-tablet) {
+    text-align: center;
+  }
+}
+
+.m-footer {
+  float: left;
+  padding-top: 1em;
+
+  @media screen and (max-width: $break-tablet) {
+    float: none;
+    padding-top: 2em;
+  }
+}
+
+.m-footer-logo {
+  float: right;
+
+  @media screen and (max-width: $break-tablet) {
+    float: none;
+    padding: 2em;
+  }
 }
