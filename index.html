@@ -11,11 +11,21 @@
         <link rel="icon" type="image/png" href="img/pp-favicon.png">
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,300' rel='stylesheet' type='text/css'>
+        <link href="http://assets.sbnation.com/voxmedia/public/stylesheets/ss-social/ss-social.css" rel="stylesheet">
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     </head>
 
     <body>
-        <div id="container" class="container intro-effect-push">
+        <div id="container">
+            <div class="social-buttons ss-social" id="social">
+              <div class="social">
+                <a href="https://www.facebook.com/voxmediainc">facebook</a>
+              </div>
+              <div class="social">
+                <a href="https://twitter.com/voxmediainc">twitter</a>
+              </div>
+            </div>
+
             <header class="header">
                 <div class="bg-img">
                     <img src="img/pp-cover-large.png" alt="background image" />
@@ -24,6 +34,7 @@
                     <img src="img/pp-cover-mobile.png" alt="background image mobile" />
                 </div>
             </header>
+
 
             <div id="nav">
                 <nav class="links">
@@ -57,13 +68,17 @@
                   <h3>1201 Conneticut Ave. NW, Washington DC 20036</h3>
                 </div>
 
-              <div id="about" class="about">
+              <div class="about">
+                <span class="anchor" id="about"></span>
+
                 <h1>About</h1>
                 <p>Wes Anderson organic next level brunch, Williamsburg jean shorts Echo Park four loko shabby chic art party occupy. Polaroid Echo Park chillwave flannel Vice. Biodiesel VHS banjo Cosby sweater, Vice seitan lo-fi hella food truck put a bird on it forage authentic sartorial art party. High Life ethical Shoreditch deep v DIY pug. Plaid literally Kickstarter swag squid. McSweeney's kale chips 8-bit, deep v paleo raw denim put a bird on it you probably haven't heard of them retro cardigan viral fap wolf. Bicycle rights craft beer seitan, keytar fashion axe forage literally +1 cray next level deep v gentrify food truck photo booth.</p>
               </div>
 
-              <div id="judges" class="judges">
+              <div class="judges">
+
                 <div class="bios">
+                <span class="anchor" id="judges"></span>
                 <h1>Judges</h1>
                   <div class="photos">
                     <div class="judge-pic"><img src="http://placekitten.com/150/150"></div>
@@ -93,12 +108,14 @@
                 </div>
               </div>
 
-              <div id="prizes" class="prizes">
+              <div class="prizes">
+                <span class="anchor" id="prizes"></span>
                 <h1>PRIZES</h1>
                 <p>Cray readymade literally squid sartorial, trust fund normcore DIY Bushwick fingerstache pickled letterpress Williamsburg raw denim. You probably haven't heard of them Godard vinyl plaid pug four loko, retro Williamsburg mustache forage farm-to-table tattooed skateboard deep v Blue Bottle. Vice meh cornhole kale chips tote bag, ugh Odd Future keffiyeh four loko disrupt Intelligentsia. Jean shorts ethical trust fund gentrify mumblecore mustache.</p>
               </div>
 
-              <div id="apply" class="apply">
+              <div class="apply">
+                <span class="anchor" id="apply"></span>
                 <div class="submit">
                 <h2>Create something that is contained in one image. No personal websites or portfolios, please. Submit via email.</h2>
                 <p>The deadline is Tuesday, July 23rd.<br />
@@ -111,25 +128,28 @@
                 </div>
               </div>
 
-              <div id="sponsors" class="sponsors">
+              <div class="sponsors">
+                <span class="anchor" id="sponsors"></span>
                 <h1>Sponsors</h1>
-                <div class="sponsor-logo">
+<!--                 <div class="sponsor-logo">
                 </div>
                 <div class="sponsor-logo">
                 </div>
                 <div class="sponsor-logo">
                 </div>
                 <div class="sponsor-logo">
-                </div>
+                </div> -->
+                <p>
+                  If you're interested in sponsoring Pixel Punch, please <a href="mailto:pixelpunch@voxmedia.com">e-mail us</a>!
+                </p>
                   
               </div>
 
 
-             <div id="attend"> 
+             <span class="anchor" id="attend"></span>
 
              <div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=12093815929&ref=etckt" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Online Ticketing</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://www.eventbrite.com/e/pixel-punch-design-battle-tickets-12093815929?ref=etckt">Pixel Punch (Design Battle)</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
 
-             </div>
 
             </div>
 
@@ -147,6 +167,39 @@
 
             </footer>
 
+    <script>
+
+    $(function() {
+ 
+    // grab the initial top offset of the navigation 
+    var sticky_navigation_offset_top = $('#nav').offset().top;
+    var sticky_social_offset_top = $('#social').offset().top;
+     
+    // our function that decides weather the navigation bar should have "fixed" css position or not.
+    var sticky_navigation = function(){
+        var scroll_top = $(window).scrollTop(); // our current vertical position from the top
+         
+        // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+        // otherwise change it back to relative
+        if (scroll_top > sticky_navigation_offset_top) { 
+            $('#nav').css({ 'position': 'fixed', 'top':0, 'left':0 });
+            $('#social').css({ 'position': 'fixed'});
+        } else {
+            $('#nav').css({ 'position': 'relative' }); 
+            $('#social').css({ 'position': 'absolute' }); 
+        }   
+    };
+     
+    // run our function on load
+    sticky_navigation();
+     
+    // and run it again every time you scroll
+    $(window).scroll(function() {
+         sticky_navigation();
+    });
+ 
+});
+    </script>
     </body>
 
     </html>

@@ -71,10 +71,31 @@ a {
   a:hover {
     color: #ee3025; }
 
+.social-buttons {
+  position: absolute;
+  right: 0;
+  top: 100px; }
+
+.social {
+  background-color: #fdb415;
+  padding: 1em;
+  text-align: center; }
+  .social:hover {
+    background-color: #ee3025; }
+  .social a {
+    color: white;
+    font-size: 1em;
+    font-family: "SSSocial"; }
+  @media screen and (max-width: 470px) {
+    .social {
+      display: none; } }
+
 #nav {
   background: #fdb415;
   width: 100%;
-  padding: 0.4em; }
+  padding: 0.4em;
+  z-index: 1000;
+  position: relative; }
   @media screen and (max-width: 870px) {
     #nav {
       padding: 0.2em; } }
@@ -241,7 +262,8 @@ span {
   margin: 4em auto; }
   @media screen and (max-width: 870px) {
     .about, .bios, .prizes, .submit, .sponsors {
-      width: 80%; } }
+      width: 80%;
+      margin: 3em auto; } }
 
 .photos {
   width: 20%;
@@ -264,7 +286,7 @@ span {
 .apply {
   width: 80%;
   height: 100%;
-  margin: 0 auto;
+  margin: 6em auto;
   border: 1px solid #fdb415;
   position: relative; }
   .apply:before {
@@ -290,8 +312,15 @@ span {
   text-transform: none;
   line-height: 1.2em;
   margin-bottom: 1.2em; }
+  @media screen and (max-width: 470px) {
+    .submit h2 {
+      font-size: 1.8em;
+      text-align: center; } }
 .submit p {
   color: #f16521; }
+@media screen and (max-width: 470px) {
+  .submit {
+    margin: 6em auto 8em auto; } }
 
 .submit-button {
   width: 148px;
@@ -341,3 +370,11 @@ footer {
     .m-footer-logo {
       float: none;
       padding: 2em; } }
+
+.anchor {
+  display: block;
+  height: 125px;
+  /*same height as header*/
+  margin-top: -125px;
+  /*same height as header*/
+  visibility: hidden; }
