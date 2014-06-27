@@ -203,21 +203,23 @@ div p {
   background-color: white;
   padding: 0.5em auto;
   margin: 0 auto;
-  top: -60px;
+  top: -50px;
   width: 45%;
   position: relative;
-  margin-bottom: -4em; }
+  margin-bottom: -5em; }
   @media screen and (max-width: 980px) {
     .details {
-      top: -70px; } }
+      top: -50px;
+      margin-bottom: -6em; } }
   @media screen and (max-width: 870px) {
     .details {
       width: 60%;
-      top: -60px; } }
+      top: -40px; } }
   @media screen and (max-width: 470px) {
     .details {
-      top: -50px;
-      margin-bottom: -3em; } }
+      top: 0;
+      position: static;
+      margin-bottom: -30px; } }
 
 .event h1, h2 {
   text-transform: uppercase; }
@@ -262,6 +264,9 @@ span {
   height: 100%;
   padding-top: 1px; }
 
+.be-a-judge {
+  margin-top: 2.5em; }
+
 .about, .bios, .prizes, .submit, .sponsors, .attend {
   width: 60%;
   margin: 4em auto; }
@@ -280,7 +285,6 @@ span {
 
 .photos {
   width: 200px;
-  height: 200px;
   text-align: center;
   display: inline-block;
   margin: 1em 1em; }

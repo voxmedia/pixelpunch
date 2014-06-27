@@ -200,29 +200,32 @@ div {
     margin: 4em auto;
     width: 80%;
   }
+
 }
 
 .details {
   background-color: $white;
   padding: 0.5em auto;
   margin: 0 auto;
-  top: -60px;
+  top: -50px;
   width: 45%;
   position: relative;
-  margin-bottom: -4em;
+  margin-bottom: -5em;
 
   @media screen and (max-width: $break-large) {
-    top: -70px;
+    top: -50px;
+    margin-bottom: -6em;
   }
 
   @media screen and (max-width: $break-tablet) {
     width: 60%;
-    top: -60px;
+    top: -40px;
   }
 
   @media screen and (max-width: $break-mobile) {
-    top: -50px;
-    margin-bottom: -3em;
+    top: 0;
+    position: static;
+    margin-bottom: -30px;
   }
 }
 
@@ -283,6 +286,10 @@ span {
   padding-top: 1px;
 }
 
+.be-a-judge {
+  margin-top: 2.5em;
+}
+
 .about, .bios, .prizes, .submit, .sponsors, .attend {
   width: 60%;
   margin: 4em auto;
@@ -306,7 +313,6 @@ span {
 
 .photos {
   width: 200px;
-  height: 200px;
   text-align: center;
   display: inline-block;
   margin: 1em 1em;
