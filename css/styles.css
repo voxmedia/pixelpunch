@@ -265,13 +265,17 @@ span {
       width: 80%;
       margin: 3em auto; } }
 
+.bios {
+  text-align: center; }
+  .bios h1 {
+    text-align: left; }
+
 .photos {
-  width: 20%;
+  width: 200px;
+  height: 200px;
   text-align: center;
   display: inline-block;
-  margin-right: 2em; }
-  .photos:last-child {
-    margin-right: 0; }
+  margin: 1em 1em; }
   .photos h4 {
     font-size: 1.5em;
     text-transform: uppercase;
@@ -279,9 +283,6 @@ span {
   .photos img {
     width: 100%;
     height: 100%; }
-
-.judge-pic {
-  width: 100%; }
 
 .apply {
   width: 80%;
