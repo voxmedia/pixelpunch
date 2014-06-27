@@ -71,6 +71,9 @@ a {
   a:hover {
     color: #ee3025; }
 
+strong {
+  font-weight: 800; }
+
 .social-buttons {
   position: absolute;
   right: 0;
