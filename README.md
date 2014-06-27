@@ -1,13 +1,15 @@
 # Pixel Punch
 
-wwww.pixelpunch.voxmedia.com
+www.pixelpunch.voxmedia.com
 
 The event website for Vox Media's first design battle, Pixel Punch.
 
 ## Authors
 
 Development: Ngan Hoang, Ally Palanzi
+
 Design: Tyson Whiting, Katharine Molloy
+
 Puns: Mike Case
 
 ## Contribute
