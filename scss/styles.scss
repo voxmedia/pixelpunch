@@ -178,8 +178,25 @@ div {
       font-size: 2em;
     }
   }
+
+  h2 {
+    color: $red;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 1em auto;
+
+    @media screen and (max-width: $break-mobile) {
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+  }
+
   p {
    font-size: 1em;
+   margin: 1em 0;
 
     @media screen and (max-width: $break-mobile) {
       text-align: center;

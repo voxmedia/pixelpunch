@@ -180,8 +180,20 @@ div h1 {
     div h1 {
       text-align: center;
       font-size: 2em; } }
+div h2 {
+  color: #ee3025;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1em;
+  margin: 1em auto; }
+  @media screen and (max-width: 470px) {
+    div h2 {
+      text-align: center;
+      font-size: 1.5em; } }
 div p {
-  font-size: 1em; }
+  font-size: 1em;
+  margin: 1em 0; }
   @media screen and (max-width: 470px) {
     div p {
       text-align: center; } }
