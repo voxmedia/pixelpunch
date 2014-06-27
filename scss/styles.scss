@@ -41,7 +41,6 @@ a {
 
 .social {
   background-color: $orange;
-  padding: 1em;
   text-align: center;
 
   &:hover {
@@ -50,8 +49,10 @@ a {
 
   a {
     color: $white;
-    font-size: 1em;
+    display: block;
     font-family: $social;
+    font-size: 1em;
+    padding: 1em;
   }
 
   @media screen and (max-width: $break-mobile){
@@ -418,9 +419,12 @@ span {
 
 
   a {
+    width: 148px;
+    height: 48px;
     color: $white;
     font-weight: 600;
     font-size: 1.2em;
+    display: block;
 
      &:hover {
       color: $red;

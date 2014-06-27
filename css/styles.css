@@ -78,14 +78,15 @@ a {
 
 .social {
   background-color: #fdb415;
-  padding: 1em;
   text-align: center; }
   .social:hover {
     background-color: #ee3025; }
   .social a {
     color: white;
+    display: block;
+    font-family: "SSSocial";
     font-size: 1em;
-    font-family: "SSSocial"; }
+    padding: 1em; }
   @media screen and (max-width: 470px) {
     .social {
       display: none; } }
@@ -360,9 +361,12 @@ span {
   text-align: center;
   padding-top: .4em; }
   .submit-button a {
+    width: 148px;
+    height: 48px;
     color: white;
     font-weight: 600;
-    font-size: 1.2em; }
+    font-size: 1.2em;
+    display: block; }
     .submit-button a:hover {
       color: #ee3025; }
 
