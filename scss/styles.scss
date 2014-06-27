@@ -264,6 +264,8 @@ div {
 
     h2 {
       font-size: 2em;
+      color: $black;
+      line-height: 1em;
 
       @media screen and (max-width: $break-large) {
         font-size: 1.5em;
@@ -279,6 +281,7 @@ div {
     h3 {
       font-size: 1.7em;
       font-weight: 300;
+      margin-top: -1em;
 
       @media screen and (max-width: $break-large) {
         font-size: 1.2em;

@@ -244,7 +244,9 @@ div p {
     .event h1 {
       font-size: 2.5em; } }
 .event h2 {
-  font-size: 2em; }
+  font-size: 2em;
+  color: black;
+  line-height: 1em; }
   @media screen and (max-width: 980px) {
     .event h2 {
       font-size: 1.5em; } }
@@ -256,7 +258,8 @@ div p {
       font-size: 1em; } }
 .event h3 {
   font-size: 1.7em;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-top: -1em; }
   @media screen and (max-width: 980px) {
     .event h3 {
       font-size: 1.2em; } }
