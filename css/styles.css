@@ -156,7 +156,10 @@ a.pp-icon:hover {
       display: none; } }
 
 .bg-img-mobile img {
-  display: none; }
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%; }
   @media screen and (max-width: 470px) {
     .bg-img-mobile img {
       display: block; } }
@@ -170,7 +173,9 @@ div h1 {
   color: #ee3025;
   font-size: 3em;
   text-transform: uppercase;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 1em;
+  margin-bottom: 1em; }
   @media screen and (max-width: 470px) {
     div h1 {
       text-align: center;
@@ -257,11 +262,11 @@ span {
   height: 100%;
   padding-top: 1px; }
 
-.about, .bios, .prizes, .submit, .sponsors {
+.about, .bios, .prizes, .submit, .sponsors, .attend {
   width: 60%;
   margin: 4em auto; }
   @media screen and (max-width: 870px) {
-    .about, .bios, .prizes, .submit, .sponsors {
+    .about, .bios, .prizes, .submit, .sponsors, .attend {
       width: 80%;
       margin: 3em auto; } }
 
@@ -269,6 +274,9 @@ span {
   text-align: center; }
   .bios h1 {
     text-align: left; }
+    @media screen and (max-width: 470px) {
+      .bios h1 {
+        text-align: center; } }
 
 .photos {
   width: 200px;
@@ -289,7 +297,8 @@ span {
   height: 100%;
   margin: 6em auto;
   border: 1px solid #fdb415;
-  position: relative; }
+  position: relative;
+  text-align: center; }
   .apply:before {
     position: absolute;
     content: '';
@@ -315,8 +324,7 @@ span {
   margin-bottom: 1.2em; }
   @media screen and (max-width: 470px) {
     .submit h2 {
-      font-size: 1.8em;
-      text-align: center; } }
+      font-size: 1.2em; } }
 .submit p {
   color: #f16521; }
 @media screen and (max-width: 470px) {

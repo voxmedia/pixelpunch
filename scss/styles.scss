@@ -149,6 +149,9 @@ a.pp-icon {
 
 .bg-img-mobile img {
   display: none;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 
   @media screen and (max-width: $break-mobile){
     display: block;
@@ -167,6 +170,8 @@ div {
     font-size: 3em;
     text-transform: uppercase;
     font-weight: 300;
+    line-height: 1em;
+    margin-bottom: 1em;
 
     @media screen and (max-width: $break-mobile) {
       text-align: center;
@@ -278,7 +283,7 @@ span {
   padding-top: 1px;
 }
 
-.about, .bios, .prizes, .submit, .sponsors {
+.about, .bios, .prizes, .submit, .sponsors, .attend {
   width: 60%;
   margin: 4em auto;
 
@@ -292,6 +297,10 @@ span {
   text-align: center;
   h1 {
     text-align: left;
+
+    @media screen and (max-width: $break-mobile){
+      text-align: center;
+    }
   }
 }
 
@@ -321,6 +330,7 @@ span {
   margin: 6em auto;
   border: 1px solid $orange;
   position: relative;
+  text-align: center;
 
   &:before {
     position: absolute;
@@ -354,8 +364,7 @@ span {
     margin-bottom: 1.2em;
 
     @media screen and (max-width: $break-mobile){
-      font-size: 1.8em;
-      text-align: center;
+      font-size: 1.2em;
     }
   }
 
