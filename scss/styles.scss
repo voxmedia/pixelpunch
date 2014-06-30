@@ -25,17 +25,23 @@ body {
 }
 
 a {
-  color: $orange;
+  color: $red;
   text-decoration: none;
 
   &:hover {
-    color: $red;
+    color: $orange;
   }
 }
 
 strong {
   font-weight: 800;
 }
+
+.callout {
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
 .social-buttons {
   position: absolute;
   right: 0;
@@ -311,11 +317,8 @@ span {
 
   p {
     margin: 0em;
+    text-align: left;
   }
-}
-
-.be-a-judge {
-  margin-top: 2.5em;
 }
 
 .about, .bios, .prizes, .submit, .sponsors, .attend {
@@ -431,9 +434,8 @@ span {
 
      &:hover {
       color: $red;
-      }
     }
-
+  }
 }
 
 .sponsor-logo {

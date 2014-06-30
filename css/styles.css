@@ -66,13 +66,17 @@ body {
   font-family: "Titillium Web", sans-serif; }
 
 a {
-  color: #fdb415;
+  color: #ee3025;
   text-decoration: none; }
   a:hover {
-    color: #ee3025; }
+    color: #fdb415; }
 
 strong {
   font-weight: 800; }
+
+.callout {
+  font-size: 1.2em;
+  line-height: 1.2; }
 
 .social-buttons {
   position: absolute;
@@ -283,10 +287,8 @@ span {
   height: 100%;
   padding-top: 1px; }
   .judges p {
-    margin: 0em; }
-
-.be-a-judge {
-  margin-top: 2.5em; }
+    margin: 0em;
+    text-align: left; }
 
 .about, .bios, .prizes, .submit, .sponsors, .attend {
   width: 60%;
