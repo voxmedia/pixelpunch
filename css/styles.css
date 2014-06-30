@@ -292,7 +292,8 @@ span {
 
 .about, .bios, .prizes, .submit, .sponsors, .attend {
   width: 60%;
-  margin: 4em auto; }
+  margin: 4em auto;
+  max-width: 800px; }
   @media screen and (max-width: 870px) {
     .about, .bios, .prizes, .submit, .sponsors, .attend {
       width: 80%;

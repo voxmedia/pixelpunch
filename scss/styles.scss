@@ -324,6 +324,7 @@ span {
 .about, .bios, .prizes, .submit, .sponsors, .attend {
   width: 60%;
   margin: 4em auto;
+  max-width: 800px;
 
   @media screen and (max-width: $break-tablet) {
     width: 80%;
