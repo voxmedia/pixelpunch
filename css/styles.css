@@ -79,9 +79,10 @@ strong {
   line-height: 1.2; }
 
 .social-buttons {
-  position: absolute;
+  position: fixed;
   right: 0;
-  top: 100px; }
+  top: 100px;
+  z-index: 10000; }
 
 .social {
   background-color: #f5831f;
@@ -103,13 +104,8 @@ strong {
   width: 100%;
   padding: 0.4em;
   z-index: 1000;
-  position: relative; }
-  @media screen and (max-width: 870px) {
-    #nav {
-      padding: 0.2em; } }
-  @media screen and (max-width: 470px) {
-    #nav {
-      display: none; } }
+  position: relative;
+  margin-top: -10px; }
 
 li {
   display: inline-block;
