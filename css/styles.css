@@ -69,7 +69,7 @@ a {
   color: #ee3025;
   text-decoration: none; }
   a:hover {
-    color: #fdb415; }
+    color: #f5831f; }
 
 strong {
   font-weight: 800; }
@@ -84,7 +84,7 @@ strong {
   top: 100px; }
 
 .social {
-  background-color: #fdb415;
+  background-color: #f5831f;
   text-align: center; }
   .social:hover {
     background-color: #ee3025; }
@@ -99,7 +99,7 @@ strong {
       display: none; } }
 
 #nav {
-  background: #fdb415;
+  background: #f5831f;
   width: 100%;
   padding: 0.4em;
   z-index: 1000;
@@ -208,8 +208,8 @@ div p {
 
 .event {
   text-align: center;
-  border-top: 1px solid #fdb415;
-  border-bottom: 1px solid #fdb415;
+  border-top: 1px solid #f5831f;
+  border-bottom: 1px solid #f5831f;
   padding: 1em;
   margin: 7em auto 4em auto;
   position: relative;
@@ -279,7 +279,7 @@ div p {
       font-size: .8em; } }
 
 span {
-  color: #fdb415; }
+  color: #f5831f; }
 
 .judges {
   background-color: #e8ebda;
@@ -324,7 +324,7 @@ span {
   width: 80%;
   height: 100%;
   margin: 6em auto;
-  border: 1px solid #fdb415;
+  border: 1px solid #f5831f;
   position: relative;
   text-align: center; }
   .apply:before {
@@ -419,3 +419,22 @@ footer {
   margin-top: -125px;
   /*same height as header*/
   visibility: hidden; }
+
+.mobile {
+  display: none; }
+  @media screen and (max-width: 470px) {
+    .mobile {
+      display: block; } }
+
+.tablet {
+  display: none; }
+  @media screen and (max-width: 870px) {
+    .tablet {
+      display: block; } }
+  @media screen and (max-width: 470px) {
+    .tablet {
+      display: none; } }
+
+@media screen and (max-width: 870px) {
+  .desktop {
+    display: none; } }

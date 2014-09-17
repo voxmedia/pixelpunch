@@ -2,17 +2,17 @@
 @import "vars";
 @import "mixins";
 
-*, *:after, *:before { 
+*, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
-.clearfix:before, .clearfix:after { 
-  display: table; 
-  content: ''; 
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: '';
 }
-.clearfix:after { 
-  clear: both; 
+.clearfix:after {
+  clear: both;
 }
 
 body {
@@ -139,7 +139,7 @@ a.pp-icon {
       width: 50%;
     }
   }
-  
+
   &:hover {
     opacity: 0.7;
   }
@@ -489,4 +489,27 @@ footer {
   height: 125px; /*same height as header*/
   margin-top: -125px; /*same height as header*/
   visibility: hidden;
+}
+
+.mobile {
+  display: none;
+  @media screen and (max-width: $break-mobile) {
+    display: block;
+  }
+}
+
+.tablet {
+  display: none;
+  @media screen and (max-width: $break-tablet) {
+    display: block;
+  }
+  @media screen and (max-width: $break-mobile) {
+    display: none;
+  }
+}
+
+.desktop {
+  @media screen and (max-width: $break-tablet) {
+    display: none;
+  }
 }
