@@ -196,7 +196,7 @@ div h2 {
       text-align: center;
       font-size: 1.5em; } }
 div p {
-  font-size: 1em;
+  font-size: 1.1em;
   margin: 1em 0; }
   @media screen and (max-width: 470px) {
     div p {
@@ -285,6 +285,15 @@ span {
   .judges p {
     margin: 0em;
     text-align: left; }
+
+.about h2 {
+  font-size: 1.5em;
+  color: #f16521;
+  text-transform: none;
+  line-height: 1.2em; }
+  @media screen and (max-width: 470px) {
+    .about h2 {
+      font-size: 1.2em; } }
 
 .about, .bios, .prizes, .submit, .sponsors, .attend {
   width: 60%;
