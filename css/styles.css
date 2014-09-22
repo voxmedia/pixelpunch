@@ -425,11 +425,6 @@ footer {
   /*same height as header*/
   visibility: hidden; }
 
-svg {
-  position: relative;
-  width: 105%;
-  left: -70px; }
-
 .mobile {
   display: none; }
   @media screen and (max-width: 470px) {
