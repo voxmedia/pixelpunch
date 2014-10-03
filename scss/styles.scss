@@ -350,8 +350,9 @@ span {
   h1 {
     text-align: left;
     margin: 1em 0 1em 4em;
-    @media screen and (max-width: $break-mobile){
+    @media screen and (max-width: $break-tablet){
       text-align: center;
+      margin: 1em auto;
     }
   }
 }

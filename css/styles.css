@@ -314,9 +314,10 @@ span {
   .bios h1 {
     text-align: left;
     margin: 1em 0 1em 4em; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 870px) {
       .bios h1 {
-        text-align: center; } }
+        text-align: center;
+        margin: 1em auto; } }
 
 .photos {
   width: 20%;
