@@ -313,18 +313,17 @@ span {
   text-align: center; }
   .bios h1 {
     text-align: left;
-    max-width: 800px;
-    margin: 1em auto; }
+    margin: 1em 0 1em 4em; }
     @media screen and (max-width: 600px) {
       .bios h1 {
         text-align: center; } }
 
 .photos {
-  width: 30%;
+  width: 20%;
   text-align: center;
   display: inline-block;
-  margin: 2em;
-  vertical-align: top; }
+  vertical-align: top;
+  padding: 2em; }
   .photos h4 {
     font-size: 1.5em;
     text-transform: uppercase;
@@ -332,10 +331,16 @@ span {
   .photos img {
     width: 200px; }
   .photos p {
-    text-align: center; }
+    text-align: center;
+    font-size: 1em; }
+  @media (max-width: 1300px) {
+    .photos {
+      width: 45%;
+      padding: 4em; } }
   @media (max-width: 600px) {
     .photos {
-      width: 100%; } }
+      width: 100%;
+      padding: 1em; } }
 
 .apply {
   width: 80%;
