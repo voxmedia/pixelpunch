@@ -373,6 +373,9 @@ span {
   p {
     text-align: center;
   }
+  @media(max-width: $break-mobile) {
+    width: 100%;
+  }
 
 }
 

@@ -95,7 +95,7 @@ strong {
     font-family: "SSSocial";
     font-size: 1em;
     padding: 1em; }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     .social {
       display: none; } }
 
@@ -155,7 +155,7 @@ a.pp-icon:hover {
   margin: 0 auto;
   width: 100%;
   height: 100%; }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     .bg-img img {
       display: none; } }
 
@@ -164,7 +164,7 @@ a.pp-icon:hover {
   margin: 0 auto;
   width: 100%;
   height: 100%; }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     .bg-img-mobile img {
       display: block; } }
 
@@ -180,7 +180,7 @@ div h1 {
   font-weight: 300;
   line-height: 1em;
   margin-bottom: 1em; }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     div h1 {
       text-align: center;
       font-size: 2em; } }
@@ -191,14 +191,14 @@ div h2 {
   font-weight: 300;
   line-height: 1em;
   margin: 1em auto; }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     div h2 {
       text-align: center;
       font-size: 1.5em; } }
 div p {
   font-size: 1.1em;
   margin: 1em 0; }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     div p {
       text-align: center; } }
 
@@ -231,7 +231,7 @@ div p {
     .details {
       width: 60%;
       top: -40px; } }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     .details {
       top: 0;
       position: static;
@@ -244,7 +244,7 @@ div p {
   font-size: 3.5em;
   color: black;
   font-weight: 600; }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     .event h1 {
       font-size: 2.5em; } }
 .event h2 {
@@ -257,7 +257,7 @@ div p {
   @media screen and (max-width: 550px) {
     .event h2 {
       font-size: 1.2em; } }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     .event h2 {
       font-size: 1em; } }
 .event h3 {
@@ -270,7 +270,7 @@ div p {
   @media screen and (max-width: 550px) {
     .event h3 {
       font-size: 1em; } }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     .event h3 {
       font-size: .8em; } }
 
@@ -294,7 +294,7 @@ span {
   color: #f16521;
   text-transform: none;
   line-height: 1.2em; }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     .about h2 {
       font-size: 1.2em; } }
 
@@ -311,7 +311,7 @@ span {
   text-align: center; }
   .bios h1 {
     text-align: left; }
-    @media screen and (max-width: 470px) {
+    @media screen and (max-width: 600px) {
       .bios h1 {
         text-align: center; } }
 
@@ -329,6 +329,9 @@ span {
     width: 200px; }
   .photos p {
     text-align: center; }
+  @media (max-width: 600px) {
+    .photos {
+      width: 100%; } }
 
 .apply {
   width: 80%;
@@ -360,12 +363,12 @@ span {
   text-transform: none;
   line-height: 1.2em;
   margin-bottom: 1.2em; }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     .submit h2 {
       font-size: 1.2em; } }
 .submit p {
   color: #f16521; }
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 600px) {
   .submit {
     margin: 6em auto 8em auto; } }
 
@@ -432,7 +435,7 @@ footer {
 
 .mobile {
   display: none; }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     .mobile {
       display: block; } }
 
@@ -441,7 +444,7 @@ footer {
   @media screen and (max-width: 870px) {
     .tablet {
       display: block; } }
-  @media screen and (max-width: 470px) {
+  @media screen and (max-width: 600px) {
     .tablet {
       display: none; } }
 
