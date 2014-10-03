@@ -309,6 +309,8 @@ span {
   height: 100%;
   padding-top: 1px;
   padding-bottom: 50px;
+  max-width: auto;
+  width: 100%;
 
   p {
     margin: 0em;
@@ -332,7 +334,7 @@ span {
   }
 }
 
-.about, .bios, .prizes, .submit, .sponsors, .attend {
+.about, .prizes, .submit, .sponsors, .attend {
   width: 60%;
   margin: 4em auto;
   max-width: 800px;
@@ -347,7 +349,8 @@ span {
   text-align: center;
   h1 {
     text-align: left;
-
+    max-width: 800px;
+    margin: 1em auto;
     @media screen and (max-width: $break-mobile){
       text-align: center;
     }
@@ -355,10 +358,10 @@ span {
 }
 
 .photos {
-  width: 45%;
+  width: 30%;
   text-align: center;
   display: inline-block;
-  margin: 1em 1em;
+  margin: 2em;
   vertical-align: top;
 
   h4 {
