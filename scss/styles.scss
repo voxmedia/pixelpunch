@@ -349,11 +349,16 @@ span {
   text-align: center;
   h1 {
     text-align: left;
-    margin: 1em 0 1em 4em;
+    max-width: 800px;
+    margin: 1em auto;
     @media screen and (max-width: $break-tablet){
       text-align: center;
       margin: 1em auto;
     }
+  }
+  @media(max-width: 1300px) {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
 
@@ -362,7 +367,7 @@ span {
   text-align: center;
   display: inline-block;
   vertical-align: top;
-  padding: 2em;
+  padding: 1em 2em;
 
   h4 {
     font-size: 1.5em;
@@ -379,7 +384,7 @@ span {
   }
   @media(max-width: 1300px) {
     width: 45%;
-    padding: 4em;
+    padding: 1em 4em;
   }
   @media(max-width: $break-mobile) {
     width: 100%;
