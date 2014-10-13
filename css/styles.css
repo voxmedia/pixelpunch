@@ -405,13 +405,18 @@ span {
       color: #ee3025; }
 
 .sponsor-logo {
-  width: 45%;
-  height: 80px;
-  background-color: black;
+  display: inline-block;
   margin: 0 2em 2em 0;
-  display: inline-block; }
-  .sponsor-logo:last-child {
-    margin-right: 0; }
+  text-align: center;
+  vertical-align: middle;
+  width: 25%; }
+  .sponsor-logo img {
+    width: 100%; }
+  .sponsor-logo.smaller img {
+    max-width: 150px; }
+  @media (max-width: 600px) {
+    .sponsor-logo {
+      width: 100%; } }
 
 footer {
   background: black;
