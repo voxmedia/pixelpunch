@@ -58,8 +58,8 @@ table {
   clear: both; }
 
 body {
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000000;
   font-weight: 400;
   font-size: 1em;
   line-height: 1.5;
@@ -69,7 +69,7 @@ a {
   color: #ee3025;
   text-decoration: none; }
   a:hover {
-    color: #f5831f; }
+    color: #F5831F; }
 
 strong {
   font-weight: 800; }
@@ -85,12 +85,12 @@ strong {
   z-index: 10000; }
 
 .social {
-  background-color: #f5831f;
+  background-color: #F5831F;
   text-align: center; }
   .social:hover {
     background-color: #ee3025; }
   .social a {
-    color: white;
+    color: #ffffff;
     display: block;
     font-family: "SSSocial";
     font-size: 1em;
@@ -100,7 +100,7 @@ strong {
       display: none; } }
 
 #nav {
-  background: #f5831f;
+  background: #F5831F;
   width: 100%;
   padding: 0.4em;
   z-index: 1000;
@@ -124,7 +124,7 @@ nav.links {
     display: inline-block;
     margin: 0 .5em;
     white-space: nowrap;
-    color: white;
+    color: #ffffff;
     vertical-align: middle; }
     nav.links a:hover {
       color: #ee3025; }
@@ -204,8 +204,8 @@ div p {
 
 .event {
   text-align: center;
-  border-top: 1px solid #f5831f;
-  border-bottom: 1px solid #f5831f;
+  border-top: 1px solid #F5831F;
+  border-bottom: 1px solid #F5831F;
   padding: 1em;
   margin: 7em auto 4em auto;
   position: relative;
@@ -216,7 +216,7 @@ div p {
       width: 80%; } }
 
 .details {
-  background-color: white;
+  background-color: #ffffff;
   padding: 0.5em auto;
   margin: 0 auto;
   top: -50px;
@@ -242,14 +242,14 @@ div p {
 
 .event h1 {
   font-size: 3.5em;
-  color: black;
+  color: #000000;
   font-weight: 600; }
   @media screen and (max-width: 600px) {
     .event h1 {
       font-size: 2.5em; } }
 .event h2 {
   font-size: 2em;
-  color: black;
+  color: #000000;
   line-height: 1em; }
   @media screen and (max-width: 980px) {
     .event h2 {
@@ -275,7 +275,7 @@ div p {
       font-size: .8em; } }
 
 span {
-  color: #f5831f; }
+  color: #F5831F; }
 
 .judges {
   background-color: #f2f2f2;
@@ -339,7 +339,7 @@ span {
   .photos p {
     text-align: center;
     font-size: 1em; }
-  @media (max-width: 1300px) {
+  @media (max-width: 1400px) {
     .photos {
       width: 45%;
       padding: 1em 4em; } }
@@ -352,7 +352,7 @@ span {
   width: 80%;
   height: 100%;
   margin: 6em auto;
-  border: 1px solid #f5831f;
+  border: 1px solid #F5831F;
   position: relative;
   text-align: center; }
   .apply:before {
@@ -397,7 +397,7 @@ span {
   .submit-button a {
     width: 148px;
     height: 48px;
-    color: white;
+    color: #ffffff;
     font-weight: 600;
     font-size: 1.2em;
     display: block; }
@@ -419,8 +419,8 @@ span {
       width: 100%; } }
 
 footer {
-  background: black;
-  color: white;
+  background: #000000;
+  color: #ffffff;
   text-transform: uppercase;
   font-size: .8em;
   padding: 2em;
@@ -471,3 +471,5 @@ footer {
 @media screen and (max-width: 870px) {
   .desktop {
     display: none; } }
+
+/*# sourceMappingURL=styles.css.map */
