@@ -368,6 +368,17 @@ span {
   display: inline-block;
   vertical-align: top;
   padding: 1em 2em;
+  &.contestants {
+    width: 30%;
+    @media(max-width: 1400px) {
+      width: 45%;
+      padding: 1em 4em;
+    }
+    @media(max-width: $break-mobile) {
+      width: 100%;
+      padding: 1em;
+    }
+  }
 
   h4 {
     font-size: 1.5em;

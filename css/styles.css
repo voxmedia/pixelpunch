@@ -330,6 +330,16 @@ span {
   display: inline-block;
   vertical-align: top;
   padding: 1em 2em; }
+  .photos.contestants {
+    width: 30%; }
+    @media (max-width: 1400px) {
+      .photos.contestants {
+        width: 45%;
+        padding: 1em 4em; } }
+    @media (max-width: 600px) {
+      .photos.contestants {
+        width: 100%;
+        padding: 1em; } }
   .photos h4 {
     font-size: 1.5em;
     text-transform: uppercase;
