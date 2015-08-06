@@ -1,6 +1,6 @@
 # Pixel Punch
 
-pixelpunch.voxmedia.com
+http://pixelpunch.voxmedia.com/
 
 The event website for Vox Media's first design battle, Pixel Punch.
 
