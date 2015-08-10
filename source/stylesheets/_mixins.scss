@@ -1,0 +1,17 @@
+// MIXINS
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+     -moz-#{$name}: #{$argument};
+      -ms-#{$name}: #{$argument};
+       -o-#{$name}: #{$argument};
+          #{$name}: #{$argument};
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} { @content };
+  @-moz-keyframes #{$name}    { @content };
+  @-ms-keyframes #{$name}     { @content };
+  @-o-keyframes #{$name}      { @content };  
+  @keyframes #{$name}         { @content };
+}

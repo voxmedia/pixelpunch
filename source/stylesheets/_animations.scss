@@ -1,0 +1,8 @@
+// ANIMATIONS
+
+@include keyframes(grow-fadeIn) {
+  0%   {background-size: 20%;
+        opacity: 0;}
+  100% {background-size: 50%;
+        opacity: 1;}
+}

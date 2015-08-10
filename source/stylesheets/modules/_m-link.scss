@@ -1,0 +1,57 @@
+$m: '.m-link';
+
+#{$m} {
+  position: absolute;
+  border: 1px solid $white;
+  height: 10vh;
+  width: 10vh;
+  z-index: $z-2;
+  color: $white;
+  text-decoration: none;
+  padding-top: 1%;
+  font-size: 3em;
+  text-align: center;
+  @include vendor-prefix(transition, all .5s);
+  &:hover {
+    background-color: $alt-grey;
+  }
+  &.home {
+    background-image: image-url("pp-logo-mini-outline.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 70%;
+    border: 2px solid $white;
+    border-top: 0px solid $white;
+    border-left: 0px solid $white;
+  }
+  &.about {
+    top: 11vh;
+    right: 0%;
+    left: 6.25vw;
+    bottom: 0%;
+  }
+  &.c {
+    top: 29vh;
+    right: 0%;
+    left: 84.25vw;
+    bottom: 0%;
+  }
+  &.j {
+    top: 40vh;
+    right: 0%;
+    left: 78.25vw;
+    bottom: 0%;
+  }
+  &.s {
+    top: 60vh;
+    right: 0%;
+    left: 6.25vw;
+    bottom: 0%;
+  }
+  &.t {
+    top: 71vh;
+    right: 0%;
+    left: 12.25vw;
+    bottom: 0%;
+  }
+}
