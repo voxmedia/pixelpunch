@@ -3,15 +3,16 @@ $m: '.m-link';
 #{$m} {
   position: absolute;
   border: 1px solid $white;
-  height: 10vh;
-  width: 10vh;
+  height: 8vh;
+  width: 8vh;
   z-index: $z-2;
-  color: $white;
+  color: transparent;
   text-decoration: none;
   padding-top: 1%;
   font-size: 3em;
   text-align: center;
-  @include vendor-prefix(transition, all .5s);
+  background-color: $default-bg;
+  @include vendor-prefix(transition, background-color .5s);
   &:hover {
     background-color: $alt-grey;
   }
@@ -21,37 +22,79 @@ $m: '.m-link';
     background-position: 50% 50%;
     background-size: 70%;
     border: 2px solid $white;
-    border-top: 0px solid $white;
-    border-left: 0px solid $white;
+    left: 50%;
+    top: -4.25vh;
+    margin-left: -4vh;
+    border-radius: 50%;
+    &:before,&:after {
+      content: "";
+      position: absolute;
+      width: 40vw;
+      height: 0%;
+      bottom: 25%;
+      border-bottom: 2px solid #fff;
+    }
+    &:before {
+      left: 115%;
+    }
+    &:after {
+      right: 115%;
+    }
   }
   &.about {
+    background-image: image-url("about.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
     top: 11vh;
     right: 0%;
     left: 6.25vw;
     bottom: 0%;
   }
-  &.c {
+  &.contestants {
+    background-image: image-url("contestants.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
     top: 29vh;
     right: 0%;
     left: 84.25vw;
     bottom: 0%;
   }
-  &.j {
+  &.judges {
+    background-image: image-url("judges.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
     top: 40vh;
     right: 0%;
     left: 78.25vw;
     bottom: 0%;
   }
-  &.s {
+  &.sponcers {
+    background-image: image-url("sponcers.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
     top: 60vh;
     right: 0%;
     left: 6.25vw;
     bottom: 0%;
   }
-  &.t {
+  &.tickets {
+    background-image: image-url("tickets.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
     top: 71vh;
     right: 0%;
     left: 12.25vw;
     bottom: 0%;
+  }
+  &.about, &.contestants,
+  &.judges, &.sponcers,
+  &.tickets {
+    opacity: 0;
+    @include vendor-prefix(animation, fadeIn 1s .75s forwards);
   }
 }

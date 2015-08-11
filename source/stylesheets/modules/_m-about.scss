@@ -1,0 +1,26 @@
+$m: '.m-about';
+
+#{$m} {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+}
+
+
+#{$m}-contents {
+  color: $white;
+  line-height: 1.25em;
+  height: 65vh;
+  width: 40%;
+  margin: 10% auto;
+  overflow-y: auto;
+  h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  p {
+    margin-top: 1em; 
+  }
+}
