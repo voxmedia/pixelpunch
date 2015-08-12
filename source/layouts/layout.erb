@@ -13,7 +13,12 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div class="l-page-wrap">
+      <div class="m-container">
+        <%= link_to 'home', 'index.html', :class => 'm-link home'  %>
+        <%= yield %>
+      </div>
+    </div>
     <%= javascript_include_tag  "all" %>
   </body>
 </html>
