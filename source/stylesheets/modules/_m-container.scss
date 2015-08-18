@@ -1,6 +1,6 @@
-$m: '.m-container';
 
-#{$m} {
+
+.m-container {
   position: relative;
   // border: 7.5px solid $white;
   // top: 4vh;
@@ -25,10 +25,10 @@ $m: '.m-container';
       bottom: 0%;
     }
     &:before {
-      // background-image: image-url("cobweb-1.png"),image-url("cobweb-2.png"),image-url("cobweb-3.png"),image-url("cobweb-4.png");
-      // background-repeat: no-repeat;
-      // background-position: 0% 0%, 100% 0%, 100% 100%, 0% 100%;
-      // background-size: 40%, 10%, 40%, 10%;
+      background-image: image-url("cobweb-3.png"),image-url("cobweb-4.png");
+      background-repeat: no-repeat;
+      background-position: 100% 100%, 0% 100%;
+      background-size: 45%, 15%;
     }
     @include bp(small) {
       right: 4vw;
@@ -38,7 +38,7 @@ $m: '.m-container';
 }
 
 .index {
-  #{$m} {
+  .m-container {
 
     &__border {
       &:after {
