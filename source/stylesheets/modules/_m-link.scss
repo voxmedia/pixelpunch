@@ -20,10 +20,10 @@ $m: '.m-link';
     background-image: image-url("pp-logo-mini-outline.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 70%;
+    background-size: 60%;
     border: 2px solid $white;
     left: 50%;
-    top: -4.25vh;
+    top: 1vh;
     margin-left: -4vh;
     border-radius: 50%;
     &:before,&:after {
@@ -43,9 +43,6 @@ $m: '.m-link';
   }
   &.about {
     background-image: image-url("about.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100%;
     top: 11vh;
     right: 0%;
     left: 6.25vw;
@@ -53,9 +50,6 @@ $m: '.m-link';
   }
   &.contestants {
     background-image: image-url("contestants.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100%;
     top: 29vh;
     right: 0%;
     left: 84.25vw;
@@ -63,9 +57,6 @@ $m: '.m-link';
   }
   &.judges {
     background-image: image-url("judges.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100%;
     top: 40vh;
     right: 0%;
     left: 78.25vw;
@@ -73,9 +64,6 @@ $m: '.m-link';
   }
   &.sponcers {
     background-image: image-url("sponcers.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100%;
     top: 60vh;
     right: 0%;
     left: 6.25vw;
@@ -83,17 +71,17 @@ $m: '.m-link';
   }
   &.tickets {
     background-image: image-url("tickets.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 100%;
     top: 71vh;
     right: 0%;
     left: 12.25vw;
     bottom: 0%;
   }
-  &.about, &.contestants,
-  &.judges, &.sponcers,
-  &.tickets {
+  &.about, 
+  &.contestants, &.judges, 
+  &.sponcers, &.tickets {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
     opacity: 0;
     @include vendor-prefix(animation, fadeIn 1s .75s forwards);
   }

@@ -38,7 +38,7 @@ end
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
-  activate :autoprefixer
+  # activate :autoprefixer
 end
 
 # Methods defined in the helpers block are available in templates
