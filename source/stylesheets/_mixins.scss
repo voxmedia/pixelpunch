@@ -15,3 +15,29 @@
   @-o-keyframes #{$name}      { @content };
   @keyframes #{$name}         { @content };
 }
+
+@mixin bp($point) {
+  @if $point == large {
+    @media #{$bp-large} { @content; }
+  }
+  @else if $point == medium {
+    @media #{$bp-medium} { @content; }
+  }
+  @else if $point == small {
+    @media #{$bp-small}  { @content; }
+  }
+}
+
+
+
+
+
+// extends so I dont need to create a new page
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

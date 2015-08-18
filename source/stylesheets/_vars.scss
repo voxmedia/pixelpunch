@@ -16,6 +16,10 @@ $default-color: #CFCFCF;
 $main:    tbd;
 $display: tbd;
 
+// breakpoints 
+$bp-small: "(max-width: 680px)";
+$bp-medium: "(max-width: 1080px)";
+$bp-large: "(max-width: 1400px)";
 
 // z-index scale
 $z-1:  1;

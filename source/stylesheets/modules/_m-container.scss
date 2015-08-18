@@ -8,15 +8,15 @@ $m: '.m-container';
   // left: 2vw;
   // bottom: 4vh;
   &__border {
-      position: absolute;
-      border: 7.5px solid #FFFFFF;
-      top: 4vh;
-      right: 2vw;
-      left: 2vw;
-      bottom: 4vh;
-      height: 93vh;
-      z-index: -#{$z-10};
-      &:before,&:after {
+    position: absolute;
+    border: 7.5px solid #FFFFFF;
+    top: 4vh;
+    right: 2vw;
+    left: 2vw;
+    bottom: 4vh;
+    height: 93vh;
+    z-index: -#{$z-10};
+    &:before,&:after {
       content: '';
       position: absolute;
       top: 0%;
@@ -29,6 +29,10 @@ $m: '.m-container';
       // background-repeat: no-repeat;
       // background-position: 0% 0%, 100% 0%, 100% 100%, 0% 100%;
       // background-size: 40%, 10%, 40%, 10%;
+    }
+    @include bp(small) {
+      right: 4vw;
+      left: 4vw;
     }
   }
 }
