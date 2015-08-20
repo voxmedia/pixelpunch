@@ -1,0 +1,35 @@
+
+
+
+.svg-pp {
+  position: absolute;
+  width: 50%;
+  top: 50vh;
+  left: 50vw;
+  margin-left: -25%;
+  margin-top: -17%;
+  opacity: 0;
+
+  @include vendor-prefix(animation, grow-fadeIn 1s .5s forwards);
+
+  &__logo {
+
+    $mids: 7, 10, 9, 11, 20, 3, 12, 24, 12;
+
+    @for $i from 1 through length($mids) {
+      #middle:nth-child(#{$i}) {
+        @for $j from 1 through nth($mids, $i) {
+          rect:nth-child(#{$j}) {
+            animation: fadeOut (random(4) * 1s) ease infinite alternate;
+            animation-delay: ((1s * $i) + (.5s * $j)) - 1s;
+          }
+        }
+      }
+    }
+
+    #middle rect {
+      opacity: 1;
+    }
+  }
+}
+

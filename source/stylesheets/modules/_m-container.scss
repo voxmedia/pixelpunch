@@ -40,16 +40,16 @@
 .index {
   .m-container {
 
-    &__border {
-      &:after {
-      background-image: image-url("pp-logo.svg");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-size: 20%;
-      opacity: 0;
-      z-index: $z-1;
-      @include vendor-prefix(animation, grow-fadeIn 1s .5s forwards);
-      }
-    }
+    // &__border {
+    //   &:after {
+    //   background-image: image-url("pp-logo.svg");
+    //   background-repeat: no-repeat;
+    //   background-position: 50% 50%;
+    //   background-size: 20%;
+    //   opacity: 0;
+    //   z-index: $z-1;
+    //   @include vendor-prefix(animation, grow-fadeIn 1s .5s forwards);
+    //   }
+    // }
   }
 }

@@ -1,13 +1,18 @@
 // ANIMATIONS
 
 @include keyframes(grow-fadeIn) {
-  0%   {background-size: 20%;
+  0%   {@include vendor-prefix(transform, scale(.25));
         opacity: 0;}
-  100% {background-size: 50%;
+  100% {@include vendor-prefix(transform, scale(1));
         opacity: 1;}
 }
 
 @include keyframes(fadeIn) {
   0%   {opacity: 0;}
   100% {opacity: 1;}
+}
+
+@include keyframes(fadeOut) {
+  0%   {opacity: 1;}
+  100% {opacity: 0;}
 }
