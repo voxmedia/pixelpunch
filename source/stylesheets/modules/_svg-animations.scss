@@ -6,7 +6,6 @@
   margin-left: -25%;
   margin-top: -17%;
   opacity: 0;
-  z-index: -#{$z-9};
 
   @include vendor-prefix(animation, grow-fadeIn 1s .5s forwards);
 
@@ -40,7 +39,6 @@
   margin-left: -25%;
   margin-top: -17%;
   opacity: 0;
-  z-index: -#{$z-9};
 
   @include vendor-prefix(animation, grow-fadeIn 1s .5s forwards);
 
