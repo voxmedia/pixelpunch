@@ -16,3 +16,40 @@
   0%   {opacity: 1;}
   100% {opacity: 0;}
 }
+
+@include keyframes(look-one) {
+  0% { 
+    @include vendor-prefix(transform, translate(0, 0));
+  }
+  50%, 70% { 
+    @include vendor-prefix(transform, translate(-5px, 0));
+  }
+  75% { 
+    @include vendor-prefix(transform, translate(15px, 0));
+  }
+  100% { 
+    @include vendor-prefix(transform, translate(15px, 8px));
+  }
+}
+
+@include keyframes(look-two) {
+  0% { 
+    @include vendor-prefix(transform, translate(-2px, 3px));
+  }
+  20% { 
+    @include vendor-prefix(transform, translate(5px, 0));
+  }
+  40% { 
+    @include vendor-prefix(transform, translate(3px, 0));
+  }
+  50% { 
+    @include vendor-prefix(transform, translate(-8px, -7px));
+  }
+  70%, 85% { 
+    @include vendor-prefix(transform, translate(-10px, 10px));
+  }
+  100% { 
+    @include vendor-prefix(transform, translate(-10px, 5px));
+  }
+
+}

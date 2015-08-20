@@ -1,6 +1,3 @@
-
-
-
 .svg-pp {
   position: absolute;
   width: 50%;
@@ -32,4 +29,36 @@
     }
   }
 }
+
+
+.svg-ghost {
+  position: absolute;
+  width: 50%;
+  top: 50vh;
+  left: 50vw;
+  margin-left: -25%;
+  margin-top: -17%;
+  opacity: 0;
+
+  @include vendor-prefix(animation, grow-fadeIn 1s .5s forwards);
+
+  &__sprite {
+    opacity: .1;
+    #one {
+      & + rect,
+      & + rect + rect {
+        animation: look-one 8s ease infinite alternate;
+      }
+    }
+
+    #two {
+      & + rect,
+      & + rect + rect {
+        animation: look-two 8s ease infinite alternate;
+      }
+    }
+    
+  }
+}
+
 
