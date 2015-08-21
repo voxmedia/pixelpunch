@@ -1,13 +1,13 @@
 .svg-pp {
   position: absolute;
+  height: 60vh;
   width: 50%;
-  top: 50vh;
-  left: 50vw;
-  margin-left: -25%;
-  margin-top: -17%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   opacity: 0;
 
-  @include vendor-prefix(animation, grow-fadeIn 1s .5s forwards);
+  @include vendor-prefix(animation, fadeIn 1s .5s forwards);
 
   &__logo {
 
@@ -57,7 +57,7 @@
         animation: look-two 8s ease infinite alternate;
       }
     }
-    
+
   }
 }
 
