@@ -1,14 +1,7 @@
-
-
 .m-container {
   position: relative;
   width: 100%;
   height: 100%;
-  // border: 7.5px solid $white;
-  // top: 4vh;
-  // right: 2vw;
-  // left: 2vw;
-  // bottom: 4vh;
   &__border {
     position: absolute;
     border: 7.5px solid #FFFFFF;
@@ -42,22 +35,5 @@
       right: 4vw;
       left: 4vw;
     }
-  }
-}
-
-.index {
-  .m-container {
-
-    // &__border {
-    //   &:after {
-    //   background-image: image-url("pp-logo.svg");
-    //   background-repeat: no-repeat;
-    //   background-position: 50% 50%;
-    //   background-size: 20%;
-    //   opacity: 0;
-    //   z-index: $z-1;
-    //   @include vendor-prefix(animation, grow-fadeIn 1s .5s forwards);
-    //   }
-    // }
   }
 }

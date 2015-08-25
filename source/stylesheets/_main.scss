@@ -7,7 +7,18 @@ img,video {
 }
 
 body {
-  background-color: $default-bg; 
+  background-color: $default-bg;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1em;
+  text-align: center;
+  margin: 1em 0;
 }
 
 h1,h2,h3,
@@ -19,6 +30,7 @@ h4,h5,h6 {
 
 p {
   font-family: $main;
+  margin: 1em 0;
 }
 
 svg {
