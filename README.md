@@ -18,7 +18,8 @@ Development: Ngan Hoang, Ally Palanzi
 Design: Tyson Whiting, Katharine Molloy
 
 2015:
-Development: Ally Palanzi
+Development: Ally Palanzi, Matt Sullivan
+
 Design: Katharine Molloy
 
 ## Contribute
