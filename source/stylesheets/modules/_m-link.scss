@@ -98,13 +98,13 @@ $m: '.m-link';
       left: 27.25vw;
     }
   }
-  &.about, 
-  &.contestants, &.judges, 
+  &.about,
+  &.contestants, &.judges,
   &.sponsors, &.tickets {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100%;
     opacity: 0;
-    @include vendor-prefix(animation, fadeIn 1s .75s forwards);
+    @include vendor-prefix(animation, fadeIn .2s .2s forwards);
   }
 }

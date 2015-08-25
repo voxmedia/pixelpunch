@@ -26,11 +26,17 @@
       left: 0%;
       bottom: 0%;
     }
-    &:before {
-      background-image: image-url("cobweb-3.png"),image-url("cobweb-4.png");
-      background-repeat: no-repeat;
-      background-position: 100% 100%, 0% 100%;
-      background-size: 45%, 15%;
+    .index & {
+      &:before {
+        @media(min-width: 680px) {
+          background-image: image-url("top-left-web.svg"), image-url("right-web.svg"),image-url("left-web.svg");
+          background-repeat: no-repeat;
+          background-position: 0% 0%, 100% 100%, 0% 100%;
+          background-size: 5%, 54%, 10%;
+          opacity: 0;
+          @include vendor-prefix(animation, fadeIn .3s .3s forwards);
+        }
+      }
     }
     @include bp(small) {
       right: 4vw;

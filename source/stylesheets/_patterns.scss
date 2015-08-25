@@ -1,10 +1,12 @@
 .p-date {
   bottom: 15vh;
-  color: red;
+  color: $red;
   display: block;
-  font-size: 20px;
+  font-size: 25px;
   left: 50%;
   position: absolute;
   text-transform: uppercase;
   transform: translateX(-50%);
+  font-family: $display;
+  text-align: center;
 }

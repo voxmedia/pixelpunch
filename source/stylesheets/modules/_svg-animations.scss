@@ -1,13 +1,17 @@
 .svg-pp {
   position: absolute;
-  height: 60vh;
+  height: 55vh;
   width: 50%;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
   opacity: 0;
+  z-index: 100000;
+  @include bp(medium) {
+    height: 60vh;
+  }
 
-  @include vendor-prefix(animation, fadeIn 1s .5s forwards);
+  @include vendor-prefix(animation, fadeIn .2s .2s forwards);
 
   &__logo {
 
