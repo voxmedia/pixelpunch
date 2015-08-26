@@ -37,3 +37,29 @@ svg {
   height: 100%;
   width: 100%;
 }
+
+.m-date {
+  bottom: 15vh;
+  color: $red;
+  display: block;
+  font-size: 25px;
+  left: 50%;
+  position: absolute;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  font-family: $main;
+  text-align: center;
+  @media(min-width: 800px) {
+    li {
+      display: inline-block;
+      &:after {
+        content: '|';
+        color: $grey;
+        padding: 0 10px;
+      }
+      &:last-child:after{
+        content: '';
+      }
+    }
+  }
+}
