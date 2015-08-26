@@ -4,24 +4,28 @@
   text-transform: uppercase;
   font-family: $display;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   left: 50%;
   @include vendor-prefix(transform, translateX(-50%));
   text-align: center;
   li {
     display: inline-block;
-    a {
-      padding: 20px;
-      font-size: 1.2em;
-      text-decoration: none;
-      color: #fff;
-      display: inline-block;
-      &:hover {
-        color: $red;
-      }
+  }
+  a {
+    padding: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    &:hover {
+      color: $red;
     }
   }
   @include bp(medium) {
     width: 100%;
+    font-size: .8em;
+    a {
+      padding: 20px 10px;
+    }
   }
 }
