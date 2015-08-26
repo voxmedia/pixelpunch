@@ -1,5 +1,5 @@
 .m-section {
-  position: fixed;
+  position: absolute;
   top: 0%;
   right: 0%;
   left: 0%;
@@ -16,7 +16,7 @@
     width: 85%;
     margin: 10% auto;
     overflow-y: auto;
-    padding-top: .25em;
+    padding: .5em;
     @include bp(small) {
       height: 80vh;
       margin: 20% auto 15%;
