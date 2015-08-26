@@ -46,7 +46,7 @@ svg {
   left: 50%;
   position: absolute;
   text-transform: uppercase;
-  transform: translateX(-50%);
+  @include vendor-prefix(transform, translateX(-50%));
   font-family: $main;
   text-align: center;
   @media(min-width: 800px) {
