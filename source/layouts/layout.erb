@@ -21,6 +21,9 @@
         <%= link_to 'home', 'index.html', :class => 'm-link home'  %>
         <%= yield %>
         <div class="m-container__border"></div>
+        <% if page_classes != 'index' %>
+          <%= partial "partials/_nav" %>
+        <% end %>
       </div>
     </div>
     <%= javascript_include_tag  "all" %>
