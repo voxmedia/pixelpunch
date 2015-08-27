@@ -2,19 +2,20 @@ $m: '.m-link';
 
 #{$m} {
   position: absolute;
-  border: 1px solid $white;
+  border: 1px solid $red;
   height: 8vh;
   width: 8vh;
   z-index: $z-2;
   color: transparent;
+  font-size: 10px;
   text-decoration: none;
   padding-top: 1%;
-  font-size: 3em;
+  font-size: 0;
   text-align: center;
   background-color: $default-bg;
   @include vendor-prefix(transition, background-color .5s);
   &:hover {
-    background-color: $alt-grey;
+    background-color: $red;
   }
   &.home {
     background-image: image-url("pp-logo-mini-outline.svg");
