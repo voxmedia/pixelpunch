@@ -22,10 +22,10 @@
     .index & {
       &:before {
         @media(min-width: 680px) {
-          background-image: image-url("top-left-web.svg"), image-url("right-web.svg"),image-url("left-web.svg"),image-url("kitty-pumpkin.svg");
+          background-image: image-url("top-left-web.svg"), image-url("right-web.svg"),image-url("kitty-pumpkin.svg");
           background-repeat: no-repeat;
-          background-position: 0% 0%, 100% 100%, 0% 100%, 13.5% 100.5%;
-          background-size: 5%, 54%, 10%, 20%;
+          background-position: 0% 0%, 100% 100%, 8% 100.5%;
+          background-size: 5%, 54%, 20%;
           opacity: 0;
           @include vendor-prefix(animation, fadeIn .3s .3s forwards);
         }

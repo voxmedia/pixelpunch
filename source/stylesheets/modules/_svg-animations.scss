@@ -12,7 +12,7 @@
     width: 70%;
   }
   @include bp(small) {
-    top: 30%;
+    top: 40%;
   }
 
   @include vendor-prefix(animation, fadeIn .2s .2s forwards);
