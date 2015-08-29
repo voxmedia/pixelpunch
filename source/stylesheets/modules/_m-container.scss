@@ -36,4 +36,41 @@
       left: 4vw;
     }
   }
+
+  &__logo {
+    @include vendor-prefix(transition, background-color .5s);
+    background: $default-bg image-url("pp-logo-mini-outline.svg")  50% 50% no-repeat;
+    background-size: 60%;
+    border-radius: 50%;
+    border: 2px solid $white;
+    height: 8vh;
+    left: 50%;
+    margin-left: -4vh;
+    padding-top: 1%;
+    position: absolute;
+    text-align: center;
+    top: 1vh;
+    width: 8vh;
+    z-index: $z-2;
+    &:before,&:after {
+      content: "";
+      position: absolute;
+      width: 40vw;
+      height: 0%;
+      bottom: 25%;
+      border-bottom: 2px solid #fff;
+      @include bp(small) {
+        width: 30vw;
+      }
+    }
+    &:before {
+      left: 115%;
+    }
+    &:after {
+      right: 115%;
+    }
+    &:hover {
+      background-color: $red;
+    }
+  }
 }
