@@ -17,12 +17,12 @@
     margin: 10% auto;
     overflow-y: auto;
     padding: .5em;
+    @extend %clearfix;
     @include bp(small) {
       height: 80vh;
       margin: 20% auto 15%;
       font-size: 1em;
     }
-    @extends %clearfix;
   }
 
   &__participents {
