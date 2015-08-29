@@ -44,7 +44,7 @@ svg {
 }
 
 .m-date {
-  bottom: 15vh;
+  bottom: 30vh;
   color: $red;
   display: block;
   font-size: 20px;
@@ -54,6 +54,9 @@ svg {
   @include vendor-prefix(transform, translateX(-50%));
   font-family: $main;
   text-align: center;
+  @media(min-width: 600px) {
+    bottom: 15vh;
+  }
   @media(min-width: 800px) {
     font-size: 25px;
     li {
