@@ -1,119 +1,80 @@
-.m-nav {
-  &__links {
+.m-home {
+  @include vendor-prefix(transition, background-color .5s);
+  background: $default-bg image-url("pp-logo-mini-outline.svg")  50% 50% no-repeat;
+  background-size: 60%;
+  border-radius: 50%;
+  border: 2px solid $white;
+  height: 8vh;
+  left: 50%;
+  margin-left: -4vh;
+  padding-top: 1%;
+  position: absolute;
+  text-align: center;
+  top: 1vh;
+  width: 8vh;
+  z-index: $z-2;
+  &:before,&:after {
+    content: "";
     position: absolute;
-    border: 1px solid $red;
-    height: 8vh;
-    width: 8vh;
-    z-index: $z-2;
-    color: transparent;
-    font-size: 10px;
-    text-decoration: none;
-    padding-top: 1%;
-    font-size: 0;
-    text-align: center;
-    background-color: $default-bg;
-    @include vendor-prefix(transition, background-color .5s);
+    width: 40vw;
+    height: 0%;
+    bottom: 25%;
+    border-bottom: 2px solid #fff;
     @include bp(small) {
-      height: 7vh;
-      width: 7vh;
+      width: 30vw;
     }
+  }
+  &:before {
+    left: 115%;
+  }
+  &:after {
+    right: 115%;
+  }
+  &:hover {
+    background-color: $red;
+  }
+}
+
+.m-nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 8vh;
+  top: 8vh;
+
+  &__links {
+    border: 1px solid $red;
+    display: block;
+    margin: 20px 0;
+    background-color: $default-bg;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    opacity: 0;
+    height: 7vh;
+    text-align: center;
+    width: 7vh;
+    z-index: $z-2;
+    @include vendor-prefix(transition, background-color .5s);
+    @include vendor-prefix(animation, fadeIn .2s .2s forwards);
     &:hover {
       background-color: $red;
     }
+
     &:nth-child(1) {
-      background-image: image-url("pp-logo-mini-outline.svg");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-size: 60%;
-      border: 2px solid $white;
-      left: 50%;
-      top: 1vh;
-      margin-left: -4vh;
-      border-radius: 50%;
-      &:before,&:after {
-        content: "";
-        position: absolute;
-        width: 40vw;
-        height: 0%;
-        bottom: 25%;
-        border-bottom: 2px solid #fff;
-        @include bp(small) {
-          width: 30vw;
-        }
-      }
-      &:before {
-        left: 115%;
-      }
-      &:after {
-        right: 115%;
-      }
+      background-image: image-url("about.svg");
     }
     &:nth-child(2) {
-      background-image: image-url("about.svg");
-      top: 11vh;
-      right: 0%;
-      left: 6.25vw;
-      bottom: 0%;
-      @include bp(small) {
-        top: 161vw;
-        left: 27.25vw;
-        //left: 12.25vw;  //for after we get contestants, judges, tickets, sponsors
-      }
+      background-image: image-url("contestants.svg");
     }
     &:nth-child(3) {
-      background-image: image-url("contestants.svg");
-      top: 20vh;
-      right: 0%;
-      left: 6.25vw;
-      bottom: 0%;
-      @include bp(small) {
-        top: 161vw;
-        left: 44vw;
-        //left: 28.25vw;  //for after we get contestants, judges, tickets, sponsors
-      }
+      background-image: image-url("judges.svg");
     }
     &:nth-child(4) {
-      background-image: image-url("judges.svg");
-      top: 29vh;
-      right: 0%;
-      left: 6.25vw;
-      bottom: 0%;
-      @include bp(small) {
-        top: 161vw;
-        left: 60.25vw;
-        //left: 44.25vw;  //for after we get contestants, judges, tickets, sponsors
-      }
+      background-image: image-url("sponsors.svg");
     }
     &:nth-child(5) {
-      background-image: image-url("sponsors.svg");
-      top: 38vh;
-      right: 0%;
-      left: 6.25vw;
-      bottom: 0%;
-      @include bp(small) {
-        top: 161vw;
-        //left: 60.25vw;  //for after we get contestants, judges, tickets, sponsors
-      }
-    }
-    &:nth-child(6) {
       background-image: image-url("tickets.svg");
-      top: 47vh;
-      right: 0%;
-      left: 6.25vw;
-      bottom: 0%;
-      @include bp(small) {
-        top: 161vw;
-        //left: 76.25vw;  //for after we get contestants, judges, tickets, sponsors
-      }
-    }
-    &:nth-child(2),
-    &:nth-child(3), &:nth-child(4),
-    &:nth-child(5), &:nth-child(6) {
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-size: 100%;
-      opacity: 0;
-      @include vendor-prefix(animation, fadeIn .2s .2s forwards);
     }
   }
 }
