@@ -13,7 +13,6 @@
     border: 1px solid $red;
     display: block;
     margin: 20px 0;
-    background-color: $default-bg;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100%;
@@ -42,6 +41,8 @@
     &:nth-child(5) {
       background-image: image-url("tickets.svg");
     }
+    background-color: $default-bg;
+
     @media(max-width: $break-medium) {
       display: inline-block;
       margin: 0 5px;
