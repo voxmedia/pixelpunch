@@ -1,7 +1,7 @@
 .m-section {
   &-contents {
     position: relative;
-    z-index: 100000000;
+    z-index: 1000;
     &.about {
       max-width: 600px;
     }
@@ -16,7 +16,7 @@
     @extend %clearfix;
     @media(max-width: $break-small) {
       height: 80vh;
-      margin: 20% auto 15%;
+      margin: 30px auto;
       font-size: 1em;
     }
   }

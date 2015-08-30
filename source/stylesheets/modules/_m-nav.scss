@@ -4,6 +4,7 @@
   position: fixed;
   text-align: center;
   width: 100%;
+  z-index: 10000;
   @media(min-width: $break-medium) {
     left: 8vh;
     top: 8vh;
