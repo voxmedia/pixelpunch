@@ -7,11 +7,11 @@
   @include vendor-prefix(transform, translate(-50%,-50%));
   opacity: 0;
   z-index: 100000;
-  @include bp(medium) {
+  @media(max-width: $break-medium) {
     height: 50vh;
     width: 70%;
   }
-  @include bp(small) {
+  @media(max-width: $break-small) {
     top: 40%;
   }
 

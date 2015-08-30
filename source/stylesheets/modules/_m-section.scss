@@ -1,11 +1,7 @@
 .m-section {
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  left: 0%;
-  bottom: 0%;
-
   &-contents {
+    position: relative;
+    z-index: 100000000;
     &.about {
       max-width: 600px;
     }
@@ -18,7 +14,7 @@
     overflow-y: auto;
     padding: .5em;
     @extend %clearfix;
-    @include bp(small) {
+    @media(max-width: $break-small) {
       height: 80vh;
       margin: 20% auto 15%;
       font-size: 1em;
@@ -31,7 +27,7 @@
     padding: 2vh;
     margin-top: 8vw;
     text-align: center;
-    @include bp(small) {
+    @media(max-width: $break-small) {
       width: 50%;
       margin-top: 3vw;
     }
@@ -41,7 +37,7 @@
       width: 11.5vw;
       height: 11.5vw;
       margin: 0 auto;
-      @include bp(small) {
+      @media(max-width: $break-small) {
         width: 34.5vw;
         height: 34.5vw;
       }

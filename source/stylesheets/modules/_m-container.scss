@@ -1,56 +1,37 @@
 .m-container {
-  position: relative;
   width: 100%;
   height: 100%;
-  &__border {
-    position: absolute;
-    border: 7.5px solid #FFFFFF;
-    top: 4vh;
-    right: 2vw;
-    left: 2vw;
-    bottom: 4vh;
-    height: 93vh;
-    z-index: -#{$z-10};
-    &:before,&:after {
-      content: '';
-      position: absolute;
-      top: 0%;
-      right: 0%;
-      left: 0%;
-      bottom: 0%;
+  border: 7px solid #fff;
+
+  .index & {
+    @media(min-width: $break-small) {
+      @include vendor-prefix(animation, fadeIn .3s .3s forwards);
+      background-image: image-url("right-web.svg");
+      background-position: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: 54%;
+      opacity: 0;
     }
-    .index & {
-      &:before {
-        @media(min-width: 680px) {
-          background-image: image-url("top-left-web.svg"), image-url("right-web.svg"),image-url("kitty-pumpkin.svg");
-          background-repeat: no-repeat;
-          background-position: 0% 0%, 100% 100%, 8% 100.5%;
-          background-size: 5%, 54%, 20%;
-          opacity: 0;
-          @include vendor-prefix(animation, fadeIn .3s .3s forwards);
-        }
-      }
-    }
-    @include bp(small) {
-      right: 4vw;
-      left: 4vw;
+    @media(min-width: $break-medium) {
+      background-image: image-url("top-left-web.svg"), image-url("right-web.svg"),image-url("kitty-pumpkin.svg");
+      background-position: 0% 0%, 100% 100%, 8% 100.5%;
+      background-size: 5%, 54%, 20%;
     }
   }
 
   &__logo {
     @include vendor-prefix(transition, background-color .5s);
+    @include vendor-prefix(transform, translateX(-50%));
     background: $default-bg image-url("pp-logo-mini-outline.svg")  50% 50% no-repeat;
     background-size: 60%;
     border-radius: 50%;
     border: 2px solid $white;
     height: 8vh;
     left: 50%;
-    margin-left: -4vh;
-    padding-top: 1%;
     position: absolute;
     text-align: center;
-    top: 1vh;
     width: 8vh;
+    top: 10px;
     z-index: $z-2;
     &:before,&:after {
       content: "";
@@ -59,7 +40,7 @@
       height: 0%;
       bottom: 25%;
       border-bottom: 2px solid #fff;
-      @include bp(small) {
+      @media(max-width: $break-small) {
         width: 30vw;
       }
     }

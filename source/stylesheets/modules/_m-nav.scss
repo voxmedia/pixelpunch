@@ -1,13 +1,12 @@
 .m-nav {
+  left: 0;
+  bottom: .5em;
   position: fixed;
-  left: 8vh;
-  top: 8vh;
-  @include bp(medium) {
-    bottom: 0;
-    top: auto;
-    left: auto;
-    text-align: center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
+  @media(min-width: $break-medium) {
+    left: 8vh;
+    top: 8vh;
   }
 
   &__links {
@@ -43,7 +42,7 @@
     &:nth-child(5) {
       background-image: image-url("tickets.svg");
     }
-    @include bp(medium) {
+    @media(max-width: $break-medium) {
       display: inline-block;
       margin: 0 5px;
     }
