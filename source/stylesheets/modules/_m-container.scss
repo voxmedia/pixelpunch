@@ -32,7 +32,7 @@
     text-align: center;
     width: 8vh;
     top: 10px;
-    z-index: $z-2;
+    z-index: 2;
     &:before,&:after {
       content: "";
       position: absolute;

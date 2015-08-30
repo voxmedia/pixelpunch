@@ -21,7 +21,7 @@
     height: 50px;
     text-align: center;
     width: 50px;
-    z-index: $z-2;
+    z-index: 2;
     @include vendor-prefix(transition, background-color .5s);
     @include vendor-prefix(animation, fadeIn .2s .2s forwards);
     &:hover {
