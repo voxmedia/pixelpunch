@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   border: 4px solid #fff;
-
+  overflow: hidden;
   @media(min-width: $break-small) {
     border: 7px solid #fff;
   }

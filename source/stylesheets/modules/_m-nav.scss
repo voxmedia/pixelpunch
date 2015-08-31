@@ -1,13 +1,16 @@
 .m-nav {
   left: 0;
-  bottom: .5em;
   position: fixed;
   text-align: center;
-  width: 100%;
-  z-index: 10000;
+  display: inline-block;
   @media(min-width: $break-medium) {
-    left: 8vh;
-    top: 8vh;
+    left: 4em;
+    top: 8%;
+    bottom: auto;
+  }
+  @media(max-width: $break-medium) {
+    width: 100%;
+    bottom: 0;
   }
 
   &__links {
@@ -21,7 +24,6 @@
     height: 50px;
     text-align: center;
     width: 50px;
-    z-index: 2;
     @include vendor-prefix(transition, background-color .5s);
     @include vendor-prefix(animation, fadeIn .2s .2s forwards);
     &:hover {
