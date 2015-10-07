@@ -1,13 +1,14 @@
 .m-section {
+  color: $white;
+  @extend %clearfix;
+  .contestants &,
+  .judges & {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   &-contents {
     position: relative;
-    &.about {
-      p {
-        max-width: 600px;
-        width: 90%;
-        margin: .5em auto;
-      }
-    }
     color: $white;
     line-height: 1.5em;
     font-size: 1.25em;
@@ -20,30 +21,51 @@
     @media(max-width: $break-small) {
       font-size: 1em;
     }
-    p:last-of-type {
-      padding-bottom: 100px;
+    &.about {
+      p {
+        max-width: 600px;
+        width: 90%;
+        margin: .5em auto;
+        &:last-of-type {
+          padding-bottom: 100px;
+        }
+      }
+    }
+    .contestants &,
+    .judges & {
+      text-align: center;
     }
   }
 
-  &__participents {
-    float: left; // sorry ally
-    width: 16.666%;
-    padding: 2vh;
-    margin-top: 8vw;
-    text-align: center;
-    @media(max-width: $break-small) {
-      width: 50%;
-      margin-top: 3vw;
+  &__participants {
+    font-size: 16px;
+    line-height: 18px;
+    .judges & {
+      width: 24%;
+      @media(max-width: $break-small-medium) {
+        width: 49%;
+        margin-top: 20px;
+      }
     }
-
+    display: inline-block;
+    width: 25%;
+    padding: 1%;
+    margin-top: 20px;
+    text-align: center;
+    vertical-align: top;
+    h2 {
+      margin-bottom: 0;
+    }
+    @media(max-width: $break-small-medium) {
+      width: 49%;
+      margin-top: 20px;
+    }
     .photo {
-      background-color: $grey;
-      width: 11.5vw;
-      height: 11.5vw;
-      margin: 0 auto;
-      @media(max-width: $break-small) {
-        width: 34.5vw;
-        height: 34.5vw;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      width: 100%;
+      img {
+        border: 3px solid #fff;
       }
     }
   }

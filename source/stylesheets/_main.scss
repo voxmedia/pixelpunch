@@ -5,6 +5,9 @@
 a {
   color: $red;
   text-decoration: none;
+  &:hover {
+    color: #fff;
+  }
 }
 
 img,video {
@@ -13,11 +16,13 @@ img,video {
 
 body {
   background-color: $default-bg;
+  font-family: $main;
 }
 
 h1 {
   font-size: 2em;
   text-align: center;
+  color: #fff;
 }
 
 h2 {

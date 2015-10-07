@@ -39,10 +39,10 @@
       background-image: image-url("judges.svg");
     }
     &:nth-child(4) {
-      background-image: image-url("sponsors.svg");
+      background-image: image-url("tickets.svg");
     }
     &:nth-child(5) {
-      background-image: image-url("tickets.svg");
+      background-image: image-url("sponsors.svg");
     }
     background-color: $default-bg;
 
