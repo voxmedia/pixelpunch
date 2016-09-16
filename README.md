@@ -12,9 +12,17 @@ The Pixel Punch website is built using the [Middleman](http://middlemanapp.com),
 - Run `bundle exec middleman` to start up the server at `localhost:4567`
 - Edit source files within the `source` folder
 
+If you have SSL errors with `eventmachine`, install [Homebrew](http://brew.sh/) and then run `brew link --force openssl`, then try `bundle install` again.
+
+To deploy:
+- make sure you're on the `development` branch
+- `bundle exec middleman deploy`
+- source files will be outputted to `gh-pages` and update on pixelpunch.voxmedia.com.
+
 ## Authors
 2014:
 Development: Ngan Hoang, Ally Palanzi
+
 Design: Tyson Whiting, Katharine Molloy
 
 2015:
