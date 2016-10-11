@@ -1,72 +1,72 @@
-.m-section {
-  color: $white;
-  @extend %clearfix;
-  .contestants &,
-  .judges & {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+// .m-section {
+//   color: $white;
+//   @extend %clearfix;
+//   .contestants &,
+//   .judges & {
+//     max-width: 1200px;
+//     margin: 0 auto;
+//   }
 
-  &-contents {
-    position: relative;
-    color: $white;
-    line-height: 1.5em;
-    font-size: 1.25em;
-    height: 80vh;
-    margin: 0 auto;
-    margin-top: 8vh;
-    overflow-y: auto;
-    padding: .5em;
-    @extend %clearfix;
-    @media(max-width: $break-small) {
-      font-size: 1em;
-    }
-    &.about {
-      p {
-        max-width: 600px;
-        width: 90%;
-        margin: .5em auto;
-        &:last-of-type {
-          padding-bottom: 100px;
-        }
-      }
-    }
-    .contestants &,
-    .judges & {
-      text-align: center;
-    }
-  }
+//   &-contents {
+//     position: relative;
+//     color: $white;
+//     line-height: 1.5em;
+//     font-size: 1.25em;
+//     height: 80vh;
+//     margin: 0 auto;
+//     margin-top: 8vh;
+//     overflow-y: auto;
+//     padding: .5em;
+//     @extend %clearfix;
+//     @media(max-width: $break-small) {
+//       font-size: 1em;
+//     }
+//     &.about {
+//       p {
+//         max-width: 600px;
+//         width: 90%;
+//         margin: .5em auto;
+//         &:last-of-type {
+//           padding-bottom: 100px;
+//         }
+//       }
+//     }
+//     .contestants &,
+//     .judges & {
+//       text-align: center;
+//     }
+//   }
 
-  &__participants {
-    font-size: 16px;
-    line-height: 18px;
-    .judges & {
-      width: 24%;
-      @media(max-width: $break-small-medium) {
-        width: 49%;
-        margin-top: 20px;
-      }
-    }
-    display: inline-block;
-    width: 25%;
-    padding: 2%;
-    margin-top: 20px;
-    text-align: center;
-    vertical-align: top;
-    h2 {
-      margin-bottom: 0;
-    }
-    @media(max-width: $break-small-medium) {
-      width: 49%;
-      margin-top: 20px;
-    }
-    .photo {
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-      width: 100%;
-      img {
-        border: 3px solid #fff;
-      }
-    }
-  }
-}
+//   &__participants {
+//     font-size: 16px;
+//     line-height: 18px;
+//     .judges & {
+//       width: 24%;
+//       @media(max-width: $break-small-medium) {
+//         width: 49%;
+//         margin-top: 20px;
+//       }
+//     }
+//     display: inline-block;
+//     width: 25%;
+//     padding: 2%;
+//     margin-top: 20px;
+//     text-align: center;
+//     vertical-align: top;
+//     h2 {
+//       margin-bottom: 0;
+//     }
+//     @media(max-width: $break-small-medium) {
+//       width: 49%;
+//       margin-top: 20px;
+//     }
+//     .photo {
+//       -webkit-filter: grayscale(100%);
+//       filter: grayscale(100%);
+//       width: 100%;
+//       img {
+//         border: 3px solid #fff;
+//       }
+//     }
+//   }
+// }

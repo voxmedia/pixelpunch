@@ -25,3 +25,15 @@
     clear: both;
   }
 }
+
+@mixin media($size, $dir: $default-direction) {
+  @if ($size == retina) {
+    @media only screen and (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2.0) {
+      @content;
+    }
+  } @else if ($size and $dir) {
+    @media screen and (#{$dir}-width: ($size)) {
+      @content;
+    }
+  }
+}

@@ -2,23 +2,27 @@
 
 // colors
 
-$red:           #D42824;
-$black:         #1D1D1D;
-$grey:          #C4C4C4;
-$white:         #FFFFFF;
-$alt-grey:      #2B2E33;
+$white:   #ffffff;
+$black:   #000000;
+$grey:    #eeeeee;
+$orange:  #f5af13;
 
-$default-bg:    #1B1C1C;
-
-$default-color: #CFCFCF;
 
 // fonts
-$main:    'Dosis', sans-serif;
-$display: 'Gentium Book Basic', serif;
+$base-sans-serif: "Work Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+$base-heading-font: $base-sans-serif;
+$base-body-font: $base-sans-serif;
+$base-line-height: 1.45;
+$base-font-size: 16px;
+
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
 
 // breakpoints
-$break-small: 680px;
-$break-small-medium: 1000px;
-$break-medium: 1080px;
-$break-large: 1400px;
-
+$small:  34em;
+$medium: 48em;
+$large:  62em;
+$xlarge: 75em;
+$default-direction: 'min'; // 'min' for mobile first, 'max' for desktop first.
