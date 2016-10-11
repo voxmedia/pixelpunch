@@ -202,13 +202,13 @@ p a {
 }
 
 .contestants {
-  background: #eee;
+  background: $bg-pixelpunch-pattern repeat $grey;
   h2 {
     display: inline-block;
     padding: 10px 15px;
     margin-bottom: 10px;
     background: black;
-    color: white;
+    color: $white;
   }
 }
 
