@@ -10,6 +10,9 @@ body {
   font-weight: $font-weight-regular;
   line-height: $base-line-height;
   -webkit-font-smoothing: antialiased;
+  @include media($small, max) {
+    word-break: break-all;
+  }
   //To prevent the iPhone and iPad from inflating fonts
   @include media($large, max) {
     -webkit-text-size-adjust: 100%;
@@ -27,21 +30,32 @@ body {
   margin: 0 auto;
 }
 
-nav {
-  margin-top: 3.125em;
-  text-align: center;
-  a {
-    margin-right: 2.375em;
-    font-size: 1.25em;
-    padding: 0.688em 0.813em;
-    background: $white;
-    border: solid 0.313em $white;
-    transition: all 80ms ease-in-out;
-    &:hover {
-      border: solid 0.313em $black;
+.main-nav {
+  margin: 0 10vw;
+  @include media($large) {
+    width: $large;
+    margin: 0 auto;
+  }
+  &__ul {
+    margin-top: 3.125em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    @include media($large) {
+      flex-direction: row;
+      justify-content: space-around;
     }
-    &:last-child {
-      margin-right: 0;
+    &__li {
+      font-size: 1.15em;
+      padding: 0.688em 0.813em;
+      background: $white;
+      border: solid 0.313em $white;
+      transition: all 80ms ease-in-out;
+      &:hover {
+        border: solid 0.313em $black;
+      }
+      &:last-child {
+      }
     }
   } 
 }
@@ -76,6 +90,9 @@ nav {
   font-size: 2.25em;
   color: $white;
   text-align: left;
+  @include media($medium, max) {
+    word-break: break-all;
+  }
 }
 
 .location-details_context {

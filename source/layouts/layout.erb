@@ -10,9 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <%= favicon_tag 'images/pp-favicon.png' %>
-    <meta name="description" content="Join Vox Media on Thursday, October 22nd at 7pm for a thrilling night of pixel pushing at its finest.">
+    <meta name="description" content="Join Vox Media's Product Team on Tuesday, October 25th at 6:30pm for our third annual Pixel Punch design battle.">
     <link rel="canonical" href="http://pixelpunch.voxmedia.com">
-    <meta property="og:description" content="Join Vox Media on Thursday, October 22nd at 7pm for a thrilling night of pixel pushing at its finest.">
+    <meta property="og:description" content="Join Vox Media's Product Team on Tuesday, October 25th at 630pm for our third annual Pixel Punch design battle.">
     <meta property="fb:app_id" content="549923288395304">
     <meta property="og:image" content="http://pixelpunch.voxmedia.com/images/share.jpg">
     <meta property="og:site_name" content="Pixel Punch: A Vox Media Design Battle">
@@ -27,7 +27,7 @@
     <%= stylesheet_link_tag "all" %>
   </head>
 
-  <body class="<%= page_classes %>">
+  <body>
     <svg style="display: none">
       <symbol id="pixelPunch3Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590.08 480.52">
         <defs><style>.cls-1,.cls-3{fill:#fff;}.cls-2{fill:none;}.cls-2,.cls-3{stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:5px;}</style></defs>
@@ -248,9 +248,8 @@
         <path fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="M2.5 10.5h23.3M17.2 2.5l10 7.7-10 9"/>
       </symbol>
     </svg>
-
+    <%= partial "partials/_nav" %>
     <!--  <%= link_to 'home', 'index.html', :class => 'm-container__logo p-hidden'  %> -->
     <%= yield %>
-    <%= partial "partials/_nav" %>
   </body>
 </html>
