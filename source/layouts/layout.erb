@@ -305,9 +305,12 @@
         <circle class="boo0" cx="43.7" cy="26.5" r="4.4"/>
       </symbol>
     </svg>
+
     <%= partial "partials/_nav" %>
-    <!--  <%= link_to 'home', 'index.html', :class => 'm-container__logo p-hidden'  %> -->
+    <%= link_to 'home', '/', :class => 'm-container__logo p-hidden'  %>
+
     <%= yield %>
-    
+
+    <%= javascript_include_tag :all %>
   </body>
 </html>
