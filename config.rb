@@ -38,7 +38,6 @@
 # Reload the browser automatically whenever files change
 configure :development do
  activate :livereload
- # activate :autoprefixer
 end
 
 # Methods defined in the helpers block are available in templates
@@ -58,6 +57,10 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+
+  # css autoprefixer
+  activate :autoprefixer
+
   # For example, change the Compass output style for deployment
   activate :minify_css
 
