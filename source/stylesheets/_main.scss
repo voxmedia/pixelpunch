@@ -117,67 +117,79 @@
 // TODO: Conestant section
 .contestants {
   background: $bg-pixelpunch-pattern repeat $grey;
+  padding: 1.125rem 0;
+  @include media($large) {
+    padding: 3.125rem 0;
+  } // @include media($large)
   h2 {
     display: inline-block;
     padding: 10px 15px;
     margin-bottom: 10px;
-    background: black;
+    background: $black;
     color: $white;
   }
-}
-.contestant {
-  display: flex;
-  justify-content: flex-start;
-  max-width: 600px;
-  background: #fff;
-  margin-bottom: 10px;
-  &:nth-of-type(even) {
-    background: #000;
-    color: #fff;
-    svg {
-      fill: #fff !important;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10vw;
+    @include media($large) {
+      max-width: $large;
+      margin: 0 auto;
+    } // @include media($large)
+  } // .container
+  &__contestant {
+    display: flex;
+    justify-content: flex-start;
+    max-width: $large;
+    background: $white;
+    margin-bottom: 1rem;
+    &:nth-child(even) {
+      background: $black;
+      color: $white;
+      svg {
+        fill: $white;
+      }
     }
-    .contestant_photo {
-      order: 2;
+    &__photo {
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+      img {
+        width: 200px;
+        height: 200px;
+        filter: grayscale(100%);
+      }
+      &:nth-of-type(even) {
+        order: 2;
+      }
     }
-    .contestant_info {
-      order: 1;
+    &__info {
+      display: flex;
+      margin-left: 2rem;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-size: 1em;
+      line-height: 1.25;
+      p {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      a {
+        border-width: 0;
+      }
+      a:hover {
+        border-width: 2px;
+      }
+      &:nth-of-child(odd) {
+        background: pink;
+        order: 1;
+      }
     }
   }
 }
-
-.contestant_photo {
-  margin: 0;
-  padding: 0;
-  line-height: 0;
-  img {
-    width: 200px;
-    height: 200px;
-    filter: grayscale(100%);
-  }
-}
-
-.contestant_info {
-  display: flex;
-  margin-left: 40px;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  font-size: 16px;
-  line-height: 1.25;
-  p {
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-  a {
-    border-width: 0;
-  }
-  a:hover {
-    border-width: 2px;
-  }
-}
-
 
 // get tickets section
 .get-tickets {
