@@ -1,54 +1,36 @@
-// .m-nav {
-//   left: 0;
-//   position: fixed;
-//   text-align: center;
-//   display: inline-block;
-//   @media(min-width: $break-medium) {
-//     left: 4em;
-//     top: 8%;
-//     bottom: auto;
-//   }
-//   @media(max-width: $break-medium) {
-//     width: 100%;
-//     bottom: 0;
-//   }
-
-//   &__links {
-//     border: 1px solid $red;
-//     display: block;
-//     margin: 20px 0;
-//     background-repeat: no-repeat;
-//     background-position: 50% 50%;
-//     background-size: 100%;
-//     opacity: 0;
-//     height: 50px;
-//     text-align: center;
-//     width: 50px;
-//     @include vendor-prefix(transition, background-color .5s);
-//     @include vendor-prefix(animation, fadeIn .2s .2s forwards);
-//     &:hover {
-//       background-color: $red;
-//     }
-//     &:nth-child(1) {
-//       background-image: image-url("about.svg");
-//     }
-//     &:nth-child(2) {
-//       background-image: image-url("contestants.svg");
-//     }
-//     &:nth-child(3) {
-//       background-image: image-url("judges.svg");
-//     }
-//     &:nth-child(4) {
-//       background-image: image-url("tickets.svg");
-//     }
-//     &:nth-child(5) {
-//       background-image: image-url("sponsors.svg");
-//     }
-//     background-color: $default-bg;
-
-//     @media(max-width: $break-medium) {
-//       display: inline-block;
-//       margin: 0 5px;
-//     }
-//   }
-// }
+.main-nav {
+  margin: 0 10vw;
+  word-break: break-all;
+  @include media($small) {
+    word-break: normal;
+  }
+  @include media($large) {
+    max-width: $large;
+    margin: 0 auto;
+  }
+  &__ul {
+    margin-top: 3.125em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    @include media($large) {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    &__li {
+      font-size: 1.15em;
+      padding: 0.688em 0.813em;
+      background: $white;
+      border: solid 0.313em transparent;
+      transition: all 80ms ease-in-out;
+      &:hover {
+        border: solid 0.313em $black;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+        font-weight: $font-weight-bold;
+      }
+    }
+  } 
+}

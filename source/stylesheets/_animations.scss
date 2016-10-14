@@ -1,55 +1,8 @@
-// ANIMATIONS
-
-@include keyframes(grow-fadeIn) {
-  0%   {@include vendor-prefix(transform, scale(.25));
-        opacity: 0;}
-  100% {@include vendor-prefix(transform, scale(1));
-        opacity: 1;}
-}
-
-@include keyframes(fadeIn) {
-  0%   {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-@include keyframes(fadeOut) {
-  0%   {opacity: 1;}
-  100% {opacity: 0;}
-}
-
-@include keyframes(look-one) {
-  0% { 
-    @include vendor-prefix(transform, translate(0, 0));
-  }
-  50%, 70% { 
-    @include vendor-prefix(transform, translate(-5px, 0));
-  }
-  75% { 
-    @include vendor-prefix(transform, translate(15px, 0));
-  }
-  100% { 
-    @include vendor-prefix(transform, translate(15px, 8px));
-  }
-}
-
-@include keyframes(look-two) {
-  0% { 
-    @include vendor-prefix(transform, translate(-2px, 3px));
-  }
-  20% { 
-    @include vendor-prefix(transform, translate(5px, 0));
-  }
-  40% { 
-    @include vendor-prefix(transform, translate(3px, 0));
-  }
-  50% { 
-    @include vendor-prefix(transform, translate(-8px, -7px));
-  }
-  70%, 85% { 
-    @include vendor-prefix(transform, translate(-10px, 10px));
-  }
-  100% { 
-    @include vendor-prefix(transform, translate(-10px, 5px));
-  }
-
+@keyframes peekaboo {
+  0% {transform: translateX(-40vw);}
+  25% {transform: translateX(-17vw);}
+  32% {transform: translateX(-0.5vw); transform: rotate(10deg)}
+  32.5% {transform: translateX(-0.25vw); transform: rotate(10deg)}
+  33% {transform: translateX(-40vw);}
+  100% {transform: translateX(-40vw);}
 }

@@ -1,113 +1,13 @@
-* {
-  box-sizing: border-box;
-}
+// _layout.scss contains core css components
+// _nav.scss contains header navigation
 
-body {
-  background-color: $orange;
-  color: $black;
-  font-family: $base-body-font;
-  font-size: $base-font-size;
-  font-weight: $font-weight-regular;
-  line-height: $base-line-height;
-  -webkit-font-smoothing: antialiased;
-  @include media($small -1px, max) {
-    // I'm a stickler about how somehing would look on any possible screen so I will break words under 200px in resolution
-    word-break: break-all;
-  }
-  @include media($large -1px, max) {
-    //To prevent the iPhone and iPad from inflating fonts
-    -webkit-text-size-adjust: 100%;
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $font-weight-bold;
-  word-break: break-all;
-  padding-bottom: 0.25em;
-  @include media($small) {
-    word-break: normal;
-  }
-}
-
-.ghost {
-  position: fixed;
-  width: 3.5em;
-  height: auto;
-  animation: peekaboo 60000ms infinite;
-}
-@keyframes peekaboo {
-  0% {transform: translateX(-40vw);}
-  25% {transform: translateX(-17vw);}
-  32% {transform: translateX(-0.5vw); transform: rotate(10deg)}
-  32.5% {transform: translateX(-0.25vw); transform: rotate(10deg)}
-  33% {transform: translateX(-40vw);}
-  100% {transform: translateX(-40vw);}
-}
-
-.container {
-  padding: 3.125em 0 3.125em 0;
-  width: 80%;
-  max-width: $large;
-  margin: 0 auto;
-}
-
-.main-nav {
-  margin: 0 10vw;
-  word-break: break-all;
-  @include media($small) {
-    word-break: normal;
-  }
-  @include media($large) {
-    max-width: $large;
-    margin: 0 auto;
-  }
-  &__ul {
-    margin-top: 3.125em;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    @include media($large) {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-    &__li {
-      font-size: 1.15em;
-      padding: 0.688em 0.813em;
-      background: $white;
-      border: solid 0.313em transparent;
-      transition: all 80ms ease-in-out;
-      &:hover {
-        border: solid 0.313em $black;
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-        font-weight: $font-weight-bold;
-      }
-    }
-  } 
-}
-
-.pixel-punch-logo {
-  width: 100%;
-  height: auto;
-  @include media($small) {
-    height: 10em;
-  }
-  @include media($medium) {
-    height: 20em;
-  }
-  @include media($large) {
-    height: 30em;
-  }
-}
-
+// header section
 .header {
-  margin: 2em 10vw;
+  margin: 1.125rem 10vw;
   text-align: center;
   @include media($large) {
     max-width: $large;
-    margin: 3.125em auto;
+    margin: 3.125rem auto;
   }
   .location {
     display: flex;
@@ -146,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
         top: -60px;
       } // media($xlarge)
       &--flipL {
-        @include media($medium -1px, max) {
+        @include media($large) {
           margin: 0.75em 0;
         } // media($medium, max)
         @include media($large) {
@@ -168,70 +68,14 @@ h1, h2, h3, h4, h5, h6 {
   } // .date-location
 } // .header
 
-
-
-.button {
-  display: inline-block;
-  background: $white;
-  text-transform: uppercase;
-  color: $black;
-  border: solid 6px $black;
-  box-shadow: -8px 8px 0 $black,
-              -7px 7px 0 $black,
-              -6px 6px 0 $black,
-              -5px 5px 0 $black,
-              -4px 4px 0 $black,
-              -3px 3px 0 $black,
-              -2px 2px 0 $black,
-              -1px 1px 0 $black;
-  margin-top: 0.85rem;
-  padding: 0.95rem 0.75rem;
-  font-size: 2rem;
-  line-height: 1;
-  font-weight: $font-weight-bold;
-  text-decoration: none;
-  transition: all 80ms ease-in-out;
-  word-break: break-all;
-  @include media($small) {
-    word-break: normal;
-  }
-  &:before {
-     visibility: hidden;
-     display: block;
-     font-size: 0;
-     content: " ";
-     clear: both;
-     height: 0;
-  }
-  &:hover {
-    color: $orange;
-    box-shadow: -3px 3px 0 $black,
-                -2px 2px 0 $black,
-                -1px 1px 0 $black;
-  }
-  &__arrow {
-    stroke: $black;
-    width: 2rem;
-    height: 1.25rem;
-    transition: all 80ms ease-in-out;
-  }
-  &:hover &__arrow {
-    stroke: $orange;
-  }
-}
-
-h2 {
-  font-size: 54px;
-  text-transform: uppercase;
-  margin: 0;
-  line-height: 1;
-}
-
+// about section
 .about {
-  // font-size: 18px;
-  // line-height: 24px;
   background: $black;
   color: $white;
+  padding: 1.125rem 0;
+  @include media($large) {
+    padding: 3.125rem 0;
+  } // @include media($large)
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -240,17 +84,17 @@ h2 {
     @include media($large) {
       max-width: $large;
       margin: 0 auto;
-    }
-  }
+    } // @include media($large)
+  } // .container
   p {
     @include media($large) {
       max-width: 26em;
-    }
+    } // @include media($large)
   }
   &__details {
     @include media($large) {
       width: 70%;
-    }
+    } // @include media($large)
   }
   &__who-we-are {
     margin: 0 auto;
@@ -259,64 +103,18 @@ h2 {
     flex-direction: column;
     @include media($large) {
       flex-direction: row;
-    }
+    } // @include media($large)
     p {
       margin-top: 1.5em;
       @include media($large) {
         width: 48%;
-      }
-    }
-  }
-}
-
-.pixel-punch-icons {
-  display: block;
-  width: 100%;
-  height: auto;
-  @include media($small) {
-    display: none;
-  }
-  @include media($large) {
-    display: inline-block;
-    width: 8em;
-  }
-}
-
-.pixel-punch-icons-horizontal {
-  display: none;
-  @include media($small) {
-    display: block;
-    width: 100%;
-  }
-  @include media($large) {
-    display: none;
-  }
-}
-
-.link {
-  color: inherit;
-  text-decoration: none;
-  font-weight: $font-weight-bold;
-  border-bottom: solid 2px transparent;
-  transition: all 80ms ease-in-out;
-  &:hover {
-    border-bottom-width: 6px;
-  }
-  &--orange-line {
-    border-bottom-color: $orange;
-    &:hover {
-      color: $orange;
-    }
-  }
-  &--white-line {
-    border-bottom-color: $white;
-    &:hover {
-      color: $white;
+      } // @include media($large)
     }
   }
 }
 
 
+// TODO: Conestant section
 .contestants {
   background: $bg-pixelpunch-pattern repeat $grey;
   h2 {
@@ -327,7 +125,6 @@ h2 {
     color: $white;
   }
 }
-
 .contestant {
   display: flex;
   justify-content: flex-start;
@@ -347,14 +144,6 @@ h2 {
       order: 1;
     }
   }
-}
-
-h3 {
-  font-size: 24px;
-  margin: 0;
-  text-transform: uppercase;
-  line-height: 1;
-  padding: 0;
 }
 
 .contestant_photo {
@@ -390,7 +179,7 @@ h3 {
 }
 
 
-
+// get tickets section
 .get-tickets {
   margin: 0 10vw;
   @include media($large) {
@@ -411,12 +200,13 @@ h3 {
   }
 }
 
-footer {
+// footer section
+.main-footer {
   text-align: center;
   font-size: 1em;
-  margin: 0 10vw;
+  margin: 1.125rem 10vw;
   @include media($large) {
     max-width: $large;
-    margin: 5em auto 3em;
-  }
+    margin: 5rem auto 3rem;
+  } // @include media($large)
 }
