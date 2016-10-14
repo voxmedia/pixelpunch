@@ -1,0 +1,11 @@
+<footer class="main-footer">
+  <p>&copy; Pixel Punch and <%= link_to 'Vox Media', 'http://www.voxmedia.com/', :class => 'link link--white-line' %>, 2016.
+
+  <% if current_page.path == 'code-of-conduct.html' %>
+    <%= link_to 'Back to home', '/', :class => 'link link--white-line' %>.
+  <% else %>
+    <%= link_to 'Code of Conduct', '/code-of-conduct.html', :class => 'link link--white-line' %>.
+  <% end %>
+
+  <%= link_to 'Back to top', '#header', :class => 'link link--white-line' %>.</p>
+</footer>
