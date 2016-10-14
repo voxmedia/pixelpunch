@@ -10,19 +10,40 @@ body {
   font-weight: $font-weight-regular;
   line-height: $base-line-height;
   -webkit-font-smoothing: antialiased;
-  @include media($small, max) {
+  @include media($small -1px, max) {
+    // I'm a stickler about how somehing would look on any possible screen so I will break words under 200px in resolution
     word-break: break-all;
   }
-  //To prevent the iPhone and iPad from inflating fonts
-  @include media($large, max) {
+  @include media($large -1px, max) {
+    //To prevent the iPhone and iPad from inflating fonts
     -webkit-text-size-adjust: 100%;
   }
 }
 
-.logo {
-  width: 100%;
-  height: 30em;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-bold;
+  word-break: break-all;
+  padding-bottom: 0.25em;
+  @include media($small) {
+    word-break: normal;
+  }
 }
+
+.ghost {
+  position: fixed;
+  width: 3.5em;
+  height: auto;
+  animation: peekaboo 60000ms infinite;
+}
+@keyframes peekaboo {
+  0% {transform: translateX(-40vw);}
+  25% {transform: translateX(-17vw);}
+  32% {transform: translateX(-0.5vw); transform: rotate(10deg)}
+  32.5% {transform: translateX(-0.25vw); transform: rotate(10deg)}
+  33% {transform: translateX(-40vw);}
+  100% {transform: translateX(-40vw);}
+}
+
 .container {
   padding: 3.125em 0 3.125em 0;
   width: 80%;
@@ -32,8 +53,12 @@ body {
 
 .main-nav {
   margin: 0 10vw;
+  word-break: break-all;
+  @include media($small) {
+    word-break: normal;
+  }
   @include media($large) {
-    width: $large;
+    max-width: $large;
     margin: 0 auto;
   }
   &__ul {
@@ -49,88 +74,127 @@ body {
       font-size: 1.15em;
       padding: 0.688em 0.813em;
       background: $white;
-      border: solid 0.313em $white;
+      border: solid 0.313em transparent;
       transition: all 80ms ease-in-out;
       &:hover {
         border: solid 0.313em $black;
       }
-      &:last-child {
+      a {
+        color: inherit;
+        text-decoration: none;
+        font-weight: $font-weight-bold;
       }
     }
   } 
 }
 
-.intro {
-  background-color: $orange;
+.pixel-punch-logo {
+  width: 100%;
+  height: auto;
+  @include media($small) {
+    height: 10em;
+  }
+  @include media($medium) {
+    height: 20em;
+  }
+  @include media($large) {
+    height: 30em;
+  }
+}
+
+.header {
+  margin: 2em 10vw;
   text-align: center;
-  padding: 3.125em 0 3.125em 0;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.date-location {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.location-details {
-  @include media($xlarge, min) {
-    height: 15%;
-    position: relative;
-    top: -60px;
+  @include media($large) {
+    max-width: $large;
+    margin: 3.125em auto;
   }
-}
+  .location {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    @include media($medium) {
+      flex-direction: row;
+    }
+    &__date {
+      margin: 0.75em 0 0.5em;
+      font-weight: $font-weight-bold;
+      font-size: 1.75em;
+      line-height: 0.95em;
+      color: $white;
+      text-align: left;
+      flex: 1 100%;
+      text-align: center;
+      word-break: break-all;
+      @include media($medium) {
+        font-size: 2.25em;
+        line-height: 1em;
+      } // media($emdium)
+      @include media($large) {
+        text-align: left;
+        order: 2;
+        flex: 2;
+      } // media($large)
+    } // __date
+    &__address {
+      text-align: left;
+      @include media($large) {
+        height: 15%;
+        position: relative;
+        top: -60px;
+      } // media($xlarge)
+      &--flipL {
+        @include media($medium -1px, max) {
+          margin: 0.75em 0;
+        } // media($medium, max)
+        @include media($large) {
+          flex: 1;
+          order: 1;
+          text-align: left;
+          transform: rotate(-90deg);
+        } // media($xlarge)
+      } // --flipL
+      &--flipR {
+        @include media($large) {
+          flex: 1;
+          order: 3;
+          text-align: right;
+          transform: rotate(90deg);
+        } // media($xlarge)
+      } // --flipR
+    } // __address
+  } // .date-location
+} // .header
 
-.date-location_overview {
-  order: 2;
-  font-weight: 700;
-  font-size: 2.25em;
-  color: $white;
-  text-align: left;
-  @include media($medium, max) {
-    word-break: break-all;
-  }
-}
 
-.location-details_context {
-  text-align: left;
-  @include media($xlarge, min) {
-    order: 1;
-    transform: rotate(-90deg);
-  }
-}
 
-.location-details_address {
-  @include media($xlarge, min) {
-    order: 3;
-    text-align: right;
-    transform: rotate(90deg);
-  }
-}
-
-.button-huge {
+.button {
   display: inline-block;
-  background: #fff;
-  border: solid 6px #000;
-  box-shadow: -8px 8px 0 #000,
-              -7px 7px 0 #000,
-              -6px 6px 0 #000,
-              -5px 5px 0 #000,
-              -4px 4px 0 #000,
-              -3px 3px 0 #000,
-              -2px 2px 0 #000,
-              -1px 1px 0 #000;
+  background: $white;
   text-transform: uppercase;
-  color: #000;
-  margin-top: 25px;
-  padding: 10px 15px;
-  font-size: 34px;
-  font-weight: 700;
+  color: $black;
+  border: solid 6px $black;
+  box-shadow: -8px 8px 0 $black,
+              -7px 7px 0 $black,
+              -6px 6px 0 $black,
+              -5px 5px 0 $black,
+              -4px 4px 0 $black,
+              -3px 3px 0 $black,
+              -2px 2px 0 $black,
+              -1px 1px 0 $black;
+  margin-top: 0.85rem;
+  padding: 0.95rem 0.75rem;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: $font-weight-bold;
   text-decoration: none;
   transition: all 80ms ease-in-out;
+  word-break: break-all;
+  @include media($small) {
+    word-break: normal;
+  }
   &:before {
      visibility: hidden;
      display: block;
@@ -140,10 +204,19 @@ body {
      height: 0;
   }
   &:hover {
-   color: $orange;
-   box-shadow: -3px 3px 0 #000,
-               -2px 2px 0 #000,
-               -1px 1px 0 #000; 
+    color: $orange;
+    box-shadow: -3px 3px 0 $black,
+                -2px 2px 0 $black,
+                -1px 1px 0 $black;
+  }
+  &__arrow {
+    stroke: $black;
+    width: 2rem;
+    height: 1.25rem;
+    transition: all 80ms ease-in-out;
+  }
+  &:hover &__arrow {
+    stroke: $orange;
   }
 }
 
@@ -155,62 +228,94 @@ h2 {
 }
 
 .about {
-  padding: 50px 0;
-  font-size: 18px;
-  line-height: 24px;
-  background: #000;
-  color: #fff;
-  line-height: 1.333;
-}
-
-.about .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  @media screen and (min-width: 601px) {
-    max-width: 600px;
+  // font-size: 18px;
+  // line-height: 24px;
+  background: $black;
+  color: $white;
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10vw;
+    @include media($large) {
+      max-width: $large;
+      margin: 0 auto;
+    }
   }
-}
-
-.about .text {
-  @media screen and (min-width: 601px) {
-    width: 70%;
+  p {
+    @include media($large) {
+      max-width: 26em;
+    }
   }
-}
-
-.about .text p {
-  @media screen and (min-width: 601px) {
-    max-width: 26em;
+  &__details {
+    @include media($large) {
+      width: 70%;
+    }
   }
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-  font-weight: 700;
-}
-
-p a {
-  border-bottom: solid 2px $orange;
-  &:hover {
-    color: $orange;
-    border-bottom-width: 6px;
-  }
-}
-
-.who-we-are {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  @media screen and (min-width: 601px) {
-    flex-direction: row;
+  &__who-we-are {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @include media($large) {
+      flex-direction: row;
+    }
     p {
-      width: 48%;
+      margin-top: 1.5em;
+      @include media($large) {
+        width: 48%;
+      }
     }
   }
 }
+
+.pixel-punch-icons {
+  display: block;
+  width: 100%;
+  height: auto;
+  @include media($small) {
+    display: none;
+  }
+  @include media($large) {
+    display: inline-block;
+    width: 8em;
+  }
+}
+
+.pixel-punch-icons-horizontal {
+  display: none;
+  @include media($small) {
+    display: block;
+    width: 100%;
+  }
+  @include media($large) {
+    display: none;
+  }
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: $font-weight-bold;
+  border-bottom: solid 2px transparent;
+  transition: all 80ms ease-in-out;
+  &:hover {
+    border-bottom-width: 6px;
+  }
+  &--orange-line {
+    border-bottom-color: $orange;
+    &:hover {
+      color: $orange;
+    }
+  }
+  &--white-line {
+    border-bottom-color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
 
 .contestants {
   background: $bg-pixelpunch-pattern repeat $grey;
@@ -287,29 +392,31 @@ h3 {
 
 
 .get-tickets {
-  font-size: 18px;
+  margin: 0 10vw;
+  @include media($large) {
+    max-width: $large;
+    margin: 4em auto;
+  }
   p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 22em;
-    line-height: 1.5;
-  }
-  p:last-child {
-    text-align: center;
-  }
-  img {
-    margin-top: 50px;
+    font-size: 1.25em;
+    line-height: 1.15;
+    display: flex;
+    flex-direction: column;
+    margin: 2em auto;
+    max-width: 25rem;
+    .button {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
   }
 }
 
 footer {
   text-align: center;
-  font-size: 16px;
-  padding: 10px 0 50px 0;
-  a {
-    border-color: white;
-  }
-  a:hover {
-    color: white;
+  font-size: 1em;
+  margin: 0 10vw;
+  @include media($large) {
+    max-width: $large;
+    margin: 5em auto 3em;
   }
 }
