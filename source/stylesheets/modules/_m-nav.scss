@@ -15,7 +15,8 @@
     flex-direction: column;
     @include media($large) {
       flex-direction: row;
-      justify-content: space-around;
+      // TODO: revert to space-around when nav is complete
+      justify-content: center;
     }
     &__li {
       font-size: 1.15em;
@@ -23,6 +24,10 @@
       background: $white;
       border: solid 0.313em transparent;
       transition: all 80ms ease-in-out;
+      // TODO: completely remove margin on nav complete
+      @include media($large) {
+        margin: 0 1rem;
+      }
       &:hover {
         border: solid 0.313em $black;
       }
