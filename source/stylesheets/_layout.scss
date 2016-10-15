@@ -116,15 +116,6 @@ h3 {
 .pixel-punch-logo {
   width: 100%;
   height: auto;
-  @include media($small) {
-    height: 10em;
-  }
-  @include media($medium) {
-    height: 20em;
-  }
-  @include media($large) {
-    height: 30em;
-  }
 }
 
 .pixel-punch-icons {
