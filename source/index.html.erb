@@ -5,7 +5,7 @@ title: 'Pixel Punch: A Vox Media Design Battle'
 
 <header id="header" class="header">
   <h1 class="hidden">Pixel Punch: A Vox Media Design Battle</h1>
-  <svg ariahidden class="pixel-punch-logo"><use xlink:href="#pixelPunch3Logo" /></svg>
+  <%= partial "svgs/_pp-header" %>
   <section class="location">
     <p class="location__date">
       October 25<br>
@@ -32,14 +32,13 @@ title: 'Pixel Punch: A Vox Media Design Battle'
   </div>
 </section>
 
-<%# changed this to a rails comment so it doesnt reneder on the page when its live
-
+<%# commenting this out for now
 <section class="contestants">
   <div class="container">
     <h2>Contestants</h2>
     <div class="contestants__contestant">
       <figure class="contestants__contestant__photo">
-        <img src="http://pixelpunch.voxmedia.com/images/avatars/dan.jpg">
+        <img src="images/placeholder.jpg">
       </figure>
       <div class="contestants__contestant__info">
         <h3>Dan Rader</h3>
@@ -50,7 +49,7 @@ title: 'Pixel Punch: A Vox Media Design Battle'
     </div>
     <div class="contestants__contestant">
       <figure class="contestants__contestant__photo">
-        <img src="http://pixelpunch.voxmedia.com/images/avatars/dan.jpg">
+        <img src="images/placeholder.jpg">
       </figure>
       <div class="contestants__contestant__info">
         <h3>Dan Rader</h3>
@@ -61,7 +60,7 @@ title: 'Pixel Punch: A Vox Media Design Battle'
     </div>
     <div class="contestants__contestant">
       <figure class="contestants__contestant__photo">
-        <img src="http://pixelpunch.voxmedia.com/images/avatars/dan.jpg">
+        <img src="images/placeholder.jpg">
       </figure>
       <div class="contestants__contestant__info">
         <h3>Stephanie Stamm</h3>
@@ -72,12 +71,12 @@ title: 'Pixel Punch: A Vox Media Design Battle'
     </div>
   </div>
 </section>
+end comment %>
 
-%>
 
 <section class="get-tickets">
     <p>Admission is free but requires a ticket for entry, so RSVP today. Any further details will be sent to you at the email you sign up with on Eventbrite.
       <a class="button" href="https://www.eventbrite.com/e/pixel-punch-a-designers-worst-nightmare-tickets-28555090043">Get Tickets <svg class="button__arrow"><use xlink:href="#arrowIcon" /></svg></a>
     </p>
-    <svg class="pixel-punch-logo"><use xlink:href="#pixelPunch3FooterLogo" /></svg>
+    <%= partial "svgs/_pp-footer" %>
 </section>
