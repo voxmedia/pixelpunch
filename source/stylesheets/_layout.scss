@@ -162,3 +162,10 @@ h3 {
   height: auto;
   animation: peekaboo 60000ms infinite;
 }
+
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  height: 0;
+  width: 0;
+}
