@@ -16,6 +16,7 @@ If you have SSL errors with `eventmachine`, install [Homebrew](http://brew.sh/) 
 
 To deploy:
 - make sure you're on the `development` branch
+- first build out files: `bundle exec middleman build`
 - `bundle exec middleman deploy`
 - source files will be outputted to `gh-pages` and update on pixelpunch.voxmedia.com.
 
@@ -29,6 +30,11 @@ Design: Tyson Whiting, Katharine Molloy
 Development: Ally Palanzi, Matt Sullivan
 
 Design: Katharine Molloy
+
+2016:
+Development: Marvin Cespedes
+
+Design: Jessica Paoli, Dani Balenson
 
 ## Contribute
 
