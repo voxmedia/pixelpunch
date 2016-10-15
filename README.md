@@ -21,20 +21,11 @@ To deploy:
 - source files will be outputted to `gh-pages` and update on pixelpunch.voxmedia.com.
 
 ## Authors
-2014:
-Development: Ngan Hoang, Ally Palanzi
+*2014* Development: Ngan Hoang, Ally Palanzi Design: Tyson Whiting, Katharine Molloy
 
-Design: Tyson Whiting, Katharine Molloy
+*2015* Development: Ally Palanzi, Matt Sullivan Design: Katharine Molloy
 
-2015:
-Development: Ally Palanzi, Matt Sullivan
-
-Design: Katharine Molloy
-
-2016:
-Development: Marvin Cespedes
-
-Design: Jessica Paoli, Dani Balenson
+*2016* Development: Marvin Cespedes Design: Jessica Paoli, Dani Balenson
 
 ## Contribute
 
