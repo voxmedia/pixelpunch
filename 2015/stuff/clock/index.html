@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Pixel Punch</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h4>Welcome to</h4>
+					<h1 style="font-size:4.5em">Pixel Punch!</h1>
+					<h3>A Vox Product Design Battle</h3>
+				</section>
+				<section>
+					<h1 class="timer"></h1>
+					<button class="playpause">start</button>
+					<button class="reset">reset</button>
+					<h2>Challenge #1</h2>
+					<h3>Design the entrance sign to the mansion.</h3>
+					<p>Two colors only.<br></p>
+					</section>
+				<section>
+					<h1 class="timer"></h1>
+					<button class="playpause">start</button>
+					<button class="reset">reset</button>
+					<h2>Challenge #2</h2>
+					<h3>Design who (or what) greets you at the door.</h3>
+					<p>Include a characteristic chosen from the bag.</p>
+				</section>
+				<section>
+					<h1 class="timer"></h1>
+					<button class="playpause">start</button>
+					<button class="reset">reset</button>
+					<h2>Challenge #3</h2>
+					<h3>Design a spooky meal.</h3>
+					<p>Include one menu item that uses an ingredient chosen from the bag.</p>
+				</section>
+				<section>
+				<h1 class="timer"></h1>
+				<button class="playpause">start</button>
+				<button class="reset">reset</button>
+					<h2>Challenge #4</h2>
+					<h3>Design your missing poster.</h3>
+					<p><br><br></p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+			var COUNT_START = 10*15*60; // tenths * seconds * hours
+			var count = COUNT_START;
+			var playing = false;
+
+			var playpause = $('.playpause');
+			var reset = $('.reset');
+
+			playpause.on('click', function() {
+			  if (playing) {
+			    playing = false;
+			    playpause.innerHTML = "play";
+			  } else if (!playing) {
+			    playing = true;
+			    playpause.innerHTML = "pause";
+			  }
+
+			});
+
+			reset.on('click',function() {
+			  if (playing) {
+			    playing = false;
+			    playpause.innerHTML = "play";
+			  }
+			  count = COUNT_START;
+			});
+
+			function countdown(){
+			    displayTime();
+			    if (count == 0) {
+			      playing = false;
+			    } else if (playing) {
+			      setTimeout(countdown, 100);
+			      count--;
+			    } else {
+			      setTimeout(countdown, 100);
+			    }
+			}
+
+			function displayTime() {
+
+			  var tenths = count;
+			  var sec = Math.floor(tenths / 10);
+			  var hours = Math.floor(sec / 3600);
+			  sec -= hours * (3600);
+			  var mins = Math.floor(sec / 60);
+			  sec -= mins * (60);
+
+			  if (hours < 1) {
+			    $('.timer').text(LeadingZero(mins)+':'+LeadingZero(sec));
+			  }
+			  else {
+			    $('.timer').text(hours+':'+LeadingZero(mins)+':'+LeadingZero(sec));
+			  }
+			}
+
+			function LeadingZero(Time) {
+			  return (Time < 10) ? "0" + Time : + Time;
+			}
+			$(document).ready(function() {
+				countdown();
+			});
+
+		</script>
+
+	</body>
+</html>
