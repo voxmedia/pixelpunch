@@ -5,11 +5,11 @@ http://pixelpunch.voxmedia.com/
 The event website for Vox Media's first design battle, Pixel Punch.
 
 # Get running
-The Pixel Punch website is built using the [Middleman](http://middlemanapp.com), the static site generator.
+The Pixel Punch website is built using the [jekyll](https://jekyllrb.com), the static site generator.
 
 - Clone the project
 - Run `bundle install`
-- Run `bundle exec middleman` to start up the server at `localhost:4567`
+- Run `bundle exec jekyll serve --livereload` to start up the server at `localhost:4000`
 - Edit source files within the `source` folder
 
 If you have SSL errors with `eventmachine`, install [Homebrew](http://brew.sh/) and then run `brew link --force openssl`, then try `bundle install` again.
@@ -26,6 +26,8 @@ To deploy:
 *2015* Development: Ally Palanzi, Matt Sullivan Design: Katharine Molloy
 
 *2016* Development: Marvin Cespedes Design: Jessica Paoli, Dani Balenson
+
+*2017* Development: Marvin Cespedes Design: Katharine Molly, Irene Wang
 
 ## Contribute
 
