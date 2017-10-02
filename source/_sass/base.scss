@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  position: relative;
+  min-height: 100vh;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  transition: color $transition-time;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+code,
+pre {
+  padding: 3px 5px;
+  border-radius: 5px;
+  background: $grey-color-light;
+}
+
+pre {
+  padding: 6px 10px;
+}
+
+table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+
+  thead {
+    th {
+      background: $grey-color-light;
+    }
+  }
+
+  th {
+    padding: 12px 15px;
+  }
+
+  td {
+    padding: 10px 15px;
+    border-top: 1px solid $grey-color-light;
+  }
+
+  tr:hover {
+    td {
+      background: $grey-color-light;
+    }
+  }
+}
+
+%wrapper {
+  max-width: $content-width;
+}
+
+
+
+
+
+
+
+
+
+
+
+

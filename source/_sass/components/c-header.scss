@@ -1,0 +1,23 @@
+.c-header {
+  display: flex;
+  justify-content: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+  @include media-query {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid $grey-color-light;
+
+    @extend %wrapper;
+  }
+}

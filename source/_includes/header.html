@@ -1,0 +1,16 @@
+<header class="c-header" role="banner">
+
+  <div class="header-container">
+    {% assign default_paths = site.pages | map: "path" %}
+    {% assign page_paths = site.header_pages | default: default_paths %}
+    <a class="" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+    {% if page_paths %}
+      <nav class="c-nav">
+        {% for post in site.posts reversed %}
+          <a class="nav-items" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        {% endfor %}
+      </nav>
+    {% endif %}
+  </div>
+</header>

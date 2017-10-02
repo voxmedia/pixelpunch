@@ -1,0 +1,28 @@
+.c-footer {
+  display: flex;
+  justify-content: center;
+  background: $grey-color-light;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem 0rem;
+
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  @include media-query {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+
+    @extend %wrapper;
+  }
+}
