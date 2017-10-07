@@ -7,6 +7,12 @@ body {
   font-size: $base-font-size;
   font-weight: $base-font-weight;
   line-height: $base-line-height;
+  letter-spacing: $base-letter-spacing;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $color-space-darker;
+  color: $color-white;
   position: relative;
   min-height: 100vh;
 }
@@ -18,10 +24,10 @@ video {
 
 a {
   text-decoration: none;
-  color: $link-color;
-  transition: color $transition-time;
+  // color: $link-color;
+  // transition: color $transition-time;
   &:hover {
-    color: $link-hover-color;
+    // color: $link-hover-color;
   }
 }
 
@@ -29,7 +35,6 @@ code,
 pre {
   padding: 3px 5px;
   border-radius: 5px;
-  background: $grey-color-light;
 }
 
 pre {
@@ -43,7 +48,6 @@ table {
 
   thead {
     th {
-      background: $grey-color-light;
     }
   }
 
@@ -53,28 +57,10 @@ table {
 
   td {
     padding: 10px 15px;
-    border-top: 1px solid $grey-color-light;
   }
 
   tr:hover {
     td {
-      background: $grey-color-light;
     }
   }
 }
-
-%wrapper {
-  max-width: $content-width;
-}
-
-
-
-
-
-
-
-
-
-
-
-
