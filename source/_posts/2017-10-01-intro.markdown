@@ -3,7 +3,14 @@ title: Introduction
 categories: intro
 date: 2017-10-01 12:00:00
 ---
+
+{% include svgs/planet-and-moon-svg.html %}
+
+{% include svgs/pixel-punch-logo.html %}
+
 Earth Date: November 7th, 2017
 
 iStrategyLabs, 7:00pm - 10pm EST<br>
 641 S St NW, Fl 1, Washington, DC 20001
+
+<a class="sign-up-button" href="#">Sign Up</a>

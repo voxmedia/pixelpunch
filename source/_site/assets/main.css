@@ -1,17 +1,25 @@
 @-webkit-keyframes orbit {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+            transform: rotate(0deg);
+    -webkit-transform-origin: center;
+            transform-origin: center; }
   to {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg); } }
+    -webkit-transform: rotate(-3600deg);
+            transform: rotate(-3600deg);
+    -webkit-transform-origin: center;
+            transform-origin: center; } }
 @keyframes orbit {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+            transform: rotate(0deg);
+    -webkit-transform-origin: center;
+            transform-origin: center; }
   to {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg); } }
+    -webkit-transform: rotate(-3600deg);
+            transform: rotate(-3600deg);
+    -webkit-transform-origin: center;
+            transform-origin: center; } }
 @-webkit-keyframes floating {
   0% {
     box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.8);
@@ -553,6 +561,18 @@ article a {
       left: -20%; } }
 .header-container .satellite {
   width: 70px; }
+
+.content .earth-and-moon {
+  position: absolute;
+  left: -20%;
+  top: -20%;
+  width: 60vw; }
+  .content .earth-and-moon svg {
+    width: 100%;
+    height: 100%; }
+.content .moon-spin {
+  -webkit-animation: orbit 300s linear infinite alternate;
+          animation: orbit 300s linear infinite alternate; }
 
 .about-container .about-content .columns {
   display: -webkit-box;

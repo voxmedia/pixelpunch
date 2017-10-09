@@ -2,9 +2,14 @@
 <html lang="en">
   {% include head.html %}
 <body>
-  {% include svg-sprite.html %}
   {% include header.html %}
-  {% include about.html %}
+
+  {% for post in site.posts reversed %}
+    <article class="content">
+      {{ post.content }}
+    </article>
+  {% endfor %}
+
   {% include footer.html %}
 </body>
 </html>
