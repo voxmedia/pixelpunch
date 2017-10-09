@@ -1,9 +1,8 @@
-<footer class="c-footer">
-
-  <div class="footer-container">
-
-    <!--<p>{{ site.description | escape }}</p>-->
-
-  </div>
-
+<footer class="footer-container">
+  <article class="footer-content">
+    {% for post in site.categories.footer %}
+      {{ post.content }}
+    {% endfor %}
+    <p class="copyright">&copy; Pixel Punch and <a href="https://www.voxmedia.com" target="_blank">Vox Media</a>, {{ 'now' | date: "%Y" }}. Code of Conduct. <a href="#top">Back to top.</p>
+  </article>
 </footer>

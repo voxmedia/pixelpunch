@@ -1,21 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+<html lang="en">
   {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <main class="c-body" aria-label="Content">
-      <div class="body-container">
-        {{ content }}
-      </div>
-    </main>
-
-    {% include footer.html %}
-
-    <script src="{{ "/js/main.js" | relative_url }}"></script>
-  </body>
-
+<body>
+  {% include svg-sprite.html %}
+  {% include header.html %}
+  {% include about.html %}
+  {% include footer.html %}
+</body>
 </html>

@@ -1,16 +1,11 @@
-<header class="c-header" role="banner">
-
-  <div class="header-container">
-    {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-
-    {% if page_paths %}
-      <nav class="c-nav">
-        {% for post in site.posts reversed %}
-          <a class="nav-items" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        {% endfor %}
-      </nav>
-    {% endif %}
-  </div>
+<header id="top" class="header-container">
+  <article class="header-content">
+    {% include pixel-punch-logo.html %}
+    {% for post in site.categories.intro %}
+      {{ post.content }}
+    {% endfor %}
+    <a class="sign-up-button" href="#">Sign Up</a>
+  </article>
+  <svg viewbox="0 0 79 79" class="moon"><use xlink:href="#pixel-punch-moon" /></svg>
+  <svg viewbox="0 0 800 600" class="planet-earth"><use xlink:href="#pixel-punch-planet-earth" /></svg>
 </header>

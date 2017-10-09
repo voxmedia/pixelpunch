@@ -1,3 +1,17 @@
+@-webkit-keyframes orbit {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
+@keyframes orbit {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg); } }
 @-webkit-keyframes floating {
   0% {
     box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.8);
@@ -422,7 +436,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.25;
+  line-height: 1.5;
   letter-spacing: 0.035em;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -436,22 +450,107 @@ img,
 video {
   max-width: 100%; }
 
-a {
-  text-decoration: none; }
+@media screen and (max-width: 47.99em) {
+  p {
+    font-size: .95em; } }
+@media screen and (min-width: 48em) and (max-width: 63.99em) {
+  p {
+    font-size: 1em; } }
+@media screen and (min-width: 64em) {
+  p {
+    font-size: 1.15em; } }
 
-code,
-pre {
-  padding: 3px 5px;
-  border-radius: 5px; }
+.header-container, .about-container, .judges-container, .contestants-container {
+  position: relative;
+  padding: 5em 0; }
 
-pre {
-  padding: 6px 10px; }
+.footer-container {
+  padding-top: 5em; }
 
-table {
-  text-align: center;
-  border-collapse: collapse;
-  width: 100%; }
-  table th {
-    padding: 12px 15px; }
-  table td {
-    padding: 10px 15px; }
+article {
+  -webkit-transition: ease all 500ms;
+  transition: ease all 500ms;
+  margin: 0 auto; }
+  @media screen and (max-width: 47.99em) {
+    article {
+      width: 80vw;
+      padding: 4em 0; } }
+  @media screen and (min-width: 48em) and (max-width: 63.99em) {
+    article {
+      width: 60vw;
+      padding: 1em 0; } }
+  @media screen and (min-width: 64em) {
+    article {
+      width: 95vw;
+      max-width: 1200px;
+      padding: 0 0 0 42%; } }
+
+article a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  font-weight: 700;
+  -webkit-transition: all 80ms ease-in-out;
+  transition: all 80ms ease-in-out; }
+  article a:hover {
+    border-bottom-width: 6px; }
+
+.sign-up-button {
+  color: white;
+  text-decoration: none;
+  background: #e30c79;
+  padding: .5em 1.4em;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  -webkit-transform: translatey(0);
+          transform: translatey(0);
+  -webkit-animation: floating 8000ms ease-in-out infinite;
+          animation: floating 8000ms ease-in-out infinite;
+  -webkit-transition: border 500ms ease;
+  transition: border 500ms ease;
+  border: 2px solid #e30c79; }
+  .sign-up-button:hover {
+    border: 2px solid #fff; }
+
+.header-container .moon {
+  display: none; }
+  @media screen and (min-width: 64em) {
+    .header-container .moon {
+      z-index: 2;
+      display: block;
+      position: absolute;
+      width: 800px;
+      top: 125px;
+      left: -250px;
+      padding-left: 726px;
+      -webkit-animation: orbit 12000ms linear infinite;
+              animation: orbit 12000ms linear infinite; } }
+.header-container .planet-earth {
+  display: none; }
+  @media screen and (min-width: 64em) {
+    .header-container .planet-earth {
+      z-index: 1;
+      display: block;
+      position: absolute;
+      width: 1100px;
+      top: -270px;
+      left: -443px; } }
+.header-container .header-content {
+  z-index: 3; }
+  .header-container .header-content .pixel-punch-stacked-logo {
+    -webkit-transform: translateX(-32px);
+            transform: translateX(-32px);
+    width: 15em;
+    height: auto; }
+
+.about-container .about-content .columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between; }
+  .about-container .about-content .columns p {
+    width: 46%; }
+    .about-container .about-content .columns p:first-child {
+      margin-right: 2%; }
+    .about-container .about-content .columns p:last-child {
+      margin-left: 2%; }

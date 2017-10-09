@@ -1,0 +1,34 @@
+.header-container {
+  .moon {
+    display: none;
+    @include large {
+      z-index: 2;
+      display: block;
+      position: absolute;
+      width: 800px;
+top: 125px;
+left: -250px;
+padding-left: 726px;
+      animation: orbit 12000ms linear infinite;
+    }
+  }
+  .planet-earth {
+    display: none;
+    @include large {
+      z-index: 1;
+      display: block;
+      position: absolute;
+      width: 1100px;
+      top: -270px;
+      left: -443px;
+    }
+  }
+  .header-content {
+    z-index: 3;
+    .pixel-punch-stacked-logo {
+      transform: translateX(-32px);
+      width: 15em;
+      height: auto;
+    }
+  }
+}

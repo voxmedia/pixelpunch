@@ -22,45 +22,69 @@ video {
   max-width: 100%;
 }
 
-a {
-  text-decoration: none;
-  // color: $link-color;
-  // transition: color $transition-time;
-  &:hover {
-    // color: $link-hover-color;
+p {
+  @include small {
+    font-size: .95em;
+  }
+  @include medium {
+    font-size: 1em;
+  }
+  @include large {
+    font-size: 1.15em;
   }
 }
 
-code,
-pre {
-  padding: 3px 5px;
-  border-radius: 5px;
+// general structure
+.header-container, .about-container, .judges-container, .contestants-container {
+   position: relative;
+   padding: 5em 0;
 }
 
-pre {
-  padding: 6px 10px;
+.footer-container {
+   padding-top: 5em;
 }
 
-table {
-  text-align: center;
-  border-collapse: collapse;
-  width: 100%;
-
-  thead {
-    th {
-    }
+article {
+  transition: ease all 500ms;
+  margin: 0 auto;
+  @include small {
+    width: 80vw;
+    padding: 4em 0;
   }
-
-  th {
-    padding: 12px 15px;
+  @include medium {
+    width: 60vw;
+    padding: 1em 0;
   }
-
-  td {
-    padding: 10px 15px;
+  @include large {
+    width: 95vw;
+    max-width: 1200px;
+    padding: 0 0 0 42%;
   }
+}
 
-  tr:hover {
-    td {
-    }
-  }
+article a {
+   color: $color_white;
+   text-decoration: none;
+   border-bottom: 1px solid $color_white;
+   font-weight: 700;
+   transition: all 80ms ease-in-out;
+   &:hover {
+      border-bottom-width: 6px;
+   }
+}
+
+// components and buttons
+.sign-up-button {
+   color: $color_white;
+   text-decoration: none;
+   background: $color_pink;
+   padding: .5em 1.4em;
+   box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+   transform: translatey(0);
+	animation: floating 8000ms ease-in-out infinite;
+   transition: border 500ms ease;
+   border: 2px solid $color_pink;
+   &:hover {
+      border: 2px solid #fff;
+   }
 }

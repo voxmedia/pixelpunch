@@ -1,0 +1,17 @@
+.about-container {
+  .about-content {
+    .columns {
+      display: flex;
+      align-content: space-between;
+      p {
+        width: 46%;
+        &:first-child {
+          margin-right: 2%;
+        }
+        &:last-child {
+          margin-left: 2%;
+        }
+      }
+    }
+  }
+}
