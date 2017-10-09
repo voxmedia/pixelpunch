@@ -492,9 +492,9 @@ article {
       padding: 0 0 0 240px; } }
 
 article a {
-  color: white;
+  color: currentColor;
   text-decoration: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid currentColor;
   font-weight: 700;
   -webkit-transition: all 80ms ease-in-out;
   transition: all 80ms ease-in-out; }
@@ -502,18 +502,16 @@ article a {
     border-bottom-width: 6px; }
 
 .sign-up-button {
-  color: white;
-  text-decoration: none;
   background: #e30c79;
   padding: .5em 1.4em;
-  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
   -webkit-animation: floating 8000ms ease-in-out infinite;
           animation: floating 8000ms ease-in-out infinite;
   -webkit-transition: border 500ms ease;
   transition: border 500ms ease;
   border: 2px solid #e30c79; }
   .sign-up-button:hover {
-    border: 2px solid #fff; }
+    border: 2px solid currentColor; }
 
 @media screen and (min-width: 64em) {
   .header-container .header-content {
@@ -553,6 +551,8 @@ article a {
     .header-container .planet-earth {
       top: -270px;
       left: -20%; } }
+.header-container .satellite {
+  width: 70px; }
 
 .about-container .about-content .columns {
   display: -webkit-box;
@@ -566,3 +566,8 @@ article a {
       margin-right: 2%; }
     .about-container .about-content .columns p:last-child {
       margin-left: 2%; }
+.about-container .spacegirl {
+  display: none; }
+  @media screen and (min-width: 64em) {
+    .about-container .spacegirl {
+      width: 200px; } }

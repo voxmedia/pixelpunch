@@ -14,4 +14,10 @@
       }
     }
   }
+  .spacegirl {
+    display: none;
+    @include large {
+      width: 200px;
+    }
+  }
 }
