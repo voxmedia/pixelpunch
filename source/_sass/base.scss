@@ -47,6 +47,7 @@ p {
 article {
   transition: ease all 500ms;
   margin: 0 auto;
+  z-index: 5;
   @include small {
     width: 80vw;
     padding: 4em 0;
@@ -59,6 +60,11 @@ article {
     width: 95vw;
     max-width: 1200px;
     padding: 0 0 0 42%;
+  }
+  @include largest {
+    width: 95vw;
+    max-width: 1200px;
+    padding: 0 0 0 240px;
   }
 }
 
@@ -80,8 +86,7 @@ article a {
    background: $color_pink;
    padding: .5em 1.4em;
    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-   transform: translatey(0);
-	animation: floating 8000ms ease-in-out infinite;
+   animation: floating 8000ms ease-in-out infinite;
    transition: border 500ms ease;
    border: 2px solid $color_pink;
    &:hover {

@@ -1,15 +1,28 @@
 .header-container {
+  .header-content {
+    @include large {
+      padding-top: 20%;
+    }
+    @include largest {
+      padding-top: 30%;
+    }
+    .pixel-punch-stacked-logo {
+      transform: translateX(-28px);
+      width: 15em;
+      height: auto;
+    }
+  }
   .moon {
     display: none;
     @include large {
       z-index: 2;
       display: block;
       position: absolute;
-      width: 800px;
-top: 125px;
-left: -250px;
-padding-left: 726px;
-      animation: orbit 12000ms linear infinite;
+      width: 790px;
+      top: 137px;
+      left: -245px;
+      padding-left: 710px;
+      animation: orbit 20000ms linear infinite;
     }
   }
   .planet-earth {
@@ -22,13 +35,9 @@ padding-left: 726px;
       top: -270px;
       left: -443px;
     }
-  }
-  .header-content {
-    z-index: 3;
-    .pixel-punch-stacked-logo {
-      transform: translateX(-32px);
-      width: 15em;
-      height: auto;
+    @include largest {
+      top: -270px;
+      left: -20%;
     }
   }
 }

@@ -470,7 +470,8 @@ video {
 article {
   -webkit-transition: ease all 500ms;
   transition: ease all 500ms;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: 5; }
   @media screen and (max-width: 47.99em) {
     article {
       width: 80vw;
@@ -484,6 +485,11 @@ article {
       width: 95vw;
       max-width: 1200px;
       padding: 0 0 0 42%; } }
+  @media screen and (min-width: 90em) {
+    article {
+      width: 95vw;
+      max-width: 1200px;
+      padding: 0 0 0 240px; } }
 
 article a {
   color: white;
@@ -501,8 +507,6 @@ article a {
   background: #e30c79;
   padding: .5em 1.4em;
   box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
-  -webkit-transform: translatey(0);
-          transform: translatey(0);
   -webkit-animation: floating 8000ms ease-in-out infinite;
           animation: floating 8000ms ease-in-out infinite;
   -webkit-transition: border 500ms ease;
@@ -511,6 +515,17 @@ article a {
   .sign-up-button:hover {
     border: 2px solid #fff; }
 
+@media screen and (min-width: 64em) {
+  .header-container .header-content {
+    padding-top: 20%; } }
+@media screen and (min-width: 90em) {
+  .header-container .header-content {
+    padding-top: 30%; } }
+.header-container .header-content .pixel-punch-stacked-logo {
+  -webkit-transform: translateX(-28px);
+          transform: translateX(-28px);
+  width: 15em;
+  height: auto; }
 .header-container .moon {
   display: none; }
   @media screen and (min-width: 64em) {
@@ -518,12 +533,12 @@ article a {
       z-index: 2;
       display: block;
       position: absolute;
-      width: 800px;
-      top: 125px;
-      left: -250px;
-      padding-left: 726px;
-      -webkit-animation: orbit 12000ms linear infinite;
-              animation: orbit 12000ms linear infinite; } }
+      width: 790px;
+      top: 137px;
+      left: -245px;
+      padding-left: 710px;
+      -webkit-animation: orbit 20000ms linear infinite;
+              animation: orbit 20000ms linear infinite; } }
 .header-container .planet-earth {
   display: none; }
   @media screen and (min-width: 64em) {
@@ -534,13 +549,10 @@ article a {
       width: 1100px;
       top: -270px;
       left: -443px; } }
-.header-container .header-content {
-  z-index: 3; }
-  .header-container .header-content .pixel-punch-stacked-logo {
-    -webkit-transform: translateX(-32px);
-            transform: translateX(-32px);
-    width: 15em;
-    height: auto; }
+  @media screen and (min-width: 90em) {
+    .header-container .planet-earth {
+      top: -270px;
+      left: -20%; } }
 
 .about-container .about-content .columns {
   display: -webkit-box;

@@ -7,13 +7,13 @@ $size-to-medium: 47.99em;
 $size-from-medium: 48em;
 $size-to-large: 63.99em;
 $size-from-large: 64em;
+$size-from-largest: 90em;
 
 // colors
 $color-white: rgb(255,255,255);
 $color-pink: rgb(227,12,121);
 $color-space-dark: rgb(57,29,89);
 $color-space-darker: rgb(22,22,65);
-
 
 // font
 $base-font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -35,6 +35,12 @@ $base-letter-spacing: 0.035em !default;
 }
 @mixin large {
   @media screen and (min-width: $size-from-large) {
+    @content;
+  }
+}
+// this is meant for edgecases with crazy wide monitors
+@mixin largest {
+  @media screen and (min-width: $size-from-largest) {
     @content;
   }
 }
