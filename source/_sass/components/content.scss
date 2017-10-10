@@ -8,11 +8,11 @@
   min-height: 100vh;
 
   &:nth-child(even) {
-    background: linear-gradient(to bottom, #3e1b5b 50%,#181543 100%);
+    background: linear-gradient(to bottom, $color-space-dark 50%, $color-space-darker 100%);
   }
 
   &:nth-child(odd) {
-    background: linear-gradient(to bottom, #181543 50%,#3e1b5b 100%);
+    background: linear-gradient(to bottom, $color-space-darker 50%, $color-space-darker 100%);
   }
 }
 
@@ -47,9 +47,24 @@
       height: 100%;
     }
   }
-
   .moon-spin {
     animation: orbit 300s linear infinite alternate;
+  }
+
+  .space-girl {
+    display: none;
+
+    @include media-query {
+      position: absolute;
+      display: block;
+      left: 3vw;
+      top: 5vw;
+      width: 23vw;
+    }
+
+    svg {
+      height: 100%;
+    }
   }
 
   .columns {

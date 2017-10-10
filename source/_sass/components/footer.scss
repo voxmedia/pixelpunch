@@ -1,3 +1,9 @@
-.c-body {
-
+.copyright {
+    text-align: center;
+    padding: 2rem;
+    max-width: 65ch;
+  
+    @include media-query {
+      margin: 0 auto;
+    }
 }

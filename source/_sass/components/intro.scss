@@ -6,11 +6,12 @@
 
   .pixel-punch-stacked-logo {
     width: 80vw;
-    margin-top: 25vw;
+    margin-top: 45vw;
+    transform: translateX(-12%);
 
     @include media-query {
       width: 50vw;
-      margin-top: 0vw;
+      margin-top: 20vw;
     }
   }
 }

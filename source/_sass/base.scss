@@ -32,6 +32,17 @@ p {
   font-size: $base-font-size;
 }
 
+a {
+  font-weight: $bold-font-weight;
+  color: currentColor;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: border-width 100ms ease-in-out;
+  &:hover {
+    border-bottom-width: 3px;
+  }
+}
+
 h1 {
   font-size: 3rem;
   line-height: 1rem;
@@ -47,7 +58,7 @@ h1 {
    background: $color_pink;
    padding: .5em 1.4em;
    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
-   transition: border 500ms ease;
+   transition: border 300ms ease;
    border: 2px solid $color_pink;
    &:hover {
       border: 2px solid currentColor;

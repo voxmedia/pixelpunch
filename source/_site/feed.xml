@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-10T15:56:19+00:00</updated><id>http://localhost:4000/</id><title type="html">Beat</title><subtitle>TBD.</subtitle><entry><title type="html">about</title><link href="http://localhost:4000/2017/10/02/about.html" rel="alternate" type="text/html" title="about" /><published>2017-10-02T12:00:00+00:00</published><updated>2017-10-02T12:00:00+00:00</updated><id>http://localhost:4000/2017/10/02/about</id><content type="html" xml:base="http://localhost:4000/2017/10/02/about.html">&lt;h1 id=&quot;about&quot;&gt;ABOUT&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-10T20:49:03+00:00</updated><id>http://localhost:4000/</id><title type="html">Beat</title><subtitle>TBD.</subtitle><entry><title type="html">about</title><link href="http://localhost:4000/2017/10/02/about.html" rel="alternate" type="text/html" title="about" /><published>2017-10-02T12:00:00+00:00</published><updated>2017-10-02T12:00:00+00:00</updated><id>http://localhost:4000/2017/10/02/about</id><content type="html" xml:base="http://localhost:4000/2017/10/02/about.html">&lt;svg class=&quot;space-girl&quot; id=&quot;pixel-punch-spacegirl&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1157.4 1080&quot;&gt;
+	&lt;style&gt;
+	  .space-pink{fill:#E40B79;} .space-white{fill:#FFFFFF;} .space-black{fill:#161641;} .stopac{opacity:0.3;fill:url(#SVGID_1_);}
+	&lt;/style&gt;
+	&lt;g id=&quot;astronaut&quot;&gt;
+	  &lt;path class=&quot;space-pink&quot; d=&quot;M669 903.4c-23 0-44.7-9-61-25.3-3.4-3.3-6.5-7-9.3-11l-16 18.3c-12.5 14-11.2 35.8 3 48.3l41 36.2c14.2 12.4 36 11 48.4-3l36.3-41.2c9-10.3 10.8-24.8 5.5-36.6-14 9.4-30.5 14.4-47.7 14.4z&quot; /&gt;
+	  &lt;path class=&quot;space-white&quot; d=&quot;M669.3 892c-20 0-39-7.7-53.2-22-14-14.2-22-33-22-53.2 0-20 7.8-39 22-53.2 14.3-14.2 33.2-22 53.3-22 20 0 39 7.7 53.2 22 14.2 14.2 22 33 22 53.2 0 20-7.7 39-22 53.2-14.2 14.3-33 22-53.2 22z&quot; /&gt;
+	  &lt;ellipse transform=&quot;rotate(-45 669.283 816.825)&quot; class=&quot;space-black&quot; cx=&quot;669.3&quot; cy=&quot;816.8&quot; rx=&quot;58.2&quot; ry=&quot;58.2&quot; /&gt;
+	  &lt;path class=&quot;space-white&quot; d=&quot;M702.3 849.8l-7.8-7.8c6.7-6.7 10.4-15.7 10.4-25.2s-3.8-18.5-10.5-25.2l7.8-7.8c18.2 18.2 18.2 47.8 0 66z&quot; /&gt;
+	  &lt;path class=&quot;space-white&quot; d=&quot;M448 981.4c-6.7-6.6-12.2-13.8-16-20.8l-18.2 18c-9.7 9.8-9.7 25.5 0 35.2 4.8 4.8 11.2 7.3 17.5 7.3s12.7-2.3 17.5-7.2l17.6-17.6c-6-3.8-12.6-9-18.5-14.8z&quot; /&gt;
+	  &lt;path class=&quot;space-white&quot; d=&quot;M502.4 1036c-6.3-6.4-11.6-13.2-15.4-19.8l-17.8 17.8c-9.7 9.7-9.7 25.4 0 35 4.8 5 11.2 7.4 17.5 7.4s12.7-2.4 17.5-7.3l17.8-17.7c-6.5-4-13.3-9-19.6-15.4z&quot; /&gt;
+	  &lt;path class=&quot;space-white&quot; d=&quot;M688.2 901c-6 1.5-12.5 2.2-19 2.2-23 0-44.7-9-61-25.3-16.3-16.4-25.3-38-25.3-61.2 0-3.3 0-6.5.5-9.8-12.7-2.6-22.3-14-22.3-27.4 0-15.4 12.6-28 28-28 12.2 0 22-10 22-22s-10-22-22-22c-39.7 0-72 32.3-72 72 0 26 13.7 48.8 34.3 61.5l-1.6 1.7-.7.6-109.2 109c3.3 7 9 14.5 15.7 21.3 6 6 12.8 11 19 14.5L523 940l20.2 20.2-48 48c3.3 6.5 8.6 13.6 15 20 6.4 6.5 13.6 11.8 20 15l63.7-63.5c1-.8 2.2-1.8 3.3-3l53-53c2.7 4.3 4.2 9.3 4.2 14.6 0 15.5-12.6 28-28 28-12.2 0-22 10-22 22s10 22 22 22c39.7 0 72-32.2 72-72 0-13.4-3.8-26-10.3-37z&quot; /&gt;
+	&lt;/g&gt;
+	&lt;path class=&quot;space-pink&quot; d=&quot;M624 993.2c-1 0-2.2-.3-3.2-1-22-16.2-31-44.7-40-72.3-6-19-12.4-38.7-22.8-53-10.2-14-26-25.5-42.6-37.7-23.6-17.2-48-35-56.4-61.3-8-25 1-53.2 9.7-80.3 6.3-19.4 12.7-39.5 12.7-58 0-21.6-3-44.4-5.7-66.5-5.8-45.3-11.8-92 7.3-131 19.8-40.4 61-64.4 100.8-87.6 18.7-11 38-22.2 54.3-34.8 16-12.4 30.8-27.5 46.4-43.4 32.3-33 65.8-67.2 110.7-76.5 3-.7 6 1.2 6.6 4.2.6 3-1.3 6-4.3 6.5-41.6 8.6-74 41.5-105 73.4-15.3 15.6-31 31.7-47.5 44.5-16.8 13-36.5 24.6-55.5 35.6-38.4 22.5-78 45.6-96.4 83-17.7 36-12.2 79.2-6.4 124.8 3 22.4 5.8 45.6 5.8 68 0 20.2-6.7 41-13.3 61.3-8.5 26.7-16.6 52-9.6 73.6 7.4 23 30.3 39.6 52.4 55.7 16.6 12 34 24.7 45 40 11.5 15.8 18 36.3 24.4 56 8.7 27.2 17 52.7 36 66.8 2.5 2 3 5.4 1.2 7.8-1 1.6-2.6 2.4-4.3 2.4z&quot; id=&quot;string&quot; /&gt;
+	&lt;g id=&quot;spaceship&quot;&gt;
+	  &lt;linearGradient id=&quot;SVGID_1_&quot; gradientUnits=&quot;userSpaceOnUse&quot; x1=&quot;330.6&quot; y1=&quot;616&quot; x2=&quot;766.8&quot; y2=&quot;187.6&quot; gradientTransform=&quot;matrix(1.1014 -.1014 -.1014 1.1014 -73.645 73.645)&quot;&gt;
+		&lt;stop offset=&quot;0&quot; stop-color=&quot;#FFF&quot; stop-opacity=&quot;0&quot; /&gt;
+		&lt;stop offset=&quot;1&quot; stop-color=&quot;#FFF&quot; /&gt;
+	  &lt;/linearGradient&gt;
+	  &lt;polygon class=&quot;stopac&quot; points=&quot;62.7,808.4 141.2,886.8 782.2,245.8 703.7,167.3&quot; /&gt;
+	  &lt;path class=&quot;space-white&quot; d=&quot;M940 9.4c-23.7-23.8-115 28.8-203.5 117.4-2 2-4 4.2-6.2 6.2-14.6 4.6-29.4 7.5-44 8.8l-28 2.4c-24.8 2-49.5 14-68.6 33-1.3 1.4 48 48 57.3 57.3-8.4 12.8-15.4 25-20.7 36-3.6 7.5 0 18.8 8.6 27.5l16.6 16.7c8.7 8.7 20 12.2 27.4 8.6 11-5.4 23.2-12.3 36-20.7 9.3 9.2 56 58.6 57.3 57.3 19-19.2 31-44 33-68.8l2.5-27.8c1.3-14.7 4.2-29.6 8.8-44l6.2-6.3C911.4 124.5 963.8 33.3 940 9.5z&quot; /&gt;
+	&lt;/g&gt;
+&lt;/svg&gt;
+
+&lt;h1 id=&quot;about&quot;&gt;ABOUT&lt;/h1&gt;
 
 &lt;p&gt;Join Vox Media on Tuesday, November 7 at 6:30pm for an interstellar night of pixel pushing at its finest.&lt;/p&gt;
 
@@ -10,7 +34,7 @@
   &lt;p&gt;Vox Media is a prestigious modern media company that believes in the power of going deeper to connect with global, passionate, curious audiences. Through our authoritative house of brands, commitment to developing standout technology, and high-fidelity advertising, we are shaping the future of journalism and entertainment.&lt;/p&gt;
 
   &lt;p&gt;The Vox Media product team is made up of designers, developers, operations engineers, and product and community managers, based in Washington, DC, New York, Chicago, SF and Austin, and distributed remotely in cities from Santa Barbara, California to Springfield, Missouri.&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html">ABOUT</summary></entry><entry><title type="html">intro</title><link href="http://localhost:4000/2017/10/01/intro.html" rel="alternate" type="text/html" title="intro" /><published>2017-10-01T12:00:00+00:00</published><updated>2017-10-01T12:00:00+00:00</updated><id>http://localhost:4000/2017/10/01/intro</id><content type="html" xml:base="http://localhost:4000/2017/10/01/intro.html">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">intro</title><link href="http://localhost:4000/2017/10/01/intro.html" rel="alternate" type="text/html" title="intro" /><published>2017-10-01T12:00:00+00:00</published><updated>2017-10-01T12:00:00+00:00</updated><id>http://localhost:4000/2017/10/01/intro</id><content type="html" xml:base="http://localhost:4000/2017/10/01/intro.html">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --&gt;
 &lt;svg class=&quot;earth-and-moon&quot; version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 675.3 675&quot; style=&quot;enable-background:new 0 0 675.3 675;&quot; xml:space=&quot;preserve&quot;&gt;
 &lt;style type=&quot;text/css&quot;&gt;
@@ -23,7 +47,6 @@
 	.st6{fill:none;}
 &lt;/style&gt;
 &lt;title&gt;pixel-punch-planet-and-moon&lt;/title&gt;
-&lt;desc&gt;Created with Sketch.&lt;/desc&gt;
 &lt;g id=&quot;Page-1&quot;&gt;
 	&lt;g id=&quot;pixel-punch-planet-and-moon&quot; transform=&quot;translate(0.000000, -37.000000)&quot;&gt;
 		&lt;g id=&quot;pixel-punch-planet-earth&quot; transform=&quot;translate(39.781465, 39.621519)&quot;&gt;
@@ -72,7 +95,7 @@
 			&lt;circle id=&quot;moon-shape_1_&quot; class=&quot;st6&quot; cx=&quot;635.8&quot; cy=&quot;374.5&quot; r=&quot;39.5&quot; /&gt;
 			&lt;circle id=&quot;moon-shape_2_&quot; class=&quot;st6&quot; cx=&quot;337.4&quot; cy=&quot;76.5&quot; r=&quot;39.5&quot; /&gt;
 			&lt;circle id=&quot;moon-shape_3_&quot; class=&quot;st6&quot; cx=&quot;337.8&quot; cy=&quot;672.5&quot; r=&quot;39.5&quot; /&gt;
-		&lt;/g&gt;
+		&lt;/g&gt;		  
 	&lt;/g&gt;
 &lt;/g&gt;
 &lt;/svg&gt;
@@ -115,4 +138,4 @@
 &lt;p&gt;iStrategyLabs, 7:00pm - 10pm EST&lt;br /&gt;
 641 S St NW, Fl 1, Washington, DC 20001&lt;/p&gt;
 
-&lt;p&gt;&lt;a class=&quot;sign-up-button&quot; href=&quot;#&quot;&gt;Sign Up&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">pixel-punch-planet-and-moon Created with Sketch.</summary></entry></feed>
+&lt;p&gt;&lt;a class=&quot;sign-up-button&quot; href=&quot;#&quot;&gt;Sign Up&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">pixel-punch-planet-and-moon</summary></entry></feed>

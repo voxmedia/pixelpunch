@@ -2,6 +2,9 @@
 title: about
 date: 2017-10-02 12:00:00
 ---
+
+{% include svgs/space-girl-svg.html %}
+
 # ABOUT
 
 Join Vox Media on Tuesday, November 7 at 6:30pm for an interstellar night of pixel pushing at its finest.

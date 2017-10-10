@@ -445,6 +445,16 @@ svg {
 p {
   font-size: 16px; }
 
+a {
+  font-weight: 700;
+  color: currentColor;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  -webkit-transition: border-width 100ms ease-in-out;
+  transition: border-width 100ms ease-in-out; }
+  a:hover {
+    border-bottom-width: 3px; }
+
 h1 {
   font-size: 3rem;
   line-height: 1rem;
@@ -457,8 +467,8 @@ h1 {
   background: #e30c79;
   padding: .5em 1.4em;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
-  -webkit-transition: border 500ms ease;
-  transition: border 500ms ease;
+  -webkit-transition: border 300ms ease;
+  transition: border 300ms ease;
   border: 2px solid #e30c79; }
   .sign-up-button:hover {
     border: 2px solid currentColor; }
@@ -480,11 +490,11 @@ h1 {
   position: relative;
   min-height: 100vh; }
   .content-gradient:nth-child(even) {
-    background: -webkit-linear-gradient(top, #3e1b5b 50%, #181543 100%);
-    background: linear-gradient(to bottom, #3e1b5b 50%, #181543 100%); }
+    background: -webkit-linear-gradient(top, #391d59 50%, #161641 100%);
+    background: linear-gradient(to bottom, #391d59 50%, #161641 100%); }
   .content-gradient:nth-child(odd) {
-    background: -webkit-linear-gradient(top, #181543 50%, #3e1b5b 100%);
-    background: linear-gradient(to bottom, #181543 50%, #3e1b5b 100%); }
+    background: -webkit-linear-gradient(top, #161641 50%, #161641 100%);
+    background: linear-gradient(to bottom, #161641 50%, #161641 100%); }
 
 @media screen and (min-width: 768px) {
   .content-container {
@@ -512,6 +522,17 @@ h1 {
   .content .moon-spin {
     -webkit-animation: orbit 300s linear infinite alternate;
             animation: orbit 300s linear infinite alternate; }
+  .content .space-girl {
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .content .space-girl {
+        position: absolute;
+        display: block;
+        left: 3vw;
+        top: 5vw;
+        width: 23vw; } }
+    .content .space-girl svg {
+      height: 100%; }
   @media screen and (min-width: 768px) {
     .content .columns {
       -webkit-column-count: 2;
@@ -534,8 +555,18 @@ h1 {
           justify-content: center; }
   .intro .pixel-punch-stacked-logo {
     width: 80vw;
-    margin-top: 25vw; }
+    margin-top: 45vw;
+    -webkit-transform: translateX(-12%);
+            transform: translateX(-12%); }
     @media screen and (min-width: 768px) {
       .intro .pixel-punch-stacked-logo {
         width: 50vw;
-        margin-top: 0vw; } }
+        margin-top: 20vw; } }
+
+.copyright {
+  text-align: center;
+  padding: 2rem;
+  max-width: 65ch; }
+  @media screen and (min-width: 768px) {
+    .copyright {
+      margin: 0 auto; } }
