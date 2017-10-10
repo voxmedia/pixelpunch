@@ -1,6 +1,5 @@
 ---
-title: Introduction
-categories: intro
+title: intro
 date: 2017-10-01 12:00:00
 ---
 

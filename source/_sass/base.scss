@@ -8,75 +8,38 @@ body {
   font-weight: $base-font-weight;
   line-height: $base-line-height;
   letter-spacing: $base-letter-spacing;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
+
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smooth: always;
+
   background: $color-space-darker;
   color: $color-white;
   position: relative;
   min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
 }
 
 img,
-video {
+video,
+svg {
   max-width: 100%;
 }
 
 p {
-  @include small {
-    font-size: .95em;
-  }
-  @include medium {
-    font-size: 1em;
-  }
-  @include large {
-    font-size: 1.15em;
-  }
+  font-size: $base-font-size;
 }
 
-// general structure
-.header-container, .about-container, .judges-container, .contestants-container {
-   position: relative;
-   padding: 5em 0;
-}
+h1 {
+  font-size: 3rem;
+  line-height: 1rem;
+  font-family: $base-heading-font;
 
-.footer-container {
-   padding-top: 5em;
-}
-
-article {
-  transition: ease all 500ms;
-  margin: 0 auto;
-  z-index: 5;
-  @include small {
-    width: 80vw;
-    padding: 4em 0;
+  @include media-query {
+    font-size: 4.5rem;
   }
-  @include medium {
-    width: 60vw;
-    padding: 1em 0;
-  }
-  @include large {
-    width: 95vw;
-    max-width: 1200px;
-    padding: 0 0 0 42%;
-  }
-  @include largest {
-    width: 95vw;
-    max-width: 1200px;
-    padding: 0 0 0 240px;
-  }
-}
-
-article a {
-   color: currentColor;
-   text-decoration: none;
-   border-bottom: 1px solid currentColor;
-   font-weight: 700;
-   transition: all 80ms ease-in-out;
-   &:hover {
-      border-bottom-width: 6px;
-   }
 }
 
 // components and buttons
@@ -84,7 +47,6 @@ article a {
    background: $color_pink;
    padding: .5em 1.4em;
    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
-   animation: floating 8000ms ease-in-out infinite;
    transition: border 500ms ease;
    border: 2px solid $color_pink;
    &:hover {

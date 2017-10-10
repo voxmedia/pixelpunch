@@ -1,18 +1,66 @@
+.content-gradient {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position: relative;
+
+  min-height: 100vh;
+
+  &:nth-child(even) {
+    background: linear-gradient(to bottom, #3e1b5b 50%,#181543 100%);
+  }
+
+  &:nth-child(odd) {
+    background: linear-gradient(to bottom, #181543 50%,#3e1b5b 100%);
+  }
+}
+
+.content-container {
+
+  @include media-query {
+    width: 70vw;
+    align-self: flex-end;
+  }
+}
+
 .content {
+  padding: 2rem;
+
+  @include media-query {
+    margin: 0 auto;
+    max-width: 550px;
+  }
 
   .earth-and-moon {
     position: absolute;
-    left: -20%;
-    top: -20%;
-    width: 60vw;
+    width: 85vw;
+    top: -40vw;
+
+    @include media-query {
+      left: -20vw;
+      top: -20vw;
+      width: 60vw;
+    }
 
     svg {
-      width: 100%;
       height: 100%;
     }
   }
 
   .moon-spin {
     animation: orbit 300s linear infinite alternate;
+  }
+
+  .columns {
+
+    @include media-query {
+      column-count: 2;
+
+      p {
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+      }
+    }
   }
 }

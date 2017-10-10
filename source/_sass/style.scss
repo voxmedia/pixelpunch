@@ -1,83 +1,52 @@
 @charset "utf-8";
-
-// variables
-
-// sizes
-$size-to-medium: 47.99em;
-$size-from-medium: 48em;
-$size-to-large: 63.99em;
-$size-from-large: 64em;
-$size-from-largest: 90em;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Karla');
 
 // colors
-$color-white: rgb(255,255,255);
-$color-pink: rgb(227,12,121);
-$color-space-dark: rgb(57,29,89);
+$color-white:        rgb(255,255,255);
+$color-pink:         rgb(227,12,121);
+$color-space-dark:   rgb(57,29,89);
 $color-space-darker: rgb(22,22,65);
 
 // font
-$base-font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-$base-font-size:   16px !default;
-$base-font-weight: 400 !default;
-$base-line-height: 1.5 !default;
+$base-font-family:    'Open Sans', sans-serif;
+$base-heading-font:   'Karla', sans-serif;
+$base-font-size:      16px !default;
+$base-font-weight:    400 !default;
+$base-line-height:    1.5 !default;
 $base-letter-spacing: 0.035em !default;
 
-// media queries
-@mixin small {
-   @media screen and (max-width: $size-to-medium) {
-      @content;
-   }
-}
-@mixin medium {
-  @media screen and (min-width: $size-from-medium) and (max-width: $size-to-large) {
-    @content;
-  }
-}
-@mixin large {
-  @media screen and (min-width: $size-from-large) {
-    @content;
-  }
-}
-// this is meant for edgecases with crazy wide monitors
-@mixin largest {
-  @media screen and (min-width: $size-from-largest) {
+// this media query overrides mobile styling
+
+// Media Query
+$large-screen:     768px !default;
+
+@mixin media-query {
+  @media screen and (min-width: $large-screen) {
     @content;
   }
 }
 
 // animations
 @keyframes orbit {
-  from {
+  0% {
     transform:rotate(0deg);
     transform-origin: center;
   }
-  to{
+  100% {
     transform:rotate(-3600deg);
     transform-origin: center;
   }
-}
-
-@keyframes floating {
-	0% {
-		box-shadow: -5px 5px 15px 0 rgba(0,0,0,0.8);
-		transform: translateY(0);
-	}
-	50% {
-		box-shadow: -10px 25px 15px 0 rgba(0,0,0,0.4);
-		transform: translateY(-20px);
-	}
-	100% {
-		box-shadow: -5px 5px 15px 0 rgba(0,0,0,0.8);
-		transform: translateY(0);
-	}
 }
 
 // imports
 @import
   "normalize",
   "base",
+  "components/body-container",
   "components/header",
   "components/content",
+  "components/intro",
   "components/about",
   "components/footer"
 ;

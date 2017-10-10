@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-<body>
-  {% include header.html %}
+  <body>
 
-  {% for post in site.posts reversed %}
-    <article class="content">
-      {{ post.content }}
-    </article>
-  {% endfor %}
+    <div class="body-container">
 
-  {% include footer.html %}
-</body>
+      {% include header.html %}
+
+      {% for post in site.posts reversed %}
+        <div class="content-gradient">
+          <div class="content-container">
+            <section class="content {{ post.title }}">
+              {{ post.content }}
+            </section>
+          </div>
+        </div>
+      {% endfor %}
+
+      {% include footer.html %}
+
+    </div>
+  </body>
 </html>

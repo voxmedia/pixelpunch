@@ -1,51 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Karla");
 @-webkit-keyframes orbit {
-  from {
+  0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     -webkit-transform-origin: center;
             transform-origin: center; }
-  to {
+  100% {
     -webkit-transform: rotate(-3600deg);
             transform: rotate(-3600deg);
     -webkit-transform-origin: center;
             transform-origin: center; } }
 @keyframes orbit {
-  from {
+  0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     -webkit-transform-origin: center;
             transform-origin: center; }
-  to {
+  100% {
     -webkit-transform: rotate(-3600deg);
             transform: rotate(-3600deg);
     -webkit-transform-origin: center;
             transform-origin: center; } }
-@-webkit-keyframes floating {
-  0% {
-    box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.8);
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  50% {
-    box-shadow: -10px 25px 15px 0 rgba(0, 0, 0, 0.4);
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px); }
-  100% {
-    box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.8);
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
-@keyframes floating {
-  0% {
-    box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.8);
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  50% {
-    box-shadow: -10px 25px 15px 0 rgba(0, 0, 0, 0.4);
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px); }
-  100% {
-    box-shadow: -5px 5px 15px 0 rgba(0, 0, 0, 0.8);
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -441,153 +417,125 @@ template {
   box-sizing: border-box; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.035em;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smooth: always;
   background: #161641;
   color: white;
   position: relative;
-  min-height: 100vh; }
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 img,
-video {
+video,
+svg {
   max-width: 100%; }
 
-@media screen and (max-width: 47.99em) {
-  p {
-    font-size: .95em; } }
-@media screen and (min-width: 48em) and (max-width: 63.99em) {
-  p {
-    font-size: 1em; } }
-@media screen and (min-width: 64em) {
-  p {
-    font-size: 1.15em; } }
+p {
+  font-size: 16px; }
 
-.header-container, .about-container, .judges-container, .contestants-container {
-  position: relative;
-  padding: 5em 0; }
-
-.footer-container {
-  padding-top: 5em; }
-
-article {
-  -webkit-transition: ease all 500ms;
-  transition: ease all 500ms;
-  margin: 0 auto;
-  z-index: 5; }
-  @media screen and (max-width: 47.99em) {
-    article {
-      width: 80vw;
-      padding: 4em 0; } }
-  @media screen and (min-width: 48em) and (max-width: 63.99em) {
-    article {
-      width: 60vw;
-      padding: 1em 0; } }
-  @media screen and (min-width: 64em) {
-    article {
-      width: 95vw;
-      max-width: 1200px;
-      padding: 0 0 0 42%; } }
-  @media screen and (min-width: 90em) {
-    article {
-      width: 95vw;
-      max-width: 1200px;
-      padding: 0 0 0 240px; } }
-
-article a {
-  color: currentColor;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  font-weight: 700;
-  -webkit-transition: all 80ms ease-in-out;
-  transition: all 80ms ease-in-out; }
-  article a:hover {
-    border-bottom-width: 6px; }
+h1 {
+  font-size: 3rem;
+  line-height: 1rem;
+  font-family: "Karla", sans-serif; }
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 4.5rem; } }
 
 .sign-up-button {
   background: #e30c79;
   padding: .5em 1.4em;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
-  -webkit-animation: floating 8000ms ease-in-out infinite;
-          animation: floating 8000ms ease-in-out infinite;
   -webkit-transition: border 500ms ease;
   transition: border 500ms ease;
   border: 2px solid #e30c79; }
   .sign-up-button:hover {
     border: 2px solid currentColor; }
 
-@media screen and (min-width: 64em) {
-  .header-container .header-content {
-    padding-top: 20%; } }
-@media screen and (min-width: 90em) {
-  .header-container .header-content {
-    padding-top: 30%; } }
-.header-container .header-content .pixel-punch-stacked-logo {
-  -webkit-transform: translateX(-28px);
-          transform: translateX(-28px);
-  width: 15em;
-  height: auto; }
-.header-container .moon {
-  display: none; }
-  @media screen and (min-width: 64em) {
-    .header-container .moon {
-      z-index: 2;
-      display: block;
-      position: absolute;
-      width: 790px;
-      top: 137px;
-      left: -245px;
-      padding-left: 710px;
-      -webkit-animation: orbit 20000ms linear infinite;
-              animation: orbit 20000ms linear infinite; } }
-.header-container .planet-earth {
-  display: none; }
-  @media screen and (min-width: 64em) {
-    .header-container .planet-earth {
-      z-index: 1;
-      display: block;
-      position: absolute;
-      width: 1100px;
-      top: -270px;
-      left: -443px; } }
-  @media screen and (min-width: 90em) {
-    .header-container .planet-earth {
-      top: -270px;
-      left: -20%; } }
-.header-container .satellite {
-  width: 70px; }
+.body-container {
+  width: 100vw; }
 
-.content .earth-and-moon {
-  position: absolute;
-  left: -20%;
-  top: -20%;
-  width: 60vw; }
-  .content .earth-and-moon svg {
-    width: 100%;
-    height: 100%; }
-.content .moon-spin {
-  -webkit-animation: orbit 300s linear infinite alternate;
-          animation: orbit 300s linear infinite alternate; }
-
-.about-container .about-content .columns {
+.content-gradient {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: justify;
-      align-content: space-between; }
-  .about-container .about-content .columns p {
-    width: 46%; }
-    .about-container .about-content .columns p:first-child {
-      margin-right: 2%; }
-    .about-container .about-content .columns p:last-child {
-      margin-left: 2%; }
-.about-container .spacegirl {
-  display: none; }
-  @media screen and (min-width: 64em) {
-    .about-container .spacegirl {
-      width: 200px; } }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  min-height: 100vh; }
+  .content-gradient:nth-child(even) {
+    background: -webkit-linear-gradient(top, #3e1b5b 50%, #181543 100%);
+    background: linear-gradient(to bottom, #3e1b5b 50%, #181543 100%); }
+  .content-gradient:nth-child(odd) {
+    background: -webkit-linear-gradient(top, #181543 50%, #3e1b5b 100%);
+    background: linear-gradient(to bottom, #181543 50%, #3e1b5b 100%); }
+
+@media screen and (min-width: 768px) {
+  .content-container {
+    width: 70vw;
+    -ms-flex-item-align: end;
+        align-self: flex-end; } }
+
+.content {
+  padding: 2rem; }
+  @media screen and (min-width: 768px) {
+    .content {
+      margin: 0 auto;
+      max-width: 550px; } }
+  .content .earth-and-moon {
+    position: absolute;
+    width: 85vw;
+    top: -40vw; }
+    @media screen and (min-width: 768px) {
+      .content .earth-and-moon {
+        left: -20vw;
+        top: -20vw;
+        width: 60vw; } }
+    .content .earth-and-moon svg {
+      height: 100%; }
+  .content .moon-spin {
+    -webkit-animation: orbit 300s linear infinite alternate;
+            animation: orbit 300s linear infinite alternate; }
+  @media screen and (min-width: 768px) {
+    .content .columns {
+      -webkit-column-count: 2;
+         -moz-column-count: 2;
+              column-count: 2; }
+      .content .columns p {
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0; } }
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .intro .pixel-punch-stacked-logo {
+    width: 80vw;
+    margin-top: 25vw; }
+    @media screen and (min-width: 768px) {
+      .intro .pixel-punch-stacked-logo {
+        width: 50vw;
+        margin-top: 0vw; } }

@@ -1,0 +1,16 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  .pixel-punch-stacked-logo {
+    width: 80vw;
+    margin-top: 25vw;
+
+    @include media-query {
+      width: 50vw;
+      margin-top: 0vw;
+    }
+  }
+}
