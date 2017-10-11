@@ -2,22 +2,36 @@
 <html lang="en">
   {% include head.html %}
   <body>
-
     <div class="body-container">
 
-      {% include header.html %}
-
       {% for post in site.posts reversed %}
-        <div class="content-gradient">
-          <div class="content-container">
-            <section class="content {{ post.title }}">
-              {{ post.content }}
-            </section>
-          </div>
-        </div>
+        {% if forloop.first %}
+          <header id="top" class="header content-gradient">
+            <div class="content-container">
+              <article class="content {{ post.title }}">
+                {{ post.content }}
+                <a class="sign-up-button" href="#">Sign Up</a>
+              </article>
+            </div>
+          </header>
+          {% elsif forloop.last %}
+          <footer class="content-gradient">
+            <div class="content-container">
+              <article class="content {{ post.title }}">
+                {{ post.content }}
+              </article>
+            </div>
+          </footer>
+        {% else %}
+          <section class="footer content-gradient">
+            <div class="content-container">
+              <article class="content {{ post.title }}">
+                {{ post.content }}
+              </article>
+            </div>
+          </section>
+        {% endif %}
       {% endfor %}
-
-      {% include footer.html %}
 
     </div>
   </body>

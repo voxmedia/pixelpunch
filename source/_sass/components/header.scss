@@ -1,0 +1,24 @@
+.header.content-gradient {
+
+  .content-container {
+    width: 100vw;
+
+    @include media-query {
+      max-width: 73ch;
+    }
+
+    .content {
+
+      .pixel-punch-stacked-logo {
+        max-width: 400px;
+        margin-top: 45vw;
+        transform: translateX(-12%);
+
+        @include media-query {
+          margin-top: 20vw;
+        }
+      }
+
+    }
+  }
+}

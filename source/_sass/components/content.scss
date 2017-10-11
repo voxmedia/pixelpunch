@@ -1,26 +1,29 @@
 .content-gradient {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  align-items: center;
   justify-content: center;
+  @include media-query {
+    &:not(:last-child) {
+      justify-content: end;
+      min-height: 100vh;
+    }
+  }
 
   position: relative;
 
-  min-height: 100vh;
-
   &:nth-child(even) {
-    background: linear-gradient(to bottom, $color-space-dark 50%, $color-space-darker 100%);
+    background: linear-gradient(to bottom, $color-space-dark 30%, $color-space-darker 100%);
   }
 
   &:nth-child(odd) {
-    background: linear-gradient(to bottom, $color-space-darker 50%, $color-space-darker 100%);
+    background: linear-gradient(to bottom, $color-space-darker 30%, $color-space-dark 100%);
   }
 }
 
 .content-container {
-
+  max-width: 85vw;
   @include media-query {
-    width: 70vw;
-    align-self: flex-end;
+    max-width: 73ch;
   }
 }
 
@@ -29,15 +32,18 @@
 
   @include media-query {
     margin: 0 auto;
-    max-width: 550px;
   }
 
   .earth-and-moon {
     position: absolute;
     width: 85vw;
     top: -40vw;
+    left: 0;
+    right: 0;
+    margin: auto;
 
     @include media-query {
+      margin: 0;
       left: -20vw;
       top: -20vw;
       width: 60vw;
