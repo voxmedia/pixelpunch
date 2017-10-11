@@ -561,14 +561,5 @@ h1 {
         -webkit-margin-before: 0;
         -webkit-margin-after: 0; } }
 
-.intro .pixel-punch-stacked-logo {
-  max-width: 400px;
-  margin-top: 45vw;
-  -webkit-transform: translateX(-12%);
-          transform: translateX(-12%); }
-  @media screen and (min-width: 768px) {
-    .intro .pixel-punch-stacked-logo {
-      margin-top: 20vw; } }
-
 .copyright {
   text-align: center; }
