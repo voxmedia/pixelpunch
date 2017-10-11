@@ -1,0 +1,24 @@
+<nav class="nav">
+  <ul>
+    {% for post in site.posts reversed %}
+      <li>
+        <a class="nav-items" href="#{{ post.title | escape }}">{{ post.title | escape }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+
+<!-- remove this marvin and style-->
+<style type="text/css">
+  nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999999;
+  }
+
+  .nav-active {
+    color: white !important;
+  }
+</style>
