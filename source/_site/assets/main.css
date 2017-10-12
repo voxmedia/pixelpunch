@@ -22,6 +22,28 @@
             transform: rotate(-3600deg);
     -webkit-transform-origin: center;
             transform-origin: center; } }
+@-webkit-keyframes floaty {
+  0% {
+    -webkit-transform: translateY(-2%);
+            transform: translateY(-2%);
+    -webkit-transform-origin: center;
+            transform-origin: center; }
+  100% {
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+    -webkit-transform-origin: center;
+            transform-origin: center; } }
+@keyframes floaty {
+  0% {
+    -webkit-transform: translateY(-2%);
+            transform: translateY(-2%);
+    -webkit-transform-origin: center;
+            transform-origin: center; }
+  100% {
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+    -webkit-transform-origin: center;
+            transform-origin: center; } }
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -426,16 +448,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-smooth: always;
   background: #161641;
-  color: white;
-  position: relative;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  color: white; }
 
 img,
 video,
@@ -459,7 +472,7 @@ h1 {
   font-size: 3rem;
   line-height: 1rem;
   font-family: "Karla", sans-serif; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 770px) {
     h1 {
       font-size: 4.5rem; } }
 
@@ -474,21 +487,29 @@ h1 {
     border: 2px solid currentColor; }
 
 .body-container {
-  width: 100vw; }
+  width: 100vw;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr auto;
+      grid-template-rows: 1fr auto; }
 
 .header.content-gradient .content-container {
   width: 100vw; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 770px) {
     .header.content-gradient .content-container {
       max-width: 73ch; } }
-  .header.content-gradient .content-container .content .pixel-punch-stacked-logo {
-    max-width: 400px;
-    margin-top: 45vw;
-    -webkit-transform: translateX(-12%);
-            transform: translateX(-12%); }
-    @media screen and (min-width: 768px) {
-      .header.content-gradient .content-container .content .pixel-punch-stacked-logo {
-        margin-top: 20vw; } }
+  .header.content-gradient .content-container .content {
+    padding-bottom: 3em; }
+    .header.content-gradient .content-container .content .pixel-punch-stacked-logo {
+      display: block;
+      max-width: 400px;
+      margin-top: 45vw;
+      -webkit-transform: translateX(-12%);
+              transform: translateX(-12%); }
+      @media screen and (min-width: 770px) {
+        .header.content-gradient .content-container .content .pixel-punch-stacked-logo {
+          margin-top: 20vw; } }
 
 .content-gradient {
   display: -ms-grid;
@@ -499,12 +520,11 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 770px) {
     .content-gradient:not(:last-child) {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
-              justify-content: end;
-      min-height: 100vh; } }
+              justify-content: end; } }
   .content-gradient:nth-child(even) {
     background: -webkit-linear-gradient(top, #391d59 30%, #161641 100%);
     background: linear-gradient(to bottom, #391d59 30%, #161641 100%); }
@@ -514,52 +534,52 @@ h1 {
 
 .content-container {
   max-width: 85vw; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 770px) {
     .content-container {
       max-width: 73ch; } }
 
-.content {
-  padding: 2rem; }
-  @media screen and (min-width: 768px) {
-    .content {
-      margin: 0 auto; } }
-  .content .earth-and-moon {
-    position: absolute;
-    width: 85vw;
-    top: -40vw;
-    left: 0;
-    right: 0;
-    margin: auto; }
-    @media screen and (min-width: 768px) {
-      .content .earth-and-moon {
-        margin: 0;
-        left: -20vw;
-        top: -20vw;
-        width: 60vw; } }
-    .content .earth-and-moon svg {
-      height: 100%; }
-  .content .moon-spin {
-    -webkit-animation: orbit 300s linear infinite alternate;
-            animation: orbit 300s linear infinite alternate; }
-  .content .space-girl {
-    display: none; }
-    @media screen and (min-width: 768px) {
-      .content .space-girl {
-        position: absolute;
-        display: block;
-        left: 3vw;
-        top: 5vw;
-        width: 23vw; } }
-    .content .space-girl svg {
-      height: 100%; }
-  @media screen and (min-width: 768px) {
-    .content .columns {
-      -webkit-column-count: 2;
-         -moz-column-count: 2;
-              column-count: 2; }
-      .content .columns p {
-        -webkit-margin-before: 0;
-        -webkit-margin-after: 0; } }
+@media screen and (min-width: 770px) {
+  .content {
+    padding-right: 2.5em; } }
+.content .earth-and-moon {
+  position: absolute;
+  width: 85vw;
+  top: -40vw;
+  left: 0;
+  right: 0;
+  margin: auto; }
+  @media screen and (min-width: 770px) {
+    .content .earth-and-moon {
+      margin: 0;
+      left: -20vw;
+      top: -20vw;
+      width: 60vw; } }
+  .content .earth-and-moon svg {
+    height: 100%; }
+.content .moon-spin {
+  -webkit-animation: orbit 300s linear infinite alternate;
+          animation: orbit 300s linear infinite alternate; }
+.content .space-girl {
+  display: none; }
+  @media screen and (min-width: 770px) {
+    .content .space-girl {
+      position: absolute;
+      display: block;
+      left: 3vw;
+      top: 5vw;
+      width: 23vw;
+      -webkit-animation: floaty 3000ms ease-in-out infinite alternate;
+              animation: floaty 3000ms ease-in-out infinite alternate; } }
+  .content .space-girl svg {
+    height: 100%; }
+@media screen and (min-width: 770px) {
+  .content .columns {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; }
+    .content .columns p {
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0; } }
 
 .copyright {
   text-align: center; }

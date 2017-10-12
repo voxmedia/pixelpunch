@@ -8,8 +8,10 @@
     }
 
     .content {
+      padding-bottom: 3em;
 
       .pixel-punch-stacked-logo {
+        display: block;
         max-width: 400px;
         margin-top: 45vw;
         transform: translateX(-12%);
