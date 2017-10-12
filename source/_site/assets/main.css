@@ -494,6 +494,16 @@ h1 {
   -ms-grid-rows: 1fr auto;
       grid-template-rows: 1fr auto; }
 
+nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10; }
+
+.nav-active {
+  color: white !important; }
+
 .header.content-gradient .content-container {
   width: 100vw; }
   @media screen and (min-width: 770px) {
