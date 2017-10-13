@@ -1,0 +1,13 @@
+nav {
+    //remove for now
+    display: none;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .nav-active {
+    color: white !important;
+  }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    <div class="body-container">
+
+      {% include header.html %}
+
+      {% include nav.html %}
+
+      {% for post in site.posts reversed %}
+        <section class="content-gradient" id="{{ post.title }}">
+          <div class="content-container">
+            <article class="content {{ post.title }}">
+              {{ post.content }}
+            </article>
+          </div>
+        </section>
+      {% endfor %}
+
+      {% include footer.html %}
+
+    </div>
+
+    <script src="{{ "/js/main.js" | relative_url }}"></script>
+    <script src="{{ "/js/scrollTo.min.js" | relative_url }}"></script>
+    <script src="{{ "/js/nav.js" | relative_url }}"></script>
+  </body>
+</html>

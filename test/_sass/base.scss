@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  letter-spacing: $base-letter-spacing;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smooth: always;
+
+  background: $color-space-darker;
+  color: $color-white;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
+p {
+  font-size: $base-font-size;
+}
+
+a {
+  font-weight: $bold-font-weight;
+  color: currentColor;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: border-width 100ms ease-in-out;
+  &:hover {
+    border-bottom-width: 3px;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1rem;
+  font-family: $base-heading-font;
+
+  @include media-query {
+    font-size: 4.5rem;
+  }
+}
+
+// components and buttons
+.sign-up-button {
+   background: $color_pink;
+   padding: .5em 1.4em;
+   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
+   transition: border 300ms ease;
+   border: 2px solid $color_pink;
+   &:hover {
+      border: 2px solid currentColor;
+   }
+}
