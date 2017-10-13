@@ -2,6 +2,7 @@
 <html lang="en">
   {% include head.html %}
   <body>
+
     <div class="body-container">
 
       {% include header.html %}
@@ -9,13 +10,13 @@
       {% include nav.html %}
 
       {% for post in site.posts reversed %}
-        <section class="content-gradient" id="{{ post.title }}">
+        <div class="content-gradient content-size" id="{{ post.title }}">
           <div class="content-container">
-            <article class="content {{ post.title }}">
+            <section class="content {{ post.title }}">
               {{ post.content }}
-            </article>
+            </section>
           </div>
-        </section>
+        </div>
       {% endfor %}
 
       {% include footer.html %}

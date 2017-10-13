@@ -1,3 +1,18 @@
-.copyright {
-  text-align: center;
+.footer {
+  padding-top: 10vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  a {
+    color: #fff;
+
+    &:hover {
+      opacity: .75;
+    }
+  }
 }
