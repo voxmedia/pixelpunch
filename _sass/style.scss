@@ -19,7 +19,7 @@ $base-letter-spacing: 0.035em !default;
 // this media query overrides mobile styling
 
 // Media Query
-$large-screen:     768px !default;
+$large-screen: 768px !default;
 
 @mixin media-query {
   @media screen and (min-width: $large-screen) {

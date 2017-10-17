@@ -22,20 +22,55 @@
     list-style: none;
     display: flex;
     justify-content: center;
+    position: relative;
+
+    &:after {
+      content: "¯\_(ツ)_/¯";
+      height: 3vw;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      border-right: 1px solid rgba(255,255,255,.5);
+      color: transparent;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+
+    &:last-of-type:after {
+      content: "";
+      border-right: 1px solid rgba(255,255,255,0);
+
+    }
 
     &:nth-child(1){
       a {
         background: #2f7600;
-        height: 2vw;
-        width: 2vw;
+        height: 2.2vw;
+        width: 2.2vw;
       }
     }
 
     &:nth-child(2){
       a {
         background: #ab0018;
-        height: 4vw;
-        width: 4vw;
+        height: 1.5vw;
+        width: 1.5vw;
+      }
+    }
+
+    &:nth-child(3){
+      a {
+        background: #ab0018;
+        height: 1.5vw;
+        width: 1.5vw;
+      }
+    }
+
+    &:nth-child(4){
+      a {
+        background: #ab0018;
+        height: 1.5vw;
+        width: 1.5vw;
       }
     }
 
