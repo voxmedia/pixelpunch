@@ -13,41 +13,17 @@ $base-font-family:    'Open Sans', sans-serif;
 $base-heading-font:   'Karla', sans-serif;
 $base-font-size:      16px !default;
 $base-font-weight:    400 !default;
-$bold-font-weight:    700 !default;
 $base-line-height:    1.5 !default;
 $base-letter-spacing: 0.035em !default;
 
 // this media query overrides mobile styling
 
 // Media Query
-$large-screen:     770px !default;
+$large-screen: 768px !default;
 
 @mixin media-query {
   @media screen and (min-width: $large-screen) {
     @content;
-  }
-}
-
-// animations
-@keyframes orbit {
-  0% {
-    transform: rotate(0deg);
-    transform-origin: center;
-  }
-  100% {
-    transform: rotate(-3600deg);
-    transform-origin: center;
-  }
-}
-
-@keyframes floaty {
-  0% {
-    transform: translateY(-2%);
-    transform-origin: center;
-  }
-  100% {
-    transform: translateY(2%);
-    transform-origin: center;
   }
 }
 
@@ -59,6 +35,9 @@ $large-screen:     770px !default;
   "components/nav",
   "components/header",
   "components/content",
+  "components/intro",
   "components/about",
+  "components/judges",
+  "components/contestants",
   "components/footer"
 ;

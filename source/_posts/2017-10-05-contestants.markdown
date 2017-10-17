@@ -1,18 +1,14 @@
 ---
-title: about
-date: 2017-10-02 12:00:00
+title: contestants
+date: 2017-10-05 12:00:00
+published: false
 ---
-<div class="astronaut">
-  <div class="astronaut-container">
-    {% include svgs/astronaut.html %}
-  </div>
+
+<div class="saturn">
+  {% include svgs/saturn.html %}
 </div>
 
-<div class="mars">
-  {% include svgs/mars.html %}
-</div>
-
-# ABOUT
+# CONTESTANTS
 
 Join Vox Media on Tuesday, November 7 at 6:30pm for an interstellar night of pixel pushing at its finest.
 

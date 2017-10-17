@@ -1,0 +1,18 @@
+.judges {
+
+  .jupiter {
+    position: relative;
+    height: 65vw;
+    width: 65vw;
+    top: -5vw;
+    left: 10vw;
+
+    @include media-query {
+      position: absolute;
+      height: 65vw;
+      width: 65vw;
+      top: -5vw;
+      left: -30vw;
+    }
+  }
+}

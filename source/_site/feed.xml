@@ -1,26 +1,65 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-12T16:24:16+00:00</updated><id>http://localhost:4000/</id><title type="html">Beat</title><subtitle>TBD.</subtitle><entry><title type="html">about</title><link href="http://localhost:4000/2017/10/02/about.html" rel="alternate" type="text/html" title="about" /><published>2017-10-02T12:00:00+00:00</published><updated>2017-10-02T12:00:00+00:00</updated><id>http://localhost:4000/2017/10/02/about</id><content type="html" xml:base="http://localhost:4000/2017/10/02/about.html">&lt;svg class=&quot;space-girl&quot; id=&quot;pixel-punch-spacegirl&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1157.4 1080&quot;&gt;
-	&lt;style&gt;
-	  .space-pink{fill:#E40B79;} .space-white{fill:#FFFFFF;} .space-black{fill:#161641;} .stopac{opacity:0.3;fill:url(#SVGID_1_);}
-	&lt;/style&gt;
-	&lt;g id=&quot;astronaut&quot;&gt;
-	  &lt;path class=&quot;space-pink&quot; d=&quot;M669 903.4c-23 0-44.7-9-61-25.3-3.4-3.3-6.5-7-9.3-11l-16 18.3c-12.5 14-11.2 35.8 3 48.3l41 36.2c14.2 12.4 36 11 48.4-3l36.3-41.2c9-10.3 10.8-24.8 5.5-36.6-14 9.4-30.5 14.4-47.7 14.4z&quot; /&gt;
-	  &lt;path class=&quot;space-white&quot; d=&quot;M669.3 892c-20 0-39-7.7-53.2-22-14-14.2-22-33-22-53.2 0-20 7.8-39 22-53.2 14.3-14.2 33.2-22 53.3-22 20 0 39 7.7 53.2 22 14.2 14.2 22 33 22 53.2 0 20-7.7 39-22 53.2-14.2 14.3-33 22-53.2 22z&quot; /&gt;
-	  &lt;ellipse transform=&quot;rotate(-45 669.283 816.825)&quot; class=&quot;space-black&quot; cx=&quot;669.3&quot; cy=&quot;816.8&quot; rx=&quot;58.2&quot; ry=&quot;58.2&quot; /&gt;
-	  &lt;path class=&quot;space-white&quot; d=&quot;M702.3 849.8l-7.8-7.8c6.7-6.7 10.4-15.7 10.4-25.2s-3.8-18.5-10.5-25.2l7.8-7.8c18.2 18.2 18.2 47.8 0 66z&quot; /&gt;
-	  &lt;path class=&quot;space-white&quot; d=&quot;M448 981.4c-6.7-6.6-12.2-13.8-16-20.8l-18.2 18c-9.7 9.8-9.7 25.5 0 35.2 4.8 4.8 11.2 7.3 17.5 7.3s12.7-2.3 17.5-7.2l17.6-17.6c-6-3.8-12.6-9-18.5-14.8z&quot; /&gt;
-	  &lt;path class=&quot;space-white&quot; d=&quot;M502.4 1036c-6.3-6.4-11.6-13.2-15.4-19.8l-17.8 17.8c-9.7 9.7-9.7 25.4 0 35 4.8 5 11.2 7.4 17.5 7.4s12.7-2.4 17.5-7.3l17.8-17.7c-6.5-4-13.3-9-19.6-15.4z&quot; /&gt;
-	  &lt;path class=&quot;space-white&quot; d=&quot;M688.2 901c-6 1.5-12.5 2.2-19 2.2-23 0-44.7-9-61-25.3-16.3-16.4-25.3-38-25.3-61.2 0-3.3 0-6.5.5-9.8-12.7-2.6-22.3-14-22.3-27.4 0-15.4 12.6-28 28-28 12.2 0 22-10 22-22s-10-22-22-22c-39.7 0-72 32.3-72 72 0 26 13.7 48.8 34.3 61.5l-1.6 1.7-.7.6-109.2 109c3.3 7 9 14.5 15.7 21.3 6 6 12.8 11 19 14.5L523 940l20.2 20.2-48 48c3.3 6.5 8.6 13.6 15 20 6.4 6.5 13.6 11.8 20 15l63.7-63.5c1-.8 2.2-1.8 3.3-3l53-53c2.7 4.3 4.2 9.3 4.2 14.6 0 15.5-12.6 28-28 28-12.2 0-22 10-22 22s10 22 22 22c39.7 0 72-32.2 72-72 0-13.4-3.8-26-10.3-37z&quot; /&gt;
-	&lt;/g&gt;
-	&lt;path class=&quot;space-pink&quot; d=&quot;M624 993.2c-1 0-2.2-.3-3.2-1-22-16.2-31-44.7-40-72.3-6-19-12.4-38.7-22.8-53-10.2-14-26-25.5-42.6-37.7-23.6-17.2-48-35-56.4-61.3-8-25 1-53.2 9.7-80.3 6.3-19.4 12.7-39.5 12.7-58 0-21.6-3-44.4-5.7-66.5-5.8-45.3-11.8-92 7.3-131 19.8-40.4 61-64.4 100.8-87.6 18.7-11 38-22.2 54.3-34.8 16-12.4 30.8-27.5 46.4-43.4 32.3-33 65.8-67.2 110.7-76.5 3-.7 6 1.2 6.6 4.2.6 3-1.3 6-4.3 6.5-41.6 8.6-74 41.5-105 73.4-15.3 15.6-31 31.7-47.5 44.5-16.8 13-36.5 24.6-55.5 35.6-38.4 22.5-78 45.6-96.4 83-17.7 36-12.2 79.2-6.4 124.8 3 22.4 5.8 45.6 5.8 68 0 20.2-6.7 41-13.3 61.3-8.5 26.7-16.6 52-9.6 73.6 7.4 23 30.3 39.6 52.4 55.7 16.6 12 34 24.7 45 40 11.5 15.8 18 36.3 24.4 56 8.7 27.2 17 52.7 36 66.8 2.5 2 3 5.4 1.2 7.8-1 1.6-2.6 2.4-4.3 2.4z&quot; id=&quot;string&quot; /&gt;
-	&lt;g id=&quot;spaceship&quot;&gt;
-	  &lt;linearGradient id=&quot;SVGID_1_&quot; gradientUnits=&quot;userSpaceOnUse&quot; x1=&quot;330.6&quot; y1=&quot;616&quot; x2=&quot;766.8&quot; y2=&quot;187.6&quot; gradientTransform=&quot;matrix(1.1014 -.1014 -.1014 1.1014 -73.645 73.645)&quot;&gt;
-		&lt;stop offset=&quot;0&quot; stop-color=&quot;#FFF&quot; stop-opacity=&quot;0&quot; /&gt;
-		&lt;stop offset=&quot;1&quot; stop-color=&quot;#FFF&quot; /&gt;
-	  &lt;/linearGradient&gt;
-	  &lt;polygon class=&quot;stopac&quot; points=&quot;62.7,808.4 141.2,886.8 782.2,245.8 703.7,167.3&quot; /&gt;
-	  &lt;path class=&quot;space-white&quot; d=&quot;M940 9.4c-23.7-23.8-115 28.8-203.5 117.4-2 2-4 4.2-6.2 6.2-14.6 4.6-29.4 7.5-44 8.8l-28 2.4c-24.8 2-49.5 14-68.6 33-1.3 1.4 48 48 57.3 57.3-8.4 12.8-15.4 25-20.7 36-3.6 7.5 0 18.8 8.6 27.5l16.6 16.7c8.7 8.7 20 12.2 27.4 8.6 11-5.4 23.2-12.3 36-20.7 9.3 9.2 56 58.6 57.3 57.3 19-19.2 31-44 33-68.8l2.5-27.8c1.3-14.7 4.2-29.6 8.8-44l6.2-6.3C911.4 124.5 963.8 33.3 940 9.5z&quot; /&gt;
-	&lt;/g&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-17T19:26:49+00:00</updated><id>http://localhost:4000/</id><title type="html">Beat</title><subtitle>In this 4th year of Pixel Punch, we will be challenging four brave designers do their best Captain Kirk and puzzle their way through galactic challenges guaranteed to test their creativity, fortitude and ability to think on their feet. We’re excited to bring together friends, new and old, to explore new solar systems together. We’ve got the starship, you bring your skills.</subtitle><entry><title type="html">about</title><link href="http://localhost:4000/2017/10/02/about.html" rel="alternate" type="text/html" title="about" /><published>2017-10-02T12:00:00+00:00</published><updated>2017-10-02T12:00:00+00:00</updated><id>http://localhost:4000/2017/10/02/about</id><content type="html" xml:base="http://localhost:4000/2017/10/02/about.html">&lt;div class=&quot;astronaut&quot;&gt;
+  &lt;div class=&quot;astronaut-container&quot;&gt;
+    &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;svg width=&quot;755px&quot; height=&quot;1074px&quot; viewBox=&quot;0 0 755 1074&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;
+    &lt;!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --&gt;
+    &lt;title&gt;pixel-punch_object-ship-astronaut&lt;/title&gt;
+    &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
+    &lt;defs&gt;
+        &lt;linearGradient x1=&quot;22.9836481%&quot; y1=&quot;76.6196042%&quot; x2=&quot;95.794099%&quot; y2=&quot;4.88692948%&quot; id=&quot;linearGradient-1&quot;&gt;
+            &lt;stop stop-color=&quot;#FFFFFF&quot; stop-opacity=&quot;0&quot; offset=&quot;0%&quot;&gt;&lt;/stop&gt;
+            &lt;stop stop-color=&quot;#FFFFFF&quot; offset=&quot;100%&quot;&gt;&lt;/stop&gt;
+        &lt;/linearGradient&gt;
+    &lt;/defs&gt;
+    &lt;g id=&quot;Page-1&quot; stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+        &lt;g id=&quot;pixel-punch_object-ship-astronaut&quot; transform=&quot;translate(-129.000000, 0.000000)&quot; fill-rule=&quot;nonzero&quot;&gt;
+            &lt;g id=&quot;Astronaut&quot; transform=&quot;translate(344.000000, 704.000000)&quot;&gt;
+                &lt;path d=&quot;M263.1,196.4 C240,196.4 218.3,187.4 202,171.1 C198.6,167.7 195.5,164 192.7,160.1 L176.6,178.3 C164.2,192.4 165.5,214.1 179.7,226.6 L220.8,262.8 C234.9,275.2 256.6,273.9 269.1,259.7 L305.3,218.6 C314.4,208.3 316.1,193.8 310.8,182 C296.8,191.4 280.3,196.4 263.1,196.4 Z&quot; id=&quot;Shape&quot; fill=&quot;#E40B79&quot;&gt;&lt;/path&gt;
+                &lt;path d=&quot;M263.3,185.1 C243.2,185.1 224.3,177.3 210.1,163 C195.9,148.8 188,129.9 188,109.8 C188,89.7 195.8,70.8 210.1,56.6 C224.3,42.4 243.2,34.5 263.3,34.5 C283.4,34.5 302.3,42.3 316.5,56.6 C330.7,70.8 338.6,89.7 338.6,109.8 C338.6,129.9 330.8,148.8 316.5,163 C302.3,177.3 283.4,185.1 263.3,185.1 Z&quot; id=&quot;Shape&quot; fill=&quot;#FFFFFF&quot;&gt;&lt;/path&gt;
+                &lt;circle id=&quot;Oval&quot; fill=&quot;#161641&quot; transform=&quot;translate(263.277010, 109.795250) rotate(-45.000000) translate(-263.277010, -109.795250) &quot; cx=&quot;263.27701&quot; cy=&quot;109.79525&quot; r=&quot;58.1994419&quot;&gt;&lt;/circle&gt;
+                &lt;path d=&quot;M296.3,142.8 L288.5,135 C295.2,128.3 298.9,119.3 298.9,109.8 C298.9,100.3 295.2,91.3 288.5,84.6 L296.3,76.8 C314.5,95 314.5,124.6 296.3,142.8 Z&quot; id=&quot;Shape&quot; fill=&quot;#FFFFFF&quot;&gt;&lt;/path&gt;
+                &lt;g id=&quot;Group&quot; fill=&quot;#FFFFFF&quot;&gt;
+                    &lt;path d=&quot;M41.9,274.4 C35.3,267.8 29.8,260.6 25.9,253.6 L7.8,271.7 C-1.9,281.4 -1.9,297.1 7.8,306.8 C12.6,311.6 19,314.1 25.3,314.1 C31.6,314.1 38,311.7 42.8,306.8 L60.4,289.2 C54.3,285.4 47.8,280.3 41.9,274.4 Z&quot; id=&quot;Shape&quot;&gt;&lt;/path&gt;
+                    &lt;g transform=&quot;translate(34.000000, 0.000000)&quot; id=&quot;Shape&quot;&gt;
+                        &lt;path d=&quot;M62.4,328.9 C56.1,322.6 50.8,315.8 47,309.2 L29.2,327 C19.5,336.7 19.5,352.4 29.2,362.1 C34,366.9 40.4,369.4 46.7,369.4 C53,369.4 59.4,367 64.2,362.1 L82,344.3 C75.5,340.4 68.7,335.2 62.4,328.9 Z&quot;&gt;&lt;/path&gt;
+                        &lt;path d=&quot;M248.2,194.1 C242.1,195.5 235.7,196.2 229.3,196.2 C206.2,196.2 184.5,187.2 168.2,170.9 C151.9,154.6 142.9,132.9 142.9,109.8 C142.9,106.5 143.1,103.3 143.5,100 C130.8,97.4 121.2,86.1 121.2,72.6 C121.2,57.2 133.8,44.6 149.2,44.6 C161.4,44.6 171.2,34.7 171.2,22.6 C171.2,10.5 161.3,0.6 149.2,0.6 C109.5,0.6 77.1,32.9 77.1,72.7 C77.1,98.7 90.9,121.4 111.5,134.1 L109.9,135.7 C109.7,135.9 109.5,136.1 109.3,136.3 L0.1,245.4 C3.3,252.2 8.9,259.8 15.7,266.6 C21.7,272.6 28.5,277.7 34.7,281.1 L83,232.8 L103.2,253 L55.2,301 C58.5,307.5 63.8,314.6 70.2,321.1 C76.6,327.5 83.8,332.8 90.3,336.1 L153.9,272.5 C155.1,271.7 156.2,270.7 157.3,269.6 L210.4,216.5 C213,220.8 214.5,225.8 214.5,231.1 C214.5,246.5 201.9,259.1 186.5,259.1 C174.3,259.1 164.5,269 164.5,281.1 C164.5,293.2 174.4,303.1 186.5,303.1 C226.2,303.1 258.6,270.8 258.6,231 C258.5,217.6 254.7,204.9 248.2,194.1 Z&quot;&gt;&lt;/path&gt;
+                    &lt;/g&gt;
+                &lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g id=&quot;String&quot; transform=&quot;translate(393.000000, 186.000000)&quot; fill=&quot;#E30B79&quot;&gt;
+                &lt;path d=&quot;M169.1,804.2 C168,804.2 166.8,803.9 165.8,803.1 C143.8,787 134.7,758.5 125.8,730.9 C119.7,711.9 113.4,692.3 103,678 C92.8,663.9 77.1,652.5 60.4,640.3 C36.8,623.1 12.5,605.4 4,579 C-4.1,553.9 4.9,525.8 13.7,498.7 C20,479.3 26.4,459.2 26.4,440.8 C26.4,419.1 23.5,396.3 20.7,374.2 C14.9,328.9 8.9,282.2 28,243.2 C47.8,202.8 89,178.8 128.8,155.6 C147.5,144.7 166.9,133.4 183.1,120.8 C199,108.4 213.8,93.3 229.4,77.4 C261.7,44.4 295.2,10.2 340.1,0.9 C343.1,0.3 346,2.2 346.6,5.2 C347.2,8.2 345.3,11.1 342.3,11.7 C300.7,20.3 268.4,53.2 237.2,85.1 C222,100.6 206.3,116.7 189.8,129.5 C173,142.6 153.3,154.1 134.3,165.1 C95.9,187.5 56.2,210.6 37.9,248.1 C20.3,284 25.8,327.2 31.6,372.8 C34.5,395.2 37.4,418.4 37.4,440.8 C37.4,461 30.7,481.9 24.1,502.1 C15.5,528.7 7.4,553.9 14.4,575.6 C21.8,598.5 44.7,615.2 66.8,631.3 C83.4,643.4 100.7,656 111.9,671.4 C123.3,687.1 129.9,707.6 136.2,727.4 C144.9,754.5 153.1,780 172.2,794.1 C174.7,795.9 175.2,799.4 173.4,801.8 C172.4,803.4 170.8,804.2 169.1,804.2 Z&quot; id=&quot;Shape&quot;&gt;&lt;/path&gt;
+            &lt;/g&gt;
+            &lt;g id=&quot;Spaceship&quot;&gt;
+                &lt;polygon id=&quot;Shape&quot; fill=&quot;url(#linearGradient-1)&quot; opacity=&quot;0.3&quot; points=&quot;0.7 805.4 79.2 883.8 720.2 242.8 641.7 164.3&quot;&gt;&lt;/polygon&gt;
+                &lt;path d=&quot;M878.1,6.4 C854.3,-17.4 763.1,35.2 674.5,123.8 C672.4,125.9 670.4,128 668.3,130 C653.7,134.6 638.9,137.5 624.2,138.8 L596.4,141.2 C571.5,143.3 546.8,155.2 527.7,174.3 C526.4,175.6 575.8,222.3 585,231.5 C576.6,244.3 569.6,256.5 564.3,267.6 C560.7,275 564.2,286.3 572.9,295 L589.6,311.7 C598.3,320.4 609.6,323.9 617,320.3 C628.1,314.9 640.2,308 653.1,299.6 C662.3,308.8 709,358.2 710.3,356.9 L710.3,356.9 C729.4,337.8 741.3,313.1 743.4,288.2 L745.8,260.4 C747.1,245.7 750,230.8 754.6,216.3 C756.7,214.3 758.8,212.2 760.8,210.1 C849.4,121.4 901.9,30.2 878.1,6.4 Z&quot; id=&quot;Shape&quot; fill=&quot;#FFFFFF&quot;&gt;&lt;/path&gt;
+            &lt;/g&gt;
+        &lt;/g&gt;
+    &lt;/g&gt;
 &lt;/svg&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;mars&quot;&gt;
+  &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;svg width=&quot;141px&quot; height=&quot;141px&quot; viewBox=&quot;0 0 141 141&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;
+    &lt;!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --&gt;
+    &lt;title&gt;pixel-punch_planet-mars&lt;/title&gt;
+    &lt;desc&gt;Created with Sketch.&lt;/desc&gt;
+    &lt;defs&gt;
+        &lt;linearGradient x1=&quot;50%&quot; y1=&quot;0%&quot; x2=&quot;50%&quot; y2=&quot;100%&quot; id=&quot;linearGradient-4&quot;&gt;
+            &lt;stop stop-color=&quot;#F5515F&quot; offset=&quot;0%&quot;&gt;&lt;/stop&gt;
+            &lt;stop stop-color=&quot;#9F041B&quot; offset=&quot;75%&quot;&gt;&lt;/stop&gt;
+        &lt;/linearGradient&gt;
+    &lt;/defs&gt;
+    &lt;g id=&quot;Page-1&quot; stroke=&quot;none&quot; stroke-width=&quot;1&quot; fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;&gt;
+        &lt;g id=&quot;pixel-punch_planet-mars&quot; fill=&quot;url(#linearGradient-4)&quot;&gt;
+            &lt;circle id=&quot;Oval&quot; cx=&quot;70.5&quot; cy=&quot;70.5&quot; r=&quot;70.5&quot;&gt;&lt;/circle&gt;
+        &lt;/g&gt;
+    &lt;/g&gt;
+&lt;/svg&gt;
+
+&lt;/div&gt;
 
 &lt;h1 id=&quot;about&quot;&gt;ABOUT&lt;/h1&gt;
 
@@ -34,4 +73,113 @@
   &lt;p&gt;Vox Media is a prestigious modern media company that believes in the power of going deeper to connect with global, passionate, curious audiences. Through our authoritative house of brands, commitment to developing standout technology, and high-fidelity advertising, we are shaping the future of journalism and entertainment.&lt;/p&gt;
 
   &lt;p&gt;The Vox Media product team is made up of designers, developers, operations engineers, and product and community managers, based in Washington, DC, New York, Chicago, SF and Austin, and distributed remotely in cities from Santa Barbara, California to Springfield, Missouri.&lt;/p&gt;
-&lt;/div&gt;</content><author><name></name></author><summary type="html"></summary></entry></feed>
+&lt;/div&gt;</content><author><name></name></author><summary type="html">pixel-punch_object-ship-astronaut Created with Sketch.</summary></entry><entry><title type="html">intro</title><link href="http://localhost:4000/2017/10/01/intro.html" rel="alternate" type="text/html" title="intro" /><published>2017-10-01T12:00:00+00:00</published><updated>2017-10-01T12:00:00+00:00</updated><id>http://localhost:4000/2017/10/01/intro</id><content type="html" xml:base="http://localhost:4000/2017/10/01/intro.html">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  --&gt;
+&lt;svg class=&quot;earth-and-moon&quot; version=&quot;1.1&quot; id=&quot;Layer_1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; x=&quot;0px&quot; y=&quot;0px&quot; viewBox=&quot;0 0 675.3 675&quot; style=&quot;enable-background:new 0 0 675.3 675;&quot; xml:space=&quot;preserve&quot;&gt;
+&lt;style type=&quot;text/css&quot;&gt;
+	.st0{fill:#4A90E2;}
+	.st1{fill:#417505;}
+	.st2{fill:#F5F5F5;fill-opacity:0.8;}
+	.st3{fill:#FFFFFF;fill-opacity:0.8;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-opacity:0.1;}
+	.st5{fill:#D2D2D2;}
+	.st6{fill:none;}
+&lt;/style&gt;
+&lt;title&gt;pixel-punch-planet-and-moon&lt;/title&gt;
+&lt;desc&gt;Created with Sketch.&lt;/desc&gt;
+&lt;g id=&quot;Page-1&quot;&gt;
+	&lt;g id=&quot;pixel-punch-planet-and-moon&quot; transform=&quot;translate(0.000000, -37.000000)&quot;&gt;
+		&lt;g id=&quot;pixel-punch-planet-earth&quot; transform=&quot;translate(39.781465, 39.621519)&quot;&gt;
+			&lt;circle id=&quot;earth-planet-base&quot; class=&quot;st0&quot; cx=&quot;297.6&quot; cy=&quot;334.8&quot; r=&quot;159.6&quot; /&gt;
+			&lt;g id=&quot;earth-land-mass&quot; transform=&quot;translate(242.000000, 188.500000)&quot;&gt;
+				&lt;path id=&quot;Shape&quot; class=&quot;st1&quot; d=&quot;M3.4,271.2c2.5-2.6,5-4,7.5-4.3c3.7-0.3,8,1,9-0.3c1-1.3,2-4,1-5.7c-1-1.6-1-4.4,1-5.6
+					c2-1.2,1-8.3-1-10c-2-1.6-7.6-3-10,0c-2.7,3-2.2,10.6-5,11.7c-3.2,1-5.3,10-5,12.5c0.5,1.8,1.3,2.3,2.4,1.8L3.4,271.2z
+					 M157.7,269.4c-20,17-47,30.2-74.3,34.7c-25.8,4.6-52,2.8-76.5-5c-3.7-1.6-1.2-3,6.4-3.4c11.4-0.7,17-2,21.4-3
+					c4.6-1,6.8-2.8,6-4.2c-1-1.4-1.5-4.4-3.7-6c-2-1.5-3.7-4-3.5-7s-0.7-7,5.7-8.4c6.3-1.3,10.7-3.4,11-4c0.6-1,3.5-3.5,1.8-6
+					c-1.6-2.7-1-8.3,3-9.4c4-1.2,4.7-3.8,5-6c0-2,7-11.4,11-15.4c4.4-4,9-8.4,10-8.7s2.8-1.4,7,0c4.4,1.4,8-3,10.3-3.6
+					c2.3-0.3,6-0.6,6,2.2c-0.3,3-0.3,4,2.6,7c3,3,8.5,8.4,9,10c0.5,2,3,8.2,3,10c-0.4,2,9.2,8,9.2,9.2s0.7,9.8-5,13.4
+					c-5.8,3.6,1,9.7,2.3,9.7c1.3,0,11.4,3,18.4,0c4.5-2,10.6-5.2,18-9.8l-4.3,3.8L157.7,269.4z M182,51.9c-9-9-12.6-12.4-17.7-14
+					c-7.6-2.2-9,0.6-6,3.2c3,2.7,7.7,1.8,10,4.5c2,2.6,6,6,7,6.6c0.6,0.4,5.3,3.6,7.3,6.4c2,2.7,6.8,7,7,9c0.2,1.8,4.8,6.5,4.8,10
+					c0,3.4,1.7,8.2,3.8,9c2,0.6,2.6,6.6,3.4,8c0.7,1.4,3.6,12.4,5.4,16c2,4,5.4,13.7,6,18c0.3,4.7,0.8,32.2,0.3,36
+					c-0.4,3.7,5.4-21.8-0.4-49.3c-3.7-17.3-11-36.6-22-54.3l-9-9L182,51.9z&quot; /&gt;
+				&lt;path id=&quot;Shape_1_&quot; class=&quot;st1&quot; d=&quot;M198.4,174.9c-1.4,9.2-3.6,16-6,20.6c-3.5,6.8-9.4,20.7-11.3,22c-2,1.2,3.7-9.4,2-13.4
+					c-1.3-4,2.2-8.3,3.8-9.6c1.6-1.3,3.6-5,4.7-6.8c1-1,3.2-5.3,7-13L198.4,174.9z&quot; /&gt;
+			&lt;/g&gt;
+			&lt;g id=&quot;earth-ice-cap&quot; transform=&quot;translate(198.000000, 151.500000)&quot;&gt;
+				&lt;path id=&quot;Shape_2_&quot; class=&quot;st2&quot; d=&quot;M184.3,82.9c-4.4-3-7-5.2-7.3-6.5c-0.6-2-1.4-5.7-4-5.7c-3,0-9.4-7-12.4-7.5s-5,0.4-9.3-1.8
+					c-4.4-2-16.4-10-20.4-10c-4,0,0-1.6,0-3.6s-3-1.8-6.5-3c-3.6-1.5-6-4-12.3-5.6c-6-1.4-16.4-3-20.5-1.4c-4,1.4-9.7,1.4-13,1.4
+					c-3,0-25.3,7-30.7,9.6c-5.6,2.6-20.4,8.4-23.8,12.6c-3.4,4-10.4,11.4-10.5,12.7c0,1.3-4.3,5.6-5,8c-0.4,2-2.5,5.2-0.4,5.5
+					c2.1,0.3,0,4.6-2,6.6c-2.2,2-2.5,9.3-4,9.6c-1.4,0.5-1.4,3.3,0,5c1.6,1.5,0,1.3,0,3.3s1,3.2,1.6,4.6c0.6,1.3-3,5.6,0.6,5.6
+					s5.7,2,3,2.7c-3,0.7-6.7,2.7-6.7,4c0,1.5,0,6.2,1.3,6.7c1.6,0.5,1-6.4,5.2-5.2c4,1.3,3.6,5,4,6c0.5,1.2,1,5.8,0.5,9.4
+					c-0.4,3.4,1,8.6-0.4,9.4c-1.3,1-1.6,3,1.3,3.6c2.8,0.4,5.6,5.4,8.5,5c3-0.3,7-3.3,8.4-1.6c1.5,1.7,3.5,3.6,8.6,3.4
+					c5,0,5.4,3.7,5,5.4c-0.3,1.6,3.6,4.7,8,1.6c4.5-3,5.8,5,8,5.3c2.4,0,7.2,1.7,13.3-1.8c6-3.6,4,3,2.8,3.6
+					c-1.2,0.7,1.4,0.3,6.4-0.6c5-1,2,2.7,3.6,3c1.3,0.2,8-3,10.2-3c2.4,0,5.4,1.4,4,3c-1.7,1.3,5,1.3,5.6-4c0.7-5.3,5.4-0.7,4,1.7
+					c-1.5,2.4-3,4.2-1.5,4.7c1.5,0.6,4.8,3.4,6.4,2.4c1.6-0.8,5.7-0.2,3,1c-3,1.2-2.4,3,0,3.7c2,0.7,1.8,2.3,4.5,2.3
+					c2.8,0,5.8-1.4,9.2-1.4c3.4,0,6.6,2,4.6,2.6c-2,0.6-1.4,2.7,0,2.7c1.4,0,7-1.7,9.4-3c2.3-1,8.2-3.6,12-3.6c3.6,0,9-9.3,11-9.3
+					c1.8,0,5-3.2,6-7c1-3.8,4.7-7.4,7-9c2.5-1.7,6.3-4.4,6-6.8c-0.4-2.4,3.3-4.3,5-6c1.8-1.7,2.2-7,3.7-7c1,0,2,2.4,3,2
+					c1,0,1-2.3,1-6c0-3.6-0.8-8,0-11.3c1-3.2,0.3-11.5-1-14c-1.4-2.5-2.4-9.7-6-14c-3.3-4.4-8.5-13.2-6-13c2.4,0,4,3.4,5,4.3
+					L183.6,83L184.3,82.9z&quot; /&gt;
+				&lt;path id=&quot;Shape_3_&quot; class=&quot;st3&quot; d=&quot;M115.4,52.4c-12-0.7-21.4,0.7-28.2,4.3c-10,5.6-18.6,5.7-19,9.6c0,4-1.7,0.7-6-1
+					c-4-1.3-8.8-5.3-14.5-3.5c-5.7,1.7-13.6,5.3-15,7.4c-1.7,2-4.5,3.4-8,7c-3.4,3.8-6.4,7.8-6,9.5c0.3,1.6,1.6,4-0.4,6
+					c-2,1.8,0,2.6,0,6c0,3.3-4,8.5-2,9c2,0.7,2.3,3.2,2.3,5c0,1.7-1,5,0,5.7s2.6,2.6,1,5c-1.3,2.2,3-1,5-1.3c2-0.3,4.5,1.2,4,4
+					c-0.6,3,0.7,5.8,4,6.5c3,0.6,10.8-3.8,13-3.5c2,0.4,7.8,1,6.2,5c-1.4,4,2,7.4,7,9c5,1.7,8.6,4.3,6.8,5.7c-1.7,1.4,1.8,6,5,4.6
+					c3.4-1.3,10-5.4,13.4-5.6c3.2-0.2,7.7-3.4,7.7-4.7c0-1.2,5.4-1,5.7,1.3c0.2,2,3.6,1,6.4-1.3c3-2.3,8.6-4,14.3-3c5.8,1,5-0.7,9-3
+					c4-2,6-4.6,10.5-3c4.6,1.6,7-5,7.6-8c0.8-3,3.5-13,0.8-17c-2.6-4-9-12.3-6.7-16.7c2.2-4.5,4-7,8-8s5,0,10,0c4.6,0,8.6,0.4,12,2
+					c3.4,1.6,6.3,1.3,8.6,2.6c2,1.3,5.7-0.5-1.4-4.4s-12.4-8-14.4-8.8c-2-1-2.6,0-5,0c-2.2,0-1.3-0.7-4.8-3.3
+					c-3.4-2.7-5.7-8.7-9.3-10.3c-3.6-1.6-5.4-1.6-7.6-1.6c-2,0-5.3-4-7.8-4.7l-11.7-3v0.2L115.4,52.4z&quot; /&gt;
+			&lt;/g&gt;
+			&lt;circle id=&quot;earth-orbit&quot; class=&quot;st4&quot; cx=&quot;298&quot; cy=&quot;334.9&quot; r=&quot;297.9&quot; /&gt;
+		&lt;/g&gt;
+		&lt;g id=&quot;pixel-punch-moon&quot; class=&quot;moon-spin&quot;&gt;
+			&lt;circle id=&quot;moon-shape&quot; class=&quot;st5&quot; cx=&quot;39.8&quot; cy=&quot;374.5&quot; r=&quot;39.5&quot; /&gt;
+			&lt;circle id=&quot;moon-shape_1_&quot; class=&quot;st6&quot; cx=&quot;635.8&quot; cy=&quot;374.5&quot; r=&quot;39.5&quot; /&gt;
+			&lt;circle id=&quot;moon-shape_2_&quot; class=&quot;st6&quot; cx=&quot;337.4&quot; cy=&quot;76.5&quot; r=&quot;39.5&quot; /&gt;
+			&lt;circle id=&quot;moon-shape_3_&quot; class=&quot;st6&quot; cx=&quot;337.8&quot; cy=&quot;672.5&quot; r=&quot;39.5&quot; /&gt;
+		&lt;/g&gt;
+	&lt;/g&gt;
+&lt;/g&gt;
+&lt;/svg&gt;
+
+&lt;div class=&quot;logo&quot;&gt;
+  &lt;svg class=&quot;pixel-punch-stacked-logo&quot; id=&quot;pixel-punch-stacked&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 277.92001 162&quot;&gt;
+  &lt;defs&gt;
+    &lt;style&gt;.punch-stacked { fill: #fff; } .cls-2 { mask: url(#mask); } .cls-3 { mask: url(#mask-2-2); }&lt;/style&gt;
+    &lt;mask id=&quot;mask&quot; x=&quot;163&quot; y=&quot;100.46&quot; width=&quot;56.86&quot; height=&quot;61.54&quot; maskUnits=&quot;userSpaceOnUse&quot;&gt;&lt;g id=&quot;mask-2&quot;&gt;&lt;polygon id=&quot;path-1&quot; class=&quot;punch-stacked&quot; points=&quot;163.001 162 219.83 162 219.83 100.459 163.001 100.459 163.001 162&quot; /&gt;&lt;/g&gt;&lt;/mask&gt;&lt;mask id=&quot;mask-2-2&quot; x=&quot;215.84&quot; y=&quot;84.44&quot; width=&quot;62.08&quot; height=&quot;66.52&quot; maskUnits=&quot;userSpaceOnUse&quot;&gt;
+      &lt;g id=&quot;mask-4&quot;&gt;&lt;polygon id=&quot;path-3&quot; class=&quot;punch-stacked&quot; points=&quot;277.91 150.94 277.91 84.439 215.838 84.439 215.838 150.94 277.91 150.94&quot; /&gt;&lt;/g&gt;&lt;/mask&gt;
+  &lt;/defs&gt;
+  &lt;title&gt;pixel-punch&lt;/title&gt;
+  &lt;path id=&quot;Fill-11&quot; class=&quot;punch-stacked&quot; d=&quot;M45.46 96.15H56.7c5.36 0 8.04 2.7 8.04 8.15q0 8.16-8.03 8.15H45.48v-16.3zm11.7 26.83c6.2 0 10.95-1.7 14.2-5.13q4.9-5.13 4.9-13.55c0-5.14-1.4-9.35-4.13-12.65L83 80.72 79.3 77 68.14 88.22a21.4 21.4 0 0 0-11-2.6h-23v8.62L12 116.5l3.7 3.7 18.43-18.52v19.75L22.63 133l3.7 3.7 7.8-7.83V147h11.33v-6.9l9.4-9.46-3.7-3.72-5.7 5.74v-9.68z&quot; /&gt;
+  &lt;path id=&quot;Fill-13&quot; class=&quot;punch-stacked&quot; d=&quot;M110.27 105.62l-11.82 11.83 3.67 3.68 8.15-8.16v3.4l-8.8 8.8 3.67 3.7 4.72-4.74a20.26 20.26 0 0 1-2.5 7.3q-2.9 4.75-7.05 4.76-6.2 0-6.2-7.2v-28H83.34v13.87L65 133.25l3.67 3.67 14.68-14.7v9.98q0 6.42 3.68 9.8a4.6 4.6 0 0 0 .5.4l-4.9 4.92L86.3 151l6.12-6.14a17.5 17.5 0 0 0 4.34.52q8.14 0 13.5-7.72v7.02H121V101h-10.73z&quot; /&gt;
+  &lt;path id=&quot;Fill-15&quot; class=&quot;punch-stacked&quot; d=&quot;M170.25 143.94v-22.7l8.75-8.52-3.66-3.56-5.1 4.96v-.37c0-4.14-1.2-7.3-3.65-9.48a14.1 14.1 0 0 0-9.7-3.27q-8.14 0-13.47 7.47v-6.8h-10.7v10.94L122 123.08l3.66 3.56 7.1-6.9v21.34l-10.68 10.38 3.65 3.56 11.37-11.05h6.34V127.1c0-5.33.96-9.52 2.9-12.6 1.9-3.07 4.25-4.6 7-4.6 3.6 0 5.62 1.74 6.1 5.2l-10.53 10.25 3.68 3.56 7-6.8v21.85h10.68z&quot; /&gt;
+  &lt;g class=&quot;cls-2&quot; id=&quot;Group-19&quot;&gt;
+    &lt;path id=&quot;Fill-17&quot; class=&quot;punch-stacked&quot; d=&quot;M210.22 128.96q-3.54 7.16-10.2 7.15a8.53 8.53 0 0 1-7.5-3.64 16.63 16.63 0 0 1-2.52-9.6 16.48 16.48 0 0 1 2.55-9.6 8.54 8.54 0 0 1 7.48-3.67 10.36 10.36 0 0 1 3.4.53l-4.46 4.45 3.67 3.64 5.18-5.15a16.08 16.08 0 0 1 2.44 3.63l9.6-3.87q-5.04-12.34-19.83-12.37-10.2 0-15.75 6.37-5.55 6.38-5.54 16.02a23.7 23.7 0 0 0 4.8 15.08L163 158.35l3.67 3.65 20.53-20.44a18.38 18.38 0 0 0 4.6 2.37l-10.2 10.17 3.66 3.65 12.66-12.6c.68.05 1.37.1 2.1.1q14.8 0 19.8-12.4l-9.6-3.9z&quot; /&gt;
+  &lt;/g&gt;
+  &lt;g class=&quot;cls-3&quot; id=&quot;Group-22&quot;&gt;
+    &lt;path id=&quot;Fill-20&quot; class=&quot;punch-stacked&quot; d=&quot;M277.9 95.7l-3.7-3.6-12.3 12c-2.4-1.92-5.6-2.9-9.58-2.9a15.7 15.7 0 0 0-14 7.62V84.44h-10.85v27.53l-9.07 8.85 3.73 3.63 5.34-5.22v16.7l-11.63 11.4 3.7 3.63 7.93-7.74V145h10.85v-18.2q0-8.14 3.06-12.33 3.06-4.2 7.26-4.2 6.57 0 6.56 7.7v6.8l-8.13 7.96 3.7 3.63 4.43-4.33v3.32l-9.44 9.24 3.7 3.6 5.74-5.6v2.4h10.86v-30.8a15.55 15.55 0 0 0-1.04-5.9l12.9-12.6z&quot; /&gt;
+  &lt;/g&gt;
+  &lt;path id=&quot;Fill-27&quot; class=&quot;punch-stacked&quot; d=&quot;M79.85 152.23c-.05-.12-.12-.23-.18-.35a3.48 3.48 0 0 0-.26-.3 1.12 1.12 0 0 0-.27-.25c-.12-.06-.23-.13-.35-.18a1.28 1.28 0 0 0-.37-.1 1.8 1.8 0 0 0-.8 0 1.2 1.2 0 0 0-.35.1 3.84 3.84 0 0 0-.35.18 1.48 1.48 0 0 0-.3.26.75.75 0 0 0-.25.27 2 2 0 0 0-.2.35 2.54 2.54 0 0 0-.1.37 1.37 1.37 0 0 0-.05.4 1.46 1.46 0 0 0 .04.4l.12.35a1.13 1.13 0 0 0 .2.35.93.93 0 0 0 .23.3 1 1 0 0 0 .3.25 1.9 1.9 0 0 0 .33.2 2.24 2.24 0 0 0 .37.1 1.5 1.5 0 0 0 .4.05 1.36 1.36 0 0 0 .4-.04 2.66 2.66 0 0 0 .37-.12 1.25 1.25 0 0 0 .35-.2 1.2 1.2 0 0 0 .3-.23 1.8 1.8 0 0 0 .25-.3 2.7 2.7 0 0 0 .18-.33 2.54 2.54 0 0 0 .1-.37 2.08 2.08 0 0 0 .05-.4 2.7 2.7 0 0 0-.04-.4l-.1-.37&quot; /&gt;
+  &lt;path id=&quot;Fill-29&quot; class=&quot;punch-stacked&quot; d=&quot;M9.84 119.2a1.37 1.37 0 0 0-.2-.34.93.93 0 0 0-.23-.3 2.02 2.02 0 0 0-2.8 0 1.53 1.53 0 0 0-.26.3 2.86 2.86 0 0 0-.18.35 3 3 0 0 0-.15.8 1.4 1.4 0 0 0 .05.4 2.54 2.54 0 0 0 .1.36l.2.35a1.18 1.18 0 0 0 .25.3 1.85 1.85 0 0 0 1.4.6 1.46 1.46 0 0 0 .4-.03l.36-.12a1.13 1.13 0 0 0 .35-.2 1.33 1.33 0 0 0 .3-.23 1 1 0 0 0 .26-.3 2 2 0 0 0 .2-.35 2.54 2.54 0 0 0 .1-.37 1.4 1.4 0 0 0 .05-.4 1.4 1.4 0 0 0-.03-.4 2.65 2.65 0 0 0-.12-.37&quot; /&gt;
+  &lt;path id=&quot;Fill-31&quot; class=&quot;punch-stacked&quot; d=&quot;M125.24 137.84a1.6 1.6 0 0 0 .37.12 1.8 1.8 0 0 0 .4.04 2.05 2.05 0 0 0 2-2 1.92 1.92 0 0 0-.6-1.42 2.07 2.07 0 0 0-1.8-.55l-.35.12a1.22 1.22 0 0 0-.35.2 1.03 1.03 0 0 0-.3.23 1.97 1.97 0 0 0 0 2.83.73.73 0 0 0 .3.26.96.96 0 0 0 .34.2&quot; /&gt;
+  &lt;path id=&quot;Fill-33&quot; class=&quot;punch-stacked&quot; d=&quot;M196.6 118.56a1.96 1.96 0 0 0-.6 1.43 2.05 2.05 0 0 0 2 2 1.86 1.86 0 0 0 1.4-.6 1.9 1.9 0 0 0 .6-1.4 1.96 1.96 0 0 0-.6-1.45 2.02 2.02 0 0 0-2.8 0&quot; /&gt;
+  &lt;path id=&quot;Fill-35&quot; class=&quot;punch-stacked&quot; d=&quot;M270.6 118.55a1.95 1.95 0 0 0-.6 1.42 1.33 1.33 0 0 0 .04.4l.1.38.2.35a1.42 1.42 0 0 0 .25.3 1.93 1.93 0 0 0 2.8 0 1.53 1.53 0 0 0 .26-.3 1.9 1.9 0 0 0 .17-.35 1.77 1.77 0 0 0 .12-.37 1.87 1.87 0 0 0 .04-.4 1.96 1.96 0 0 0-.6-1.43 2.06 2.06 0 0 0-2.8 0&quot; /&gt;
+  &lt;path id=&quot;Fill-37&quot; class=&quot;punch-stacked&quot; d=&quot;M171.9 100.66a2.06 2.06 0 0 0 .33.2 1.07 1.07 0 0 0 .38.1 1.87 1.87 0 0 0 .4.04 2.03 2.03 0 0 0 1.43-.6 1.08 1.08 0 0 0 .25-.3 1.8 1.8 0 0 0 .17-.34 1.77 1.77 0 0 0 .12-.37 2.06 2.06 0 0 0 .04-.43 2 2 0 0 0-.57-1.42 2.07 2.07 0 0 0-2.83 0l-.27.3-.18.36a2.1 2.1 0 0 0-.1.4 1.73 1.73 0 0 0-.05.37 1.94 1.94 0 0 0 .6 1.43.85.85 0 0 0 .3.26&quot; /&gt;
+  &lt;path id=&quot;Fill-1&quot; class=&quot;punch-stacked&quot; d=&quot;M44.13 16.57h10.94q7.8 0 7.8 8t-7.8 8H44.13zM55.5 42.9q9.04 0 13.8-5.02 4.75-5.04 4.75-13.3a19.78 19.78 0 0 0-2.9-10.92l9.85-10L77.4 0l-9.7 9.85q-4.56-3.6-12.2-3.6H33.1v11.2L16.4 34.42l3.58 3.65 13.14-13.34v7.98L0 66.36 3.6 70l29.5-29.98V66.5h11v-5.9l11.2-11.33-3.6-3.65-7.57 7.68V42.9z&quot; /&gt;
+  &lt;polygon id=&quot;Fill-3&quot; class=&quot;punch-stacked&quot; points=&quot;93.551 60.263 104 49.783 100.45 46.222 93.551 53.142 93.551 22 83.173 22 83.173 35.046 69.208 49.054 72.758 52.615 83.173 42.168 83.173 51.204 63 71.439 66.552 75 83.173 58.326 83.173 64.306 89.051 64.306 89.286 64.542 89.52 64.306 93.551 64.306 93.551 60.263&quot; /&gt;
+  &lt;path id=&quot;Fill-5&quot; class=&quot;punch-stacked&quot; d=&quot;M82 15.13a7.62 7.62 0 0 0 10 0 6.1 6.1 0 0 0 2-4.63 6.1 6.1 0 0 0-2-4.63 7.62 7.62 0 0 0-10 0 6.12 6.12 0 0 0-2 4.63 6.07 6.07 0 0 0 2 4.63&quot; /&gt;
+  &lt;polygon id=&quot;Fill-7&quot; class=&quot;punch-stacked&quot; points=&quot;123.382 41.726 135.288 22 124.686 22 117.999 32.996 111.314 22 100.713 22 107.751 33.663 104.045 37.478 107.505 41.039 110.402 38.056 112.618 41.726 99 64.307 109.6 64.307 117.999 50.541 124.912 61.869 115.615 71.441 119.073 75 129.462 64.307 137 64.307 123.382 41.726&quot; /&gt;
+  &lt;path id=&quot;Fill-9&quot; class=&quot;punch-stacked&quot; d=&quot;M150.9 40.36a10.46 10.46 0 0 1 3.05-5.86 8.47 8.47 0 0 1 6.17-2.4c4.9 0 7.95 2.74 9.14 8.26zm24.53-10.2a16.25 16.25 0 0 0-5.47-4.78l9.55-9.73-3.57-3.65-11.2 11.42a22.7 22.7 0 0 0-4.6-.46 20.82 20.82 0 0 0-9.34 2.02 16.63 16.63 0 0 0-6.44 5.34 25.14 25.14 0 0 0-3.5 7.15l-.27.98-7.6 7.72 3.6 3.65 3.1-3.17a26.24 26.24 0 0 0 1.15 6.58 25.96 25.96 0 0 0 3.5 7.15 16.03 16.03 0 0 0 4.2 4.04l-3.35 3.42 3.58 3.66 4.66-4.74a23.1 23.1 0 0 0 5.27.92l-7.5 7.67 3.6 3.65 11.82-12.06q8.85-2.4 12.9-11.86l-8.46-3.18q-3.8 6.72-10.32 6.72a9.28 9.28 0 0 1-7.23-2.93 10.54 10.54 0 0 1-2.84-6.9H180v-4.4a24.72 24.72 0 0 0-4.57-14.27z&quot; /&gt;
+  &lt;polygon id=&quot;Fill-23&quot; class=&quot;punch-stacked&quot; points=&quot;204.155 45.939 199.878 50.179 199.878 21.62 213 8.615 209.353 5 199.878 14.394 199.878 5.697 189.222 5.697 189.222 39.859 182 47.017 185.645 50.631 189.222 47.085 189.222 66 199.878 66 199.878 57.405 207.8 49.553 204.155 45.939&quot; /&gt;
+  &lt;path id=&quot;Fill-25&quot; class=&quot;punch-stacked&quot; d=&quot;M67.58 55.12l-.3-.4-.4-.3a1.46 1.46 0 0 0-.43-.22 1.84 1.84 0 0 0-.47-.15 2.22 2.22 0 0 0-.96 0 1.84 1.84 0 0 0-.47.15 1.75 1.75 0 0 0-.43.22l-.4.3A2.6 2.6 0 0 0 63 56.5a2.53 2.53 0 0 0 .73 1.77 3.47 3.47 0 0 0 .4.3 1.94 1.94 0 0 0 .42.25 3.22 3.22 0 0 0 .47.13 2.36 2.36 0 0 0 .48.05 2.44 2.44 0 0 0 .48-.05 3.22 3.22 0 0 0 .47-.13 2.98 2.98 0 0 0 .43-.24l.4-.3c.1-.13.2-.25.3-.4a2.36 2.36 0 0 0 .24-.4c.05-.18.1-.33.13-.5a2.36 2.36 0 0 0 .05-.48 2.52 2.52 0 0 0-.05-.48 3.22 3.22 0 0 0-.13-.47 2.98 2.98 0 0 0-.24-.43&quot; /&gt;
+  &lt;path id=&quot;Fill-39&quot; class=&quot;punch-stacked&quot; d=&quot;M11.18 41.44a3.75 3.75 0 0 0 .24.44c.1.13.2.27.3.38a1.9 1.9 0 0 0 .4.3 2.36 2.36 0 0 0 .4.24 3.52 3.52 0 0 0 .5.15 2.36 2.36 0 0 0 .48.05 2.53 2.53 0 0 0 1.77-.74 2.28 2.28 0 0 0 .3-.38 1.86 1.86 0 0 0 .23-.44 2.14 2.14 0 0 0 .15-.47 2.8 2.8 0 0 0 .05-.48 2.96 2.96 0 0 0-.05-.53 2.14 2.14 0 0 0-.15-.47 1.68 1.68 0 0 0-.22-.42l-.3-.4a2.67 2.67 0 0 0-3.55 0l-.3.4a2.3 2.3 0 0 0-.25.43 4.94 4.94 0 0 0-.13.5 2.92 2.92 0 0 0-.05.5 3.02 3.02 0 0 0 .05.5l.13.45&quot; /&gt;
+  &lt;path id=&quot;Fill-41&quot; class=&quot;punch-stacked&quot; d=&quot;M25.5 16a2.53 2.53 0 0 0 1.77-.74 2.5 2.5 0 1 0-3.54-3.56 2.54 2.54 0 0 0-.73 1.78 2.6 2.6 0 0 0 .73 1.78 2.5 2.5 0 0 0 1.77.74&quot; /&gt;
+&lt;/svg&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&quot;earth-date-november-7th-2017&quot;&gt;Earth Date: November 7th, 2017&lt;/h2&gt;
+
+&lt;h2 id=&quot;istrategylabs-700pm---10pm-est--641-s-st-nw-fl-1-washington-dc-20001&quot;&gt;iStrategyLabs, 7:00pm - 10pm EST &lt;br /&gt; 641 S St NW, Fl 1, Washington, DC 20001&lt;/h2&gt;
+
+&lt;p&gt;&lt;a class=&quot;sign-up-button&quot; href=&quot;https://t.co/XM41qCp4Dt&quot; target=&quot;_&quot;&gt;Sign Up: Contestant&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;sign-up-button&quot; href=&quot;https://t.co/U8uxcetvhE&quot; target=&quot;_&quot;&gt;Sign Up: Judge&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">pixel-punch-planet-and-moon Created with Sketch.</summary></entry></feed>

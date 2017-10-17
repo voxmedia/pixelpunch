@@ -1,0 +1,19 @@
+.contestants {
+
+  .saturn {
+    position: relative;
+    height: 60vw;
+    width: 60vw;
+    top: -5vw;
+    left: 10vw;
+    transform: rotate(-15deg);
+
+    @include media-query {
+      position: absolute;
+      height: 60vw;
+      width: 60vw;
+      top: 5vw;
+      left: -20vw;
+    }
+  }
+}

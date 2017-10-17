@@ -15,27 +15,25 @@ body {
 
   background: $color-space-darker;
   color: $color-white;
+  position: relative;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
 }
 
 img,
-video,
-svg {
+video {
   max-width: 100%;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
 }
 
 p {
   font-size: $base-font-size;
-}
-
-a {
-  font-weight: $bold-font-weight;
-  color: currentColor;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  transition: border-width 100ms ease-in-out;
-  &:hover {
-    border-bottom-width: 3px;
-  }
 }
 
 h1 {
@@ -46,16 +44,4 @@ h1 {
   @include media-query {
     font-size: 4.5rem;
   }
-}
-
-// components and buttons
-.sign-up-button {
-   background: $color_pink;
-   padding: .5em 1.4em;
-   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
-   transition: border 300ms ease;
-   border: 2px solid $color_pink;
-   &:hover {
-      border: 2px solid currentColor;
-   }
 }
