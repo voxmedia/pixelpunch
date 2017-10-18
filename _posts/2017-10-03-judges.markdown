@@ -1,0 +1,17 @@
+---
+title: judges
+date: 2017-10-03 12:00:00
+published: true
+---
+
+<div class="jupiter">
+  {% include svgs/jupiter.html %}
+</div>
+
+# JUDGES
+
+Coming Soon.
+<br/>
+<br/>
+
+<a class="sign-up-button" href="https://t.co/U8uxcetvhE" target="_">Sign Up!</a>
