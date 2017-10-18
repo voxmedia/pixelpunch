@@ -1,30 +1,41 @@
-## Pixel Punch
+# Pixel Punch
 
-A Vox Media AFK microsite
+http://pixelpunch.voxmedia.com/
 
-### Project
+The event website for Vox Media's first design battle, Pixel Punch.
 
-#### How to run
+# Get running
+The Pixel Punch website is built using the [jekyll](https://jekyllrb.com), the static site generator.
 
-This microsite is based on [jekyll](https://jekyllrb.com) and is using [github pages](https://pages.github.com)
+- Clone the project
+- Run `bundle install`
+- Run `bundle exec jekyll serve --livereload` to start up the server at `localhost:4000`
+- Edit source files within the `source` folder
 
-Please use the `master` branch to develop and use the `gh-pages` branch for releases.
+If you have SSL errors with `eventmachine`, install [Homebrew](http://brew.sh/) and then run `brew link --force openssl`, then try `bundle install` again.
 
-To run the project change into the `pixelpunch` directory and do a `bundle install` wait for all the magic to happen and then run the command below and open [http://localhost:4000](http://localhost:4000)
+To deploy:
+- make sure you're on the `development` branch
+- first build out files: `bundle exec middleman build`
+- `bundle exec middleman deploy`
+- source files will be outputted to `gh-pages` and update on pixelpunch.voxmedia.com.
 
-```bundle exec jekyll serve --livereload```
+## Authors
+*2014* Development: Ngan Hoang, Ally Palanzi Design: Tyson Whiting, Katharine Molloy
 
--- enjoy
+*2015* Development: Ally Palanzi, Matt Sullivan Design: Katharine Molloy
 
-#### How it works
+*2016* Development: Marvin Cespedes Design: Jessica Paoli, Dani Balenson
 
-This is designed to be a single page app -- to add a new section add a new page in `_posts` and name it with the current date (things are ordered by date) ex. `2017-10-02-SOMENAME.markdown` while also adding head metadata
+*2017* Development: Marvin Cespedes Design: Katharine Molly, Irene Wang
 
-```
----
-title: example
-date: 2017-10-02 12:00:00
-image: test.jpg
-layout: page
----
-```
+## Contribute
+
+This project is shared as-is. Bugs, issues, and pull requests may not be readily addressed.
+
+## License
+
+Copyright (c) 2014, Vox Media, Inc.
+All rights reserved.
+
+We're sharing this project in the hope that the methods and tactics here may be useful to others. That said, you may not republish this work. Learn from it and use it to build your own.

@@ -1,0 +1,29 @@
+---
+title: Pixel Punch IV
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: your-email@domain.com
+description: 'On November 7, Pixel Punch will test four brave designers to do their best Captain Kirk and puzzle their way through challenges that are out of this world!'
+
+baseurl:
+url:
+twitter_username: voxmedia
+github_username: voxmedia
+markdown: kramdown
+gems:
+- jekyll-feed
+- jekyll-autoprefixer
+exclude:
+- Gemfile
+- Gemfile.lock
+- clock
+- 2014
+- 2015
+- 2016
+

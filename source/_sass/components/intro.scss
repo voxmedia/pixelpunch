@@ -1,0 +1,62 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  .sign-up-button {
+    background: $color_pink;
+    padding: .5em 1.4em;
+    border-radius: 3px;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
+    transition: all .25s ease;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 5px;
+    word-break: none;
+
+    &:hover {
+      background: darken($color_pink,10%);
+    }
+  }
+
+  .logo {
+    width: 80vw;
+    margin-top: 25vw;
+
+    @include media-query {
+      width: 35vw;
+      margin-top: 0vw;
+      transform: translateX(-4.5vw);
+    }
+  }
+
+  .earth-and-moon {
+    position: absolute;
+    width: 85vw;
+    height: 85vw;
+    top: -40vw;
+
+    @include media-query {
+      left: -20vw;
+      top: -20vw;
+      width: 60vw;
+      height: 60vw;
+    }
+  }
+
+  @keyframes orbit {
+    0% {
+      transform:rotate(0deg);
+      transform-origin: center;
+    }
+    100% {
+      transform:rotate(-3600deg);
+      transform-origin: center;
+    }
+  }
+
+  .moon-spin {
+    animation: orbit 300s linear infinite alternate;
+  }
+}

@@ -1,0 +1,281 @@
+// _layout.scss contains core css components
+// _nav.scss contains header navigation
+
+// header section
+.header {
+  margin: 1.125rem 10vw;
+  text-align: center;
+  @include media($large) {
+    max-width: $large;
+    margin: 3.125rem auto;
+  }
+} // .header
+
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  @include media($medium) {
+    flex-direction: row;
+  }
+  &__date {
+    margin: 0.75em 0 0.5em;
+    font-weight: $font-weight-bold;
+    font-size: 1.75em;
+    line-height: 0.95em;
+    text-align: left;
+    text-align: center;
+    word-break: break-all;
+    @include media($medium) {
+      font-size: 2.25em;
+      line-height: 1em;
+    } // media($emdium)
+    @include media($large) {
+      text-align: left;
+      order: 2;
+      flex: 2;
+    } // media($large)
+  } // __date
+  &__address {
+    text-align: left;
+    @include media($large) {
+      height: 15%;
+      position: relative;
+      top: -60px;
+    } // media($xlarge)
+    &--flipL {
+      @include media($large) {
+        margin: 0.75em 0;
+      } // media($medium, max)
+      @include media($large) {
+        flex: 1;
+        order: 1;
+        text-align: left;
+        transform: rotate(-90deg);
+      } // media($xlarge)
+    } // --flipL
+    &--flipR {
+      @include media($large) {
+        flex: 1;
+        order: 3;
+        text-align: right;
+        transform: rotate(90deg);
+      } // media($xlarge)
+    } // --flipR
+  } // __address
+} // .date-location
+
+// about section
+.about {
+  background: $black;
+  color: $white;
+  padding: 1.125rem 0;
+  @include media($large) {
+    padding: 3.125rem 0;
+  } // @include media($large)
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10vw;
+    @include media($large) {
+      max-width: $large;
+      margin: 0 auto;
+    } // @include media($large)
+  } // .container
+  p {
+    @include media($large) {
+      max-width: 26em;
+    } // @include media($large)
+  }
+  &__details {
+    @include media($large) {
+      width: 70%;
+    } // @include media($large)
+  }
+  &__who-we-are {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    @include media($large) {
+      flex-direction: row;
+    } // @include media($large)
+    p {
+      margin-top: 1.5em;
+      @include media($large) {
+        width: 48%;
+      } // @include media($large)
+    }
+  }
+}
+
+
+// TODO: Contestant section
+.contestants {
+  background: $bg-pixelpunch-pattern repeat $grey;
+  padding: 1.125rem 0;
+  @include media($large) {
+    padding: 3.125rem 0;
+  } // @include media($large)
+  h2 {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background: $black;
+    color: $white;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10vw;
+    @include media($large) {
+      max-width: $large;
+      margin: 0 auto;
+    } // @include media($large)
+  } // .container
+  &__contestant {
+    display: flex;
+    max-width: $large;
+    background: $white;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    @include media($large) {
+      justify-content: space-between;
+    }
+    &:nth-child(even) {
+      background: $black;
+      color: $white;
+      svg {
+        fill: $white;
+      }
+      @include media($large) {
+        flex-direction: row-reverse;
+      }
+    }
+    &__photo {
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+      img {
+        width: 200px;
+        height: 200px;
+        filter: grayscale(100%);
+      }
+    }
+    &__info {
+      display: flex;
+      padding: 2rem;
+      flex-grow: 1;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-size: 1em;
+      line-height: 1.25;
+      p {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      a {
+        border-width: 0;
+      }
+      a:hover {
+        border-width: 2px;
+      }
+      &:nth-of-child(odd) {
+        background: pink;
+        order: 1;
+      }
+    }
+  }
+}
+
+// get tickets section
+.get-tickets {
+  margin: 0 10vw;
+  @include media($large) {
+    max-width: $large;
+    margin: 4em auto;
+  }
+  p {
+    font-size: 1.25em;
+    line-height: 1.15;
+    margin: 2em auto;
+    max-width: 25rem;
+    .button {
+      text-align: center;
+      margin: 2rem 0;
+      width: 100%;
+    }
+  }
+}
+
+// code of conduct
+.code-of-conduct {
+  // background: $bg-pixelpunch-pattern repeat $grey;
+  margin: 3.125rem 0;
+  padding: 1.125rem 0;
+  @include media($large) {
+    padding: 3.125rem 0;
+  } // @include media($large)
+  .container {
+    padding: 5rem 10vw;
+    background: $white;
+    @include media($large) {
+      padding: 5rem;
+      max-width: $xlarge;
+      margin: 0 auto;
+    } // @include media($large)
+    h1 {
+      word-break: break-all;
+      text-align: center;
+      font-size: 1.75rem;
+      line-height: 1;
+      @include media ($small) {
+        word-break: normal;
+      }
+      @include media ($medium) {
+        text-align: left;
+        font-size: 3rem;
+        line-height: 1;
+      }
+    }
+    h2 {
+      word-break: break-all;
+      font-size: 1.5rem;
+      @include media ($medium) {
+        word-break: normal;
+        text-transform: capitalize;
+        text-align: left;
+        font-size: 2rem;
+        line-height: 1;
+        margin: 2rem 0 0;
+      }
+    }
+    p {
+      @include media ($medium) {
+        font-size: 1.25rem;
+        line-height: 1.3;
+        margin: 0.75rem 0 1rem;
+      }
+    }
+  } // .container
+}
+
+// footer section
+.main-footer {
+  text-align: center;
+  font-size: 1em;
+  margin: 1.125rem 10vw;
+  @include media($large) {
+    max-width: $large;
+    margin: 5rem auto 3rem;
+  } // @include media($large)
+}

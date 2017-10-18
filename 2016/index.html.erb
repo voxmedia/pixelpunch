@@ -1,0 +1,82 @@
+---
+title: 'Pixel Punch: A Vox Media Design Battle'
+---
+<svg class="ghost"><use xlink:href="#ghost" /></svg>
+
+<header id="header" class="header">
+  <h1 class="hidden">Pixel Punch: A Vox Media Design Battle</h1>
+  <%= partial "svgs/_pp-header" %>
+  <section class="location">
+    <p class="location__date">
+      October 25<br>
+      6:30 – 8:30 PM<br>
+      iStrategyLabs<br>
+      <a class="button" href="https://www.eventbrite.com/e/pixel-punch-a-designers-worst-nightmare-tickets-28555090043">Get Tickets <svg class="button__arrow"><use xlink:href="#arrowIcon" /></svg></a>
+    </p>
+    <p class="location__address--flipL">The<br>Wonder Bread<br>Factory, Floor 1</p>
+    <p class="location__address--flipR">641 S St. NW<br>Washington, DC<br>20001</p>
+  </section> <!-- .date-location -->
+</header>
+
+<section class="about">
+  <div class="container">
+    <svg class="pixel-punch-icons"><use xlink:href="#pixelPunchSymbols" /></svg>
+    <svg class="pixel-punch-icons-horizontal"><use xlink:href="#pixelPunchHorizontalSymbols" /></svg>
+    <div class="about__details">
+      <h2 id="about">About</h2>
+      <p>Join Vox Media on Tuesday, October 25th at 6:30pm for a thrilling night of pixel pushing at its finest.</p><p>In this 3rd year of Pixel Punch, we will be challenging five brave designers do their best Van Helsing and puzzle their way through spooky challenges guaranteed to test their creativity, fortitude and ability to think on their feet. We’re excited to bring together friends, new and old, to puzzle out mysteries together. We’ll bring the spook, you bring your skills.</p><p>By attending or partcipating in Pixel Punch, you agree to abide by our <%= link_to 'Code of Conduct', '/code-of-conduct.html', :class => 'link link--orange-line' %>.</p>
+    </div>
+    <div class="about__who-we-are">
+      <p>Vox Media is one of the country's largest and fastest growing online publishers. Based in Washington DC, Vox Media owns and operates sites in distinct vertical categories: general news, sports, technology and culture, gaming, dining and nightlife, shopping and fashion, and design and real estate.</p><p>The Vox Media product team is made up of designers, developers, operations engineers, and product and community managers, based in Washington, DC, New York, and Austin, and distributed remotely in cities from Santa Barbara, California to Springfield, Missouri.</p>
+    </div>
+  </div>
+</section>
+
+<%# commenting this out for now
+<section class="contestants">
+  <div class="container">
+    <h2>Contestants</h2>
+    <div class="contestants__contestant">
+      <figure class="contestants__contestant__photo">
+        <img src="images/placeholder.jpg">
+      </figure>
+      <div class="contestants__contestant__info">
+        <h3>Dan Rader</h3>
+        <p><a href="#"><svg class="twitter-icon"><use xlink:href="#twitterIcon" /></svg> @danraderdesign</a></p>
+        <p>Designer, Deloitte Digital</p>
+        <p>Favorite scary movie: The Shining</p>
+      </div>
+    </div>
+    <div class="contestants__contestant">
+      <figure class="contestants__contestant__photo">
+        <img src="images/placeholder.jpg">
+      </figure>
+      <div class="contestants__contestant__info">
+        <h3>Dan Rader</h3>
+        <p><a href="#"><svg class="twitter-icon"><use xlink:href="#twitterIcon" /></svg> @danraderdesign</a></p>
+        <p>Designer, Deloitte Digital</p>
+        <p>Favorite scary movie: The Shining</p>
+      </div>
+    </div>
+    <div class="contestants__contestant">
+      <figure class="contestants__contestant__photo">
+        <img src="images/placeholder.jpg">
+      </figure>
+      <div class="contestants__contestant__info">
+        <h3>Stephanie Stamm</h3>
+        <p><a href="#"><svg class="twitter-icon"><use xlink:href="#twitterIcon" /></svg> @sestamm</a></p>
+        <p>Senior News Artist, National Journal</p>
+        <p>Favorite scary movie: American Psychog</p>
+      </div>
+    </div>
+  </div>
+</section>
+end comment %>
+
+
+<section class="get-tickets">
+    <p>Admission is free but requires a ticket for entry, so RSVP today. Food and drink is available on a first come, first served basis. Kolaches provided by <%= link_to 'Republic Kolache', 'http://republic-kolache.com/', :class => 'link link--white-line' %>, and 2 drinks per attendee. Any further details will be sent to you at the email you sign up with on Eventbrite.
+      <a class="button" href="https://www.eventbrite.com/e/pixel-punch-a-designers-worst-nightmare-tickets-28555090043">Get Tickets <svg class="button__arrow"><use xlink:href="#arrowIcon" /></svg></a>
+    </p>
+    <%= partial "svgs/_pp-footer" %>
+</section>
