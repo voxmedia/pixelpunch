@@ -33,16 +33,4 @@
     margin: 0 auto;
     max-width: 550px;
   }
-
-  .columns {
-
-    @include media-query {
-      column-count: 2;
-
-      p {
-        -webkit-margin-before: 0;
-        -webkit-margin-after: 0;
-      }
-    }
-  }
 }

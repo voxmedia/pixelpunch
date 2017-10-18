@@ -15,9 +15,3 @@ Join Vox Media on Tuesday, November 7 at 6:30pm for an interstellar night of pix
 In this 4th year of Pixel Punch, we will be challenging four brave designers do their best Captain Kirk and puzzle their way through galactic challenges guaranteed to test their creativity, fortitude and ability to think on their feet. We're excited to bring together friends, new and old, to explore new solar systems together. We've got the starship, you bring your skills.
 
 By attending or participating in Pixel Punch, you agree to abide by our Code of Conduct.
-
-<div class="columns">
-  <p>Vox Media is a prestigious modern media company that believes in the power of going deeper to connect with global, passionate, curious audiences. Through our authoritative house of brands, commitment to developing standout technology, and high-fidelity advertising, we are shaping the future of journalism and entertainment.</p>
-
-  <p>The Vox Media product team is made up of designers, developers, operations engineers, and product and community managers, based in Washington, DC, New York, Chicago, SF and Austin, and distributed remotely in cities from Santa Barbara, California to Springfield, Missouri.</p>
-</div>
