@@ -1,5 +1,5 @@
 ---
-title: Pixel Punch
+title: Pixel Punch IV
 timezone: UTC
 collections:
   posts:
@@ -9,13 +9,9 @@ collections:
     title: Uploads
     output: true
 email: your-email@domain.com
-description: 'In this 4th year of Pixel Punch, we will be challenging
-              four brave designers do their best Captain Kirk and puzzle
-              their way through galactic challenges guaranteed to test
-              their creativity, fortitude and ability to think on their
-              feet. We’re excited to bring together friends, new and old,
-              to explore new solar systems together. We’ve got the starship,
-              you bring your skills.'
+description: 'On November 7, Pixel Punch will test four brave designers
+              to do their best Captain Kirk and puzzle their way through
+              challenges that are out of this world!'
 
 baseurl:
 url:
@@ -32,3 +28,4 @@ exclude:
 - 2014
 - 2015
 - 2016
+

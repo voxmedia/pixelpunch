@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-@import url("https://fonts.googleapis.com/css?family=Karla");
 @import url("https://fonts.googleapis.com/css?family=Oswald|Space+Mono");
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -439,6 +437,20 @@ h1 {
 h2 {
   font-size: 1.25rem; }
 
+.sign-up-button {
+  background: #e30c79;
+  padding: .5em 1.4em;
+  border-radius: 3px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 5px;
+  word-break: none; }
+  .sign-up-button:hover {
+    background: #b3095f; }
+
 .body-container {
   width: 100vw; }
 
@@ -553,14 +565,6 @@ h2 {
     .content {
       margin: 0 auto;
       max-width: 550px; } }
-  @media screen and (min-width: 768px) {
-    .content .columns {
-      -webkit-column-count: 2;
-         -moz-column-count: 2;
-              column-count: 2; }
-      .content .columns p {
-        -webkit-margin-before: 0;
-        -webkit-margin-after: 0; } }
 
 .intro {
   display: -webkit-box;
@@ -573,19 +577,6 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .intro .sign-up-button {
-    background: #e30c79;
-    padding: .5em 1.4em;
-    border-radius: 3px;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
-    -webkit-transition: all .25s ease;
-    transition: all .25s ease;
-    text-decoration: none;
-    color: #fff;
-    margin-right: 5px;
-    word-break: none; }
-    .intro .sign-up-button:hover {
-      background: #b3095f; }
   .intro .logo {
     width: 80vw;
     margin-top: 25vw; }
