@@ -17,5 +17,5 @@
 *.sass-cache
 *.scssc
 
-# Ignore .DS_store file
-.DS_Store
+# Ignore DS_store file
+*.DS_Store

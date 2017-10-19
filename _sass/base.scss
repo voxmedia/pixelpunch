@@ -38,7 +38,7 @@ p {
 
 h1 {
   font-size: 3rem;
-  line-height: 1rem;
+  line-height: 1em;
   font-family: $base-heading-font;
 
   @include media-query {
@@ -50,6 +50,10 @@ h2 {
   font-size: 1.25rem;
 }
 
+a {
+  color: currentColor;
+}
+
 .sign-up-button {
   background: $color_pink;
   padding: .5em 1.4em;
@@ -57,7 +61,6 @@ h2 {
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
   transition: all .25s ease;
   text-decoration: none;
-  color: #fff;
   margin-right: 5px;
   word-break: none;
 

@@ -34,3 +34,12 @@
     max-width: 550px;
   }
 }
+
+.code-container {
+  .content {
+    max-width: 73ch;
+    h2 {
+      margin: 3em 0 1em 0;
+    }
+  }
+}

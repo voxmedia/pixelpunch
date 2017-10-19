@@ -428,7 +428,7 @@ p {
 
 h1 {
   font-size: 3rem;
-  line-height: 1rem;
+  line-height: 1em;
   font-family: "Oswald", sans-serif; }
   @media screen and (min-width: 768px) {
     h1 {
@@ -436,6 +436,9 @@ h1 {
 
 h2 {
   font-size: 1.25rem; }
+
+a {
+  color: currentColor; }
 
 .sign-up-button {
   background: #e30c79;
@@ -445,7 +448,6 @@ h2 {
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
   text-decoration: none;
-  color: #fff;
   margin-right: 5px;
   word-break: none; }
   .sign-up-button:hover {
@@ -565,6 +567,11 @@ h2 {
     .content {
       margin: 0 auto;
       max-width: 550px; } }
+
+.code-container .content {
+  max-width: 73ch; }
+  .code-container .content h2 {
+    margin: 3em 0 1em 0; }
 
 .intro {
   display: -webkit-box;
