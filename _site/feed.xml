@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-25T18:25:44+00:00</updated><id>http://localhost:4000/</id><title type="html">Pixel Punch IV</title><subtitle>On November 7, Pixel Punch will test four brave designers to do their best Captain Kirk and puzzle their way through challenges that are out of this world!</subtitle><entry><title type="html">contestants</title><link href="http://localhost:4000/2017/10/05/contestants.html" rel="alternate" type="text/html" title="contestants" /><published>2017-10-05T12:00:00+00:00</published><updated>2017-10-05T12:00:00+00:00</updated><id>http://localhost:4000/2017/10/05/contestants</id><content type="html" xml:base="http://localhost:4000/2017/10/05/contestants.html">&lt;div class=&quot;saturn&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-25T21:10:55+00:00</updated><id>http://localhost:4000/</id><title type="html">Pixel Punch IV</title><subtitle>On November 7, Pixel Punch will test four brave designers to do their best Captain Kirk and puzzle their way through challenges that are out of this world!</subtitle><entry><title type="html">contestants</title><link href="http://localhost:4000/2017/10/05/contestants.html" rel="alternate" type="text/html" title="contestants" /><published>2017-10-05T12:00:00+00:00</published><updated>2017-10-05T12:00:00+00:00</updated><id>http://localhost:4000/2017/10/05/contestants</id><content type="html" xml:base="http://localhost:4000/2017/10/05/contestants.html">&lt;div class=&quot;saturn&quot;&gt;
   &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;svg width=&quot;919px&quot; height=&quot;600px&quot; viewBox=&quot;0 0 919 600&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;
     &lt;!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --&gt;
@@ -65,37 +65,42 @@
 
 &lt;h1 id=&quot;judges&quot;&gt;JUDGES&lt;/h1&gt;
 
-&lt;div class=&quot;judge-list&quot;&gt;
+&lt;p&gt;Coming soon.
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&quot;_blank&quot; class=&quot;sign-up-button&quot; href=&quot;https://t.co/U8uxcetvhE&quot;&gt;Sign Up!&lt;/a&gt;&lt;/p&gt;
+
+&lt;!-- &lt;div class=&quot;judge-list&quot;&gt;
   &lt;div class=&quot;judge&quot;&gt;
-    &lt;img alt=&quot;image of Catherine Dillingham&quot; src=&quot;/images/judge-catherine-dillingham.jpg&quot; /&gt;
-    &lt;p&gt;&lt;strong&gt;Catherine Dillingham&lt;/strong&gt;&lt;br /&gt;
-    Senior Associate, Glen Echo Group&lt;br /&gt;
+    &lt;img alt=&quot;image of Catherine Dillingham&quot; src=&quot;/images/judge-catherine-dillingham.jpg&quot;&gt;
+    &lt;p&gt;&lt;strong&gt;Catherine Dillingham&lt;/strong&gt;&lt;br&gt;
+    Senior Associate, Glen Echo Group&lt;br&gt;
     &lt;a target=&quot;_blank&quot; title=&quot;Catherine Dillingham's Twitter account&quot; href=&quot;https://twitter.com/wrendidit&quot;&gt;@wrendidit&lt;/a&gt;
     &lt;/p&gt;
   &lt;/div&gt;
   &lt;div class=&quot;judge&quot;&gt;
-    &lt;img alt=&quot;image of Michael Aleo&quot; src=&quot;/images/judge-michael-aleo.jpg&quot; /&gt;
-    &lt;p&gt;&lt;strong&gt;Michael Aleo&lt;/strong&gt;&lt;br /&gt;
-    President &amp;amp; Creative Director, LGND&lt;br /&gt;
+    &lt;img alt=&quot;image of Michael Aleo&quot; src=&quot;/images/judge-michael-aleo.jpg&quot;&gt;
+    &lt;p&gt;&lt;strong&gt;Michael Aleo&lt;/strong&gt;&lt;br&gt;
+    President &amp;amp; Creative Director, LGND&lt;br&gt;
     &lt;a target=&quot;_blank&quot; title=&quot;Michael Aleo's Twitter account&quot; href=&quot;https://twitter.com/michaelaleo&quot;&gt;@michaelaleo&lt;/a&gt;
     &lt;/p&gt;
   &lt;/div&gt;
   &lt;div class=&quot;judge&quot;&gt;
-    &lt;img alt=&quot;image of Katelyn Caillouet&quot; src=&quot;/images/judge-katelyn-caillouet.jpg&quot; /&gt;
-    &lt;p&gt;&lt;strong&gt;Katelyn Caillouet&lt;/strong&gt;&lt;br /&gt;
-    Designer, Pleasant Design Co.&lt;br /&gt;
+    &lt;img alt=&quot;image of Katelyn Caillouet&quot; src=&quot;/images/judge-katelyn-caillouet.jpg&quot;&gt;
+    &lt;p&gt;&lt;strong&gt;Katelyn Caillouet&lt;/strong&gt;&lt;br&gt;
+    Designer, Pleasant Design Co.&lt;br&gt;
     &lt;a target=&quot;_blank&quot; title=&quot;Katelyn Caillouet's Twitter account&quot; href=&quot;https://twitter.com/hellokatelyn&quot;&gt;@hellokatelyn&lt;/a&gt;
     &lt;/p&gt;
   &lt;/div&gt;
   &lt;div class=&quot;judge&quot;&gt;
-    &lt;img alt=&quot;image of Alisha Ramos&quot; src=&quot;/images/judge-alisha-ramos.jpg&quot; /&gt;
-    &lt;p&gt;&lt;strong&gt;Alisha Ramos&lt;/strong&gt;&lt;br /&gt;
-    Founder &amp;amp; CEO, Girls' Night In&lt;br /&gt;
+    &lt;img alt=&quot;image of Alisha Ramos&quot; src=&quot;/images/judge-alisha-ramos.jpg&quot;&gt;
+    &lt;p&gt;&lt;strong&gt;Alisha Ramos&lt;/strong&gt;&lt;br&gt;
+    Founder &amp;amp; CEO, Girls' Night In&lt;br&gt;
     &lt;a target=&quot;_blank&quot; title=&quot;Alisha Ramos's Twitter account&quot; href=&quot;https://twitter.com/alishalisha&quot;&gt;@alishalisha&lt;/a&gt;
     &lt;/p&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;a target=&quot;_blank&quot; class=&quot;sign-up-button&quot; href=&quot;https://t.co/U8uxcetvhE&quot;&gt;Sign Up!&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">pixel-punch_planet-jupiter Created with Sketch.</summary></entry><entry><title type="html">about</title><link href="http://localhost:4000/2017/10/02/about.html" rel="alternate" type="text/html" title="about" /><published>2017-10-02T12:00:00+00:00</published><updated>2017-10-02T12:00:00+00:00</updated><id>http://localhost:4000/2017/10/02/about</id><content type="html" xml:base="http://localhost:4000/2017/10/02/about.html">&lt;div class=&quot;astronaut&quot;&gt;
+&lt;/div&gt; --&gt;</content><author><name></name></author><summary type="html">pixel-punch_planet-jupiter Created with Sketch.</summary></entry><entry><title type="html">about</title><link href="http://localhost:4000/2017/10/02/about.html" rel="alternate" type="text/html" title="about" /><published>2017-10-02T12:00:00+00:00</published><updated>2017-10-02T12:00:00+00:00</updated><id>http://localhost:4000/2017/10/02/about</id><content type="html" xml:base="http://localhost:4000/2017/10/02/about.html">&lt;div class=&quot;astronaut&quot;&gt;
   &lt;div class=&quot;astronaut-container&quot;&gt;
     &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;svg width=&quot;755px&quot; height=&quot;1074px&quot; viewBox=&quot;0 0 755 1074&quot; version=&quot;1.1&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot;&gt;

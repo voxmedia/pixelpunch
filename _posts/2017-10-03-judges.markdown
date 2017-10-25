@@ -10,7 +10,13 @@ published: true
 
 # JUDGES
 
-<div class="judge-list">
+Coming soon.
+<br/>
+<br/>
+
+<a target="_blank" class="sign-up-button" href="https://t.co/U8uxcetvhE">Sign Up!</a>
+
+<!-- <div class="judge-list">
   <div class="judge">
     <img alt="image of Catherine Dillingham" src="/images/judge-catherine-dillingham.jpg">
     <p><strong>Catherine Dillingham</strong><br>
@@ -39,5 +45,5 @@ published: true
     <a target="_blank" title="Alisha Ramos's Twitter account" href="https://twitter.com/alishalisha">@alishalisha</a>
     </p>
   </div>
-</div>
-<a target="_blank" class="sign-up-button" href="https://t.co/U8uxcetvhE">Sign Up!</a>
+</div> -->
+
