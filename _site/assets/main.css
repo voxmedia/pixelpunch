@@ -689,6 +689,15 @@ a {
       width: 20vw;
       height: 20vw; } }
 
+.judges .judge-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  grid-gap: 5%;
+  margin-bottom: 3em; }
+  .judges .judge-list .judge:nth-last-child(-n+2) {
+    margin-top: 3em; }
 .judges .jupiter {
   position: relative;
   height: 65vw;
