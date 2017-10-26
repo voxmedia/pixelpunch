@@ -11,10 +11,7 @@ published: true
 # JUDGES
 
 Coming soon.
-<br/>
-<br/>
 
-<a target="_blank" class="sign-up-button" href="https://t.co/U8uxcetvhE">Sign Up!</a>
 
 <!-- <div class="judge-list">
   <div class="judge">

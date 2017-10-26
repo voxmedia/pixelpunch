@@ -11,7 +11,4 @@ published: true
 # CONTESTANTS
 
 Coming Soon.
-<br/>
-<br/>
 
-<a class="sign-up-button" href="https://t.co/XM41qCp4Dt" target="_">Sign Up!</a>

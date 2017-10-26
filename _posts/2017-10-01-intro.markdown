@@ -13,6 +13,4 @@ date: 2017-10-01 12:00:00
 
 ## iStrategyLabs, 6pm - 9pm EST <br />641 S St NW, Washington, DC 20001
 
-<a class="sign-up-button" href="https://t.co/XM41qCp4Dt" target="_">Sign Up: Contestant</a>
-
-<a class="sign-up-button" href="https://t.co/U8uxcetvhE" target="_">Sign Up: Judge</a>
+<a class="sign-up-button" href="https://www.eventbrite.com/e/pixel-punch-tickets-39260851263" target="_blank">Get Tickets</a>
