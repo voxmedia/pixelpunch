@@ -573,6 +573,16 @@ a {
   .code-container .content h2 {
     margin: 3em 0 1em 0; }
 
+.profile-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  grid-gap: 5%;
+  margin-bottom: 3em; }
+  .profile-list .profile {
+    margin-bottom: 3em; }
+
 .intro {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -631,15 +641,12 @@ a {
             animation: orbit 300s linear infinite alternate; }
 
 .about .astronaut {
-  position: relative;
-  top: 1vw;
-  left: 40vw;
-  width: 10vw;
-  z-index: 999;
+  display: none;
   -webkit-animation: backforth 15s linear infinite alternate;
           animation: backforth 15s linear infinite alternate; }
   @media screen and (min-width: 768px) {
     .about .astronaut {
+      display: block;
       position: absolute;
       top: 19vw;
       left: 10vw;
@@ -676,36 +683,21 @@ a {
     -webkit-transform: translateY(30%) scale(1.5) rotate(-100deg);
             transform: translateY(30%) scale(1.5) rotate(-100deg); } }
 .about .mars {
-  position: relative;
-  top: -25vw;
-  left: 26vw;
-  width: 30vw;
-  height: 30vw; }
+  display: none; }
   @media screen and (min-width: 768px) {
     .about .mars {
+      display: block;
       position: absolute;
       top: 19vw;
       left: 7vw;
       width: 20vw;
       height: 20vw; } }
 
-.judges .judge-list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
-  grid-gap: 5%;
-  margin-bottom: 3em; }
-  .judges .judge-list .judge:nth-last-child(-n+2) {
-    margin-top: 3em; }
 .judges .jupiter {
-  position: relative;
-  height: 65vw;
-  width: 65vw;
-  top: -5vw;
-  left: 10vw; }
+  display: none; }
   @media screen and (min-width: 768px) {
     .judges .jupiter {
+      display: block;
       position: absolute;
       height: 65vw;
       width: 65vw;
@@ -713,15 +705,12 @@ a {
       left: -30vw; } }
 
 .contestants .saturn {
-  position: relative;
-  height: 60vw;
-  width: 60vw;
-  top: -5vw;
-  left: 10vw;
-  -webkit-transform: rotate(-15deg);
-          transform: rotate(-15deg); }
+  display: none; }
   @media screen and (min-width: 768px) {
     .contestants .saturn {
+      display: block;
+      -webkit-transform: rotate(-15deg);
+              transform: rotate(-15deg);
       position: absolute;
       height: 60vw;
       width: 60vw;
@@ -729,16 +718,10 @@ a {
       left: -20vw; } }
 
 .footer {
+  text-align: center;
   padding-top: 10vw;
   padding-left: 5vw;
   padding-right: 5vw; }
-  .footer .footer-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
   .footer a {
     color: #fff; }
     .footer a:hover {

@@ -1,13 +1,10 @@
 .about {
 
   .astronaut {
-    position: relative;
-    top: 1vw;
-    left: 40vw;
-    width: 10vw;
-    z-index: 999;
+    display: none;
 
     @include media-query {
+      display: block;
       position: absolute;
       top: 19vw;
       left: 10vw;
@@ -33,13 +30,10 @@
   }
 
   .mars {
-    position: relative;
-    top: -25vw;
-    left: 26vw;
-    width: 30vw;
-    height: 30vw;
+    display: none;
 
     @include media-query {
+      display: block;
       position: absolute;
       top: 19vw;
       left: 7vw;

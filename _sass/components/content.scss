@@ -43,3 +43,13 @@
     }
   }
 }
+
+.profile-list {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-gap: 5%;
+  margin-bottom: 3em;
+  .profile{
+    margin-bottom: 3em;
+  }
+}
