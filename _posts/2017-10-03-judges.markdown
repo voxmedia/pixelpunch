@@ -12,10 +12,17 @@ published: true
 
 <div class="profile-list">
   <div class="profile">
-    <img alt="image of Catherine Dillingham" src="/images/judge-catherine-dillingham.jpg">
-    <p><strong>Catherine Dillingham</strong><br>
-    Senior Associate, Glen Echo Group<br>
-    <a target="_blank" title="Catherine Dillingham's Twitter account" href="https://twitter.com/wrendidit">@wrendidit</a>
+    <img alt="image of Alisha Ramos" src="/images/judge-alisha-ramos.jpg">
+    <p><strong>Alisha Ramos</strong><br>
+    Founder &amp; CEO, Girls' Night In<br>
+    <a target="_blank" title="Alisha Ramos's Twitter account" href="https://twitter.com/alishalisha">@alishalisha</a>
+    </p>
+  </div>
+  <div class="profile">
+    <img alt="image of Scott Kellum" src="/images/judge-scott-kellum.jpg">
+    <p><strong>Scott Kellum</strong><br>
+    Product and UX designer<br>
+    <a target="_blank" title="Scott Kellum's Twitter account" href="https://twitter.com/ScottKellum">@scottkellum</a>
     </p>
   </div>
   <div class="profile">
@@ -26,24 +33,17 @@ published: true
     </p>
   </div>
   <div class="profile">
-    <img alt="image of Katelyn Caillouet" src="/images/judge-katelyn-caillouet.jpg">
-    <p><strong>Katelyn Caillouet</strong><br>
-    Designer, Pleasant Design Co.<br>
-    <a target="_blank" title="Katelyn Caillouet's Twitter account" href="https://twitter.com/hellokatelyn">@hellokatelyn</a>
+    <img alt="image of Catherine Dillingham" src="/images/judge-catherine-dillingham.jpg">
+    <p><strong>Catherine Dillingham</strong><br>
+    Senior Associate, Glen Echo Group<br>
+    <a target="_blank" title="Catherine Dillingham's Twitter account" href="https://twitter.com/wrendidit">@wrendidit</a>
     </p>
   </div>
   <div class="profile">
-    <img alt="image of Alisha Ramos" src="/images/judge-alisha-ramos.jpg">
-    <p><strong>Alisha Ramos</strong><br>
-    Founder &amp; CEO, Girls' Night In<br>
-    <a target="_blank" title="Alisha Ramos's Twitter account" href="https://twitter.com/alishalisha">@alishalisha</a>
-    </p>
-  </div>
-  <div class="profile">
-    <img alt="image of Alisha Ramos" src="/images/judge-alisha-ramos.jpg">
-    <p><strong>Alisha Ramos</strong><br>
-    Founder &amp; CEO, Girls' Night In<br>
-    <a target="_blank" title="Alisha Ramos's Twitter account" href="https://twitter.com/alishalisha">@alishalisha</a>
+    <img alt="image of Brian Monroe" src="/images/judge-brian-monroe.jpg">
+    <p><strong>Brian Monroe</strong><br>
+    3D Animator, NASA Goddard Space Flight Center<br>
+    <a target="_blank" title="Brian Monroe's Linkedin account" href="https://twitter.com/brianrmonroe">@brianrmonroe</a>
     </p>
   </div>
 </div>

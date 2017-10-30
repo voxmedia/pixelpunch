@@ -10,6 +10,14 @@ published: true
 
 # CONTESTANTS
 
+<!--
+Alexander Oshiro
+Katelyn Caillouet
+Rashad Muhammad
+Jenny Gan
+Mitchell Macnaughton
+-->
+
 <div class="profile-list">
   <div class="profile">
     <img alt="image of Catherine Dillingham" src="/images/judge-catherine-dillingham.jpg">
