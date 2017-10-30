@@ -650,7 +650,8 @@ a {
       position: absolute;
       top: 19vw;
       left: 10vw;
-      width: 10vw; } }
+      width: 10vw;
+      z-index: 2; } }
 @-webkit-keyframes backforth {
   0% {
     -webkit-transform: translateX(-20%) rotate(10deg);
