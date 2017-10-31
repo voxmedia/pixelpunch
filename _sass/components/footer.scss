@@ -1,11 +1,8 @@
 .footer {
   text-align: center;
-  padding-top: 10vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
-
+  padding: 10em 8vw 3em;
   a {
-    color: #fff;
+    color: currentColor;
 
     &:hover {
       opacity: .75;

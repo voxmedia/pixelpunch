@@ -15,10 +15,8 @@ $base-font-weight:    400 !default;
 $base-line-height:    1.5 !default;
 $base-letter-spacing: 0.035em !default;
 
-// this media query overrides mobile styling
-
 // Media Query
-$large-screen: 768px !default;
+$large-screen: 60em;
 
 @mixin media-query {
   @media screen and (min-width: $large-screen) {

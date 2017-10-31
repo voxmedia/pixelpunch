@@ -1,16 +1,13 @@
 .intro {
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-
+  padding-bottom: 20em;
   .logo {
-    width: 80vw;
-    margin-top: 25vw;
+    max-width: 40em;
+    margin-top: 40vw;
+    transform: translateX(-12%);
 
     @include media-query {
       width: 35vw;
-      margin-top: 0vw;
+      margin-top: 20em;
       transform: translateX(-4.5vw);
     }
   }
@@ -19,11 +16,15 @@
     position: absolute;
     width: 85vw;
     height: 85vw;
-    top: -40vw;
+    top: -43vw;
+    right: 0;
+    left: 0;
+    margin: auto;
 
     @include media-query {
-      left: -20vw;
       top: -20vw;
+      right: auto;
+      left: -20vw;
       width: 60vw;
       height: 60vw;
     }

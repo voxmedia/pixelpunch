@@ -402,18 +402,10 @@ body {
   letter-spacing: 0.035em;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-smooth: always;
   background: #161641;
   color: white;
   position: relative;
-  min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  min-height: 100vh; }
 
 img,
 video {
@@ -430,7 +422,7 @@ h1 {
   font-size: 3rem;
   line-height: 1em;
   font-family: "Oswald", sans-serif; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 60em) {
     h1 {
       font-size: 4.5rem; } }
 
@@ -441,6 +433,7 @@ a {
   color: currentColor; }
 
 .sign-up-button {
+  display: inline-block;
   background: #e30c79;
   padding: .5em 1.4em;
   border-radius: 3px;
@@ -448,7 +441,7 @@ a {
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
   text-decoration: none;
-  margin-right: 5px;
+  margin-top: 1em;
   word-break: none; }
   .sign-up-button:hover {
     background: #b3095f; }
@@ -466,7 +459,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 60em) {
     .nav {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -534,84 +527,73 @@ a {
             transform: scale(1.2); }
 
 .content-gradient {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  position: relative; }
+          justify-content: center; }
+  @media screen and (min-width: 60em) {
+    .content-gradient:not(:last-child) {
+      -webkit-box-pack: right;
+          -ms-flex-pack: right;
+              justify-content: right; } }
   .content-gradient:nth-child(even) {
-    background: -webkit-linear-gradient(top, #3e1b5b 50%, #181543 100%);
-    background: linear-gradient(to bottom, #3e1b5b 50%, #181543 100%); }
+    background: -webkit-linear-gradient(top, #391d59 50%, #161641 100%);
+    background: linear-gradient(to bottom, #391d59 50%, #161641 100%); }
   .content-gradient:nth-child(odd) {
-    background: -webkit-linear-gradient(top, #181543 50%, #3e1b5b 100%);
-    background: linear-gradient(to bottom, #181543 50%, #3e1b5b 100%); }
+    background: -webkit-linear-gradient(top, #161641 50%, #391d59 100%);
+    background: linear-gradient(to bottom, #161641 50%, #391d59 100%); }
 
 .content-size {
   min-height: 100vh; }
 
-@media screen and (min-width: 768px) {
-  .content-container {
-    width: 70vw;
-    -ms-flex-item-align: end;
-        align-self: flex-end; } }
-
 .content {
-  padding: 2rem; }
-  @media screen and (min-width: 768px) {
+  width: 84vw;
+  max-width: 73ch;
+  padding: 0 8vw; }
+  @media screen and (min-width: 60em) {
     .content {
-      margin: 0 auto;
-      max-width: 550px; } }
-
-.code-container .content {
-  max-width: 73ch; }
-  .code-container .content h2 {
-    margin: 3em 0 1em 0; }
+      padding: 0 8vw 0 2vw; } }
+  .content h1 {
+    margin-bottom: 1em; }
 
 .profile-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 5%;
   margin-bottom: 3em; }
   .profile-list .profile {
     margin-bottom: 3em; }
 
 .intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  padding-bottom: 20em; }
   .intro .logo {
-    width: 80vw;
-    margin-top: 25vw; }
-    @media screen and (min-width: 768px) {
+    max-width: 40em;
+    margin-top: 40vw;
+    -webkit-transform: translateX(-12%);
+            transform: translateX(-12%); }
+    @media screen and (min-width: 60em) {
       .intro .logo {
         width: 35vw;
-        margin-top: 0vw;
+        margin-top: 20em;
         -webkit-transform: translateX(-4.5vw);
                 transform: translateX(-4.5vw); } }
   .intro .earth-and-moon {
     position: absolute;
     width: 85vw;
     height: 85vw;
-    top: -40vw; }
-    @media screen and (min-width: 768px) {
+    top: -43vw;
+    right: 0;
+    left: 0;
+    margin: auto; }
+    @media screen and (min-width: 60em) {
       .intro .earth-and-moon {
-        left: -20vw;
         top: -20vw;
+        right: auto;
+        left: -20vw;
         width: 60vw;
         height: 60vw; } }
 @-webkit-keyframes orbit {
@@ -644,7 +626,7 @@ a {
   display: none;
   -webkit-animation: backforth 15s linear infinite alternate;
           animation: backforth 15s linear infinite alternate; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 60em) {
     .about .astronaut {
       display: block;
       position: absolute;
@@ -685,29 +667,29 @@ a {
             transform: translateY(30%) scale(1.5) rotate(-100deg); } }
 .about .mars {
   display: none; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 60em) {
     .about .mars {
       display: block;
       position: absolute;
-      top: 19vw;
+      top: 6vh;
       left: 7vw;
       width: 20vw;
       height: 20vw; } }
 
 .judges .jupiter {
   display: none; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 60em) {
     .judges .jupiter {
       display: block;
       position: absolute;
       height: 65vw;
       width: 65vw;
-      top: -5vw;
-      left: -30vw; } }
+      top: 15vw;
+      left: -40vw; } }
 
 .contestants .saturn {
   display: none; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 60em) {
     .contestants .saturn {
       display: block;
       -webkit-transform: rotate(-15deg);
@@ -716,14 +698,12 @@ a {
       height: 60vw;
       width: 60vw;
       top: 5vw;
-      left: -20vw; } }
+      left: -27vw; } }
 
 .footer {
   text-align: center;
-  padding-top: 10vw;
-  padding-left: 5vw;
-  padding-right: 5vw; }
+  padding: 10em 8vw 3em; }
   .footer a {
-    color: #fff; }
+    color: currentColor; }
     .footer a:hover {
       opacity: .75; }

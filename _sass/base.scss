@@ -11,15 +11,11 @@ body {
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-smooth: always;
 
   background: $color-space-darker;
   color: $color-white;
   position: relative;
   min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
 }
 
 img,
@@ -55,16 +51,17 @@ a {
 }
 
 .sign-up-button {
+  display: inline-block;
   background: $color_pink;
   padding: .5em 1.4em;
   border-radius: 3px;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
   transition: all .25s ease;
   text-decoration: none;
-  margin-right: 5px;
+  margin-top: 1em;
   word-break: none;
 
   &:hover {
-    background: darken($color_pink,10%);
+    background: darken($color_pink, 10%);
   }
 }
