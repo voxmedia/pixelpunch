@@ -43,7 +43,7 @@ published: true
     <img alt="image of Mitchell Macnaughton" src="/images/contestant-mitchell-macnaughton.jpg">
     <p><strong>Mitchell Macnaughton</strong><br>
     Illustrator, designer<br>
-    <a style="word-break: break-all" target="_blank" title="Mitchell Macnaughtons Twitter account" href="https://twitter.com/MacNaughtonArt">@macnaughtonart</a>
+    <a target="_blank" title="Mitchell Macnaughtons Twitter account" href="https://twitter.com/MacNaughtonArt">@macnaughtonart</a>
     </p>
   </div>
 </div>
