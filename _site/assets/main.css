@@ -561,8 +561,8 @@ a {
 .profile-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (minmax(100px, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(100px, 1fr));
   grid-gap: 5%;
   margin-bottom: 3em; }
   .profile-list .profile {
