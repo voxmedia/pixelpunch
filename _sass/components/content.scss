@@ -1,9 +1,10 @@
-.content-gradient {
+.content-gradient, {
   position: relative;
   display: grid;
   justify-content: center;
+
   @include media-query {
-    &:not(:last-child){justify-content: right;}
+    &:not(:last-child) {justify-content: right;}
   }
 
   &:nth-child(even) {
@@ -12,6 +13,28 @@
 
   &:nth-child(odd) {
     background: linear-gradient(to bottom, $color-space-darker 50%, $color-space-dark 100%);
+  }
+
+  .content {
+    width: 84vw;
+    max-width: 73ch;
+    padding: 0 8vw;
+    @include media-query {
+      padding: 0 8vw 0 2vw;
+    }
+    h1 {
+      margin-bottom: 1em;
+    }
+  }
+
+}
+
+.content-code-of-conduct {
+  display: grid;
+  justify-content: center;
+  background: linear-gradient(to bottom, $color-space-darker 50%, $color-space-dark 100%);
+  .content {
+    padding: 0 2vw;
   }
 }
 

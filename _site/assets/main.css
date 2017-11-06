@@ -544,6 +544,26 @@ a {
   .content-gradient:nth-child(odd) {
     background: -webkit-linear-gradient(top, #161641 50%, #391d59 100%);
     background: linear-gradient(to bottom, #161641 50%, #391d59 100%); }
+  .content-gradient .content {
+    width: 84vw;
+    max-width: 73ch;
+    padding: 0 8vw; }
+    @media screen and (min-width: 60em) {
+      .content-gradient .content {
+        padding: 0 8vw 0 2vw; } }
+    .content-gradient .content h1 {
+      margin-bottom: 1em; }
+
+.content-code-of-conduct {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-linear-gradient(top, #161641 50%, #391d59 100%);
+  background: linear-gradient(to bottom, #161641 50%, #391d59 100%); }
+  .content-code-of-conduct .content {
+    padding: 0 2vw; }
 
 .content-size {
   min-height: 100vh; }
