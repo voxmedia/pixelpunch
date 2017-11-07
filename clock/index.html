@@ -118,7 +118,7 @@
 			var reset = $('.reset');
 
       function getSlideDuration() {
-        parseInt($(Reveal.getCurrentSlide()).find('.header').data('duration')) * 15 * 60;
+        return parseInt($(Reveal.getCurrentSlide()).find('.timer').data('duration')) * 15 * 60;
       }
 
 			playpause.on('click', function() {
@@ -133,11 +133,11 @@
 			});
 
 			reset.on('click',function() {
+			  count = getSlideDuration();
 			  if (playing) {
 			    playing = false;
 			    playpause.innerHTML = "play";
 			  }
-			  count = getSlideDuration();;
 			});
 
 			function countdown(){
@@ -175,7 +175,13 @@
 
       Reveal.addEventListener( 'slidechanged', function( event ) {
           count = getSlideDuration();
+			  if (playing) {
+			    playing = false;
+			    playpause.innerHTML = "play";
+			  }
+
       } );
+
 			$(document).ready(function() {
 				countdown();
 			});
