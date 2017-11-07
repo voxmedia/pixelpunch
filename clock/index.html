@@ -48,7 +48,7 @@
 					<h3>A Vox Product Design Battle</h3>
 				</section>
 				<section>
-					<h1 class="timer"></h1>
+					<h1 class="timer" data-duration="10"></h1>
 					<button class="playpause">start</button>
 					<button class="reset">reset</button>
 					<h2>Challenge #1</h2>
@@ -56,7 +56,7 @@
 					<p>Shape of the mall is determined by random selection <br>using the <a href="https://autotune.voxmedia.com/projects/field-guide-pixel-punch-directory-generator" target="_blank">Pixel Punch III Directory Generator&trade;</a></p>
 					</section>
 				<section>
-					<h1 class="timer"></h1>
+					<h1 class="timer" data-duration="10"></h1>
 					<button class="playpause">start</button>
 					<button class="reset">reset</button>
 					<h2>Challenge #2</h2>
@@ -64,7 +64,7 @@
 					<p>Only (a max of 3) pastel colors and only sans serif-fonts</p>
 				</section>
 				<section>
-					<h1 class="timer"></h1>
+					<h1 class="timer" data-duration="10"></h1>
 					<button class="playpause">start</button>
 					<button class="reset">reset</button>
 					<h2>Challenge #3</h2>
@@ -72,7 +72,7 @@
 					<p>Your guidance comes from your selection <br>in the <a href="https://autotune.voxmedia.com/projects/field-guide-pixel-punch-randomizer" target="_blank">Pixel Punch III Monster Maker&trade;</a></p>
 				</section>
 				<section>
-				<h1 class="timer"></h1>
+        <h1 class="timer" data-duration="15"></h1>
 				<button class="playpause">start</button>
 				<button class="reset">reset</button>
 					<h2>Challenge #4</h2>
@@ -117,6 +117,10 @@
 			var playpause = $('.playpause');
 			var reset = $('.reset');
 
+      function getSlideDuration() {
+        parseInt($(Reveal.getCurrentSlide()).find('.header').data('duration')) * 15 * 60;
+      }
+
 			playpause.on('click', function() {
 			  if (playing) {
 			    playing = false;
@@ -133,7 +137,7 @@
 			    playing = false;
 			    playpause.innerHTML = "play";
 			  }
-			  count = COUNT_START;
+			  count = getSlideDuration();;
 			});
 
 			function countdown(){
@@ -168,6 +172,10 @@
 			function LeadingZero(Time) {
 			  return (Time < 10) ? "0" + Time : + Time;
 			}
+
+      Reveal.addEventListener( 'slidechanged', function( event ) {
+          count = getSlideDuration();
+      } );
 			$(document).ready(function() {
 				countdown();
 			});
