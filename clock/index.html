@@ -111,14 +111,14 @@
 			});
 
 			var COUNT_START = 10*15*60; // tenths * seconds * hours
-			var count = COUNT_START;
+			var count = getSlideDuration();
 			var playing = false;
 
 			var playpause = $('.playpause');
 			var reset = $('.reset');
 
       function getSlideDuration() {
-        return parseInt($(Reveal.getCurrentSlide()).find('.timer').data('duration')) * 15 * 60;
+        return parseInt($(Reveal.getCurrentSlide()).find('.timer').data('duration')) * 10 * 60;
       }
 
 			playpause.on('click', function() {
